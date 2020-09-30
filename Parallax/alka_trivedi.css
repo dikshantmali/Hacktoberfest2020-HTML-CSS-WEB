@@ -1,0 +1,81 @@
+body, html{
+	height: 100%;
+}
+
+.content{
+ 	height: 300px;
+ 	background-color: #FFE4E1;
+ 	font-size: 36px;
+}
+
+header{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	background-color: #F08080;
+}
+
+.pic1{
+	background-image: url(https://images.unsplash.com/photo-1581636345881-5aaac6bf12e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=793&q=80);
+
+	height: 100%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.pic2{
+	background-image: url(https://images.unsplash.com/photo-1601438078571-6cb4bd5b6c74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+	height: 100%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.pic3{
+	background-image: url(https://images.unsplash.com/photo-1589280769629-746d93bd8a8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80);
+	height: 100%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.pic4{
+	background-image: url(https://images.unsplash.com/photo-1601399010637-e688bfa299ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+	height: 100%;
+
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.pic5{
+	background-image: url(https://images.unsplash.com/photo-1488998628026-a1a79746cdcd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+	height: 100%;
+
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.pic6{
+	background-image: url(https://images.unsplash.com/photo-1579527248795-347ba41f26f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=891&q=80);
+	height: 100%;
+
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
