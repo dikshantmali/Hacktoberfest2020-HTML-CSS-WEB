@@ -1,11 +1,12 @@
 *{
     margin: 0;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 html{
     scroll-behavior: smooth;
+
 }
 
 body{
@@ -14,7 +15,47 @@ body{
     background-size: cover;
     scroll-behavior: smooth;
 }
+#title{
 
+  background-size:cover;
+  text-align: center;
+  background-position: center;
+  color: black;
+  background-image: url("https://images.unsplash.com/photo-1561016444-14f747499547?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+  font-weight:bolder;
+  font-size: 120px;
+
+}
+.frontIMG{
+  background-position: center;
+  background-size: cover;
+  width: 1100px;
+  height: 600px;
+}
+.beachwalk{
+  color: black;
+}
+h5{
+  text-align: center;
+}
+p{
+
+  text-align: center;
+  color: #1d2d50;
+
+}
+.pp{
+  font-size: 15px;
+}
+.text-wrap {
+    position: absolute;
+    top: 48vh;
+    /*left: 0; */
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: black;
+}
 .head{
     display: flex;
     justify-content: space-between;
@@ -45,7 +86,9 @@ li{
     font-family: 'Dancing Script', cursive;
     font-weight: lighter;
 }
-
+#footer{
+      background-image: url("https://images.unsplash.com/photo-1561016444-14f747499547?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+}
 
 #home{
     margin: 20px;
@@ -140,6 +183,7 @@ li{
     margin: 10px 30px 10px 30px;
     font-size: 30px;
     font-family: 'Acme', sans-serif;
+
 }
 
 #contact p{
