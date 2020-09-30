@@ -1,5 +1,9 @@
 # Hacktoberfest2020-HTML-CSS-WEB
 
+Anyone can add any type of html-css web page depends on you. It can be anything like simple form, adding parallax so that people can understand how to use parallax, adding flex box, adding navbar, adding footer for website like that. Anyone can add anything written in HTML CSS so that the people who are beginner can learn let say how to add navbar, how to generate shadow for an image anything like that
+
+
+
 Anybody can make contribution.
 Steps To Generate PR(Pull Request)
 
