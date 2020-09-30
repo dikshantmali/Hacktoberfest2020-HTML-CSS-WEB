@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+div{
+    width: 100%;
+    text-align: center;
+    padding: 80px 0px 0px 0px;
+}
+
+h1,h2{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
