@@ -1,0 +1,96 @@
+body{
+    font-family:'Nunito',sans-serif;
+    background: #FF5F6D;  
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  
+    background: linear-gradient(to right, #FFC371, #FF5F6D);  
+
+}
+
+h1{
+    background-color: #fd0054;
+    color: white;
+    margin:0;
+    padding:10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+input{
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 25px;
+    box-sizing: border-box;
+    color: #fd0054;
+    border: 3px solid #fd0054;
+}
+
+input:focus{
+    background-color: white;
+    border: 3px solid #fd0054;
+    outline: none;
+}
+
+.entry {
+	background: white;
+	color: #666;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	min-height: 40px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+}
+.entry:nth-child(2n){
+	background: #F7F7F7;
+}
+
+
+.trash {
+	background: #FE4A49;
+	min-width: 0px;
+	color: white;
+	text-align: center;
+	width: 0px;
+    opacity: 0;
+    padding:0;
+
+}
+
+.trash:hover {
+	min-width: 40px;
+	transition: 0.2s linear;
+	opacity: 1;
+}
+
+.text {
+	margin: auto 0;
+	height: 100%;
+	padding: 5px 40px 5px 30px;
+	word-wrap: break-word;
+	cursor: default;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+.completed{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.fa-plus{
+    float: right;
+    font-weight: 100;
+}
+.fa-plus:hover{
+    font-weight: bolder;
+}
+
+#container{
+    max-width: 360px;
+    width: 95%;
+    margin: 5% auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
