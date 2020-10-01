@@ -1,0 +1,145 @@
+html,body{
+    margin:0;
+}
+@font-face {
+    font-family: "productSans";
+    src: url(productSans.woff);
+}
+* {
+font-family: "productSans";
+}
+/* Container 01 Section */
+.container-01{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding:10px 20px 0px 0px;
+}
+a.hyperlink01{
+    font-size:14px;
+    color:black;
+    text-decoration: none;
+}
+a.hyperlink01:hover{
+    text-decoration: underline;
+}
+.container-01-01{
+    padding-top:5px;
+    margin-right:10px;   
+}
+.container-01-02image:hover{
+    box-shadow:1px 1px 10px grey;
+}
+
+/* Container 02 Section */
+
+.container-02{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.google_Image{
+    text-align: center;
+    padding: 30px 10px;
+    margin-top:100px;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    width:500px;
+    height: 50px;
+    border: 1px solid #dedede;
+    border-radius: 40px;
+}
+.input img{
+    margin-top: 18px;
+    width:15px;
+    height:15px;
+    padding-left:14px;
+}
+.input input{
+    border:none;
+    outline:none;
+    font-size:20px;
+    width:100%;
+    margin:10px;
+    padding:5px;
+    height:30px;
+}
+.input:hover{
+    box-shadow: 2px 2px 5px #bcbcbc;
+}
+.buttons-container{
+    padding:20px 10px;
+}
+.buttons{
+    background:#efefef;
+    border:none;
+    border-radius:4px;
+    margin: 11px 4px;
+    padding: 10px 16px;
+    font-size:15px;
+    cursor: pointer;
+    color: #505050
+}
+.buttons:hover{
+    box-shadow: 2px 2px 5px #9a9a9a;
+    color:black;
+}
+
+/* Last Layer: */
+
+.last-layer{
+    font-size:15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.last-layer p{
+    margin:0;
+}
+.last-layer a{
+    text-decoration: none;
+    font-size: 13px;
+    margin:1px 4px;
+}
+.last-layer a:hover{
+    text-decoration: underline;
+}
+
+/* Container 03 Section */
+.container-03{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    background: #efefef;
+}
+.upperdiv{
+    padding:10px 15px;
+    border-top:1px solid #dedede;
+    border-bottom:1px solid #dedede;
+}
+.upperdiv p{
+    color:#808080;
+    padding-left:10px;
+    margin:0;
+}
+.lowerdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px 15px;
+    border-top:1px solid #dedede;
+    border-bottom:1px solid #dedede;
+}
+.lowerdiv a{
+    color:#808080;
+    text-decoration:none;
+    padding: 3px 10px;
+}
+.lowerdiv a:hover{
+    text-decoration: underline;
+}
