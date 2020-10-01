@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inria Sans', 'Roboto Slab';
+  }
+ /* .row
+  {
+     
+    
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+
+  }*/
+  .col-sm-6
+  {
+    padding-left: 0px;
+
+   
+    
+  }
+  .container-fluid{
+    padding-left: 25px;
+    padding-right:25px;
+  }
+  
+.card-header
+{
+  background-color: lightgrey;
+}
+.about-me .personal-info{
+  margin: 0px;
+  line-height: 30px;
+}
+p{
+  color: #333333; 
+     font-size: 13px; 
+     line-height: 20px; 
+     letter-spacing: 0.5px; 
+     text-rendering: optimizeLegibility; 
+}
+.padding-top-10 {
+  padding-top: 10px !important;
+}
+section {
+  position: relative;
+  width: 100%;
+  background: #fff;
+}
+section
+  {
+     
+    
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    align-items: center;
+    
+
+  }
+  div.col-xl-4
+  {
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 60px;
+    
+    
+  }
+  #btn_submit:hover
+  {
+    background-color:  #3dae9d !important ;
+  }
+  #soc a:hover{
+    background-color: #3dae9d !important;
+  }
+  .side-bar{
+     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  .div.col-xl-7
+  {
+    padding-right: 2px;
+    padding-bottom: 15px;
+    
+    
+  }
+  #per-info{
+    line-height: 20px;
+    border-radius: 2px solid green;
+  }
+  #last.container-fluid{
+     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-top: 2px solid #3dae9d;
+     border-bottom: 2px solid #3dae9d;
+     border-left: 2px solid #3dae9d;
+     border-right: 2px solid #3dae9d;
+    padding-top: 40px;
+     
+
+  }
+
