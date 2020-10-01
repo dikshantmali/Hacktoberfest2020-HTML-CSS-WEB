@@ -1,5 +1,5 @@
 .display-1{
-    color: red;
+    color: salmon;
 }
 @keyframes blinker {
   from { opacity: 1.0; }
