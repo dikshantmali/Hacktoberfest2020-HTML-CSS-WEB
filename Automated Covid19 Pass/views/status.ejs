@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="public/assets/images/aplogo.png" type="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Govt of Telangana  e-Pass</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="public/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="public/css/major.css">
+    <link rel="stylesheet" href="public/css/mentorpro.css">
+</head>
+
+<body id="page-top">
+    
+    
+    <div id="sec" class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="public/images/aplogo.png" alt="" width="250" height="250">
+        <h1 id="hd"> <strong>COVID-19 e-Pass Govt. of Telangana </strong></h1>
+        <p id="tp">Please keep the copy of e-Pass when enterning the premises of Telangana .This e-Pass if only valid for 1 week from its date of approval </p>
+         <p id="rule">
+                <li>Only one person is allowed to travel with the pass</li>
+                <li>Carry neccessary documents during the time of travel</li>
+                <li>e-Pass will be ceased if the applicant is seen violating the rules and regulations</li>
+                <li>The e-Pass will only be valid for 1 week </li>
+        </p>
+        <p  class="lead">
+            <strong>
+                <h2 id="stat">Status:<%= status%></h2>
+            </strong>
+        </p>
+    </div>
+    <div id="wrapper">
+        <div id="pic" class="container-fluid"> 
+            <div class="row mb-3">
+                
+                <div  class="col-lg-8">
+                    <form id="res" method="POST" >
+                        <div  class="form-row">
+                            <div class="col">
+                                <div class="form-group"><label for="username"><strong>First Name</strong></label><input class="form-control" type="text" value="<%= data.fname%>" name="fname" readonly></div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group"><label for="username"><strong>Last Name</strong></label><input class="form-control" type="text" value="<%= data.lname%>" name="lname" readonly></div>
+                            </div>
+                            <div class="col">
+                                
+                                <div class="form-group"><label for="email"><strong>Email</strong></label><input class="form-control" type="email" value="<%= data.email%>" name="email" readonly></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group"><label for="last_name"><strong>Aadhar Card </strong></label><input class="form-control" type="text" value="<%= data.idcard%>" name="last_name" readonly></div>
+                            </div>
+                        </div>
+                        <div class="form-group"><label for="address"><strong>District Source</strong></label><input class="form-control" type="text" value="<%= data.source%>" name="destination" readonly></div>
+                        <div class="form-group"><label for="address"><strong>Source State</strong></label><input class="form-control" type="text" value="<%= data.source_state%>" name="dest_state" readonly></div>
+                        <div class="form-group"><label for="address"><strong>District Destination</strong></label><input class="form-control" type="text" value="<%= data.destination%>" name="source" readonly></div>
+                        <div class="form-group"><label for="address"><strong>Destination State</strong></label><input class="form-control" type="text" value="<%= data.dest_state%>" name="source_state%" readonly></div>
+                        
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group"><label for="city"><strong>Date of Application</strong></label><input class="form-control" type="text" value="<%=data.trip%>" name="date" readonly></div>
+                            </div>
+                        </div>
+                        <input type="button" class="btn btn-primary" value="Print this page" onClick="window.print()">
+                    </form>
+                </div>
+            </div>    
+        </div>
+    
+
+
+<!--Start code from here Nibba-->
+
+
+
+
+
+
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/chart.min.js"></script>
+    <script src="public/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="public/js/theme.js"></script>
+	<style>
+		.navbar{
+			background-image: linear-gradient(to bottom right, #75cd6f, #3dae9d);
+		}
+    .navbar{
+      transition: 1s;
+    }
+    .mx-3{
+      transition: 1s;
+    }
+	</style>
+</body>
+
+</html>

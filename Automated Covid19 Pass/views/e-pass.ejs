@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Govt of Telangana e-Pass </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <link rel="icon" href="public/images/aplogo.png" type="">
+  <link rel="stylesheet" href="public/css/form.css">
+  <link rel="icon" href="public/images/aplogo.png" type="">
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="public/css/form-validation.css" rel="stylesheet">
+</head>
+
+<body id="bg" class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="public/images/aplogo.png" alt="" width="200" height="200">
+      <h2>e-Pass Application</h2>
+      <p class="lead">Please fill down the details given below for the e-Pass application process. Kindly check all the
+        details before submitting.</p>
+      <p class="lead">Note: A person can again apply after <strong>3 days</strong> if the application is not approved
+      </p>
+    </div>
+
+    <div id="main" class="row">
+      <div class="col-md-8 order-md-1">
+        <!--Personal Details Start here-->
+        <h2 class="mb-3">Applicant's Details</h2>
+        <form action="/status" method="POST" class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" name="fname" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" name="lname" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email">Email <span class="text-muted">(Mandatory)</span></label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="lastName">State</label>
+              <input type="text" class="form-control" id="lastName" name="source_state" placeholder="" value=""
+                required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="address">Source</label>
+              <input type="text" class="form-control" id="address" name="source" placeholder=" " required>
+              <div class="invalid-feedback">
+                Please enter a valid id
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Destination State</label>
+                <input type="text" class="form-control" id="lastName" name="dest_state" placeholder="" value=""
+                  required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="address">Destination</label>
+                <input type="text" class="form-control" id="address" name="destination" placeholder="" required>
+                <div class="invalid-feedback">
+                  Please enter a valid id
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="number" class="col-2 col-form-label">Telephone</label>
+                <div class="col-10">
+                  <input class="form-control" type="text"  id="number" name="phoneNumber">
+                </div>
+              </div>
+              <div class="container-fluid">
+                <label for="address">Aadhar Card</label>
+                <input type="text" class="form-control" id="address" name="idcard" placeholder=" " required>
+                <div class="invalid-feedback">
+                  Please enter a valid id
+                </div>
+              </div>
+              <div class="container-fluid">
+                <label for="start">Date of Travel</label>
+
+                <input type="date" class="form-control" id="start" name="trip" value="2018-07-22" min="2018-01-01"
+                  max="2030-12-31">
+
+              </div>
+
+
+
+              <div class="d-block my-3">
+                <div class="mb-3">
+                  <h4 class="mb-3">Declaration</h4>
+                  <p><strong>I hereby declare that above details are true and correct to the best of my knowledge. Also,
+                      I undertake that if anything is found untrue I shall be liable for punishment/penalty as per
+                      law.</strong></p>
+                  <p><strong>I hereby declare that I have downloaded Aarogya Setu App and have done Self Assessment on
+                      Aarogya Setu App.</strong></p>
+                </div>
+
+
+              </div>
+              <button class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2017-2020 Company Name</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="public/js/form-validation.js"></script>
+  <script src="public/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
