@@ -6,11 +6,10 @@ var collection = require('./collections/collection');
 
 
 
-var pdfMake = require('pdfmake/build/pdfmake.js');
-var pdfFonts = require('pdfmake/build/vfs_fonts.js');
+//PDF Gen has been deleted and is not working , changes are being made 
 require('dotenv').config();
 
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
+
 
 
 const app = express();
@@ -48,7 +47,7 @@ app.post("/status", function (req, res) {
     var source = req.body.source;
     var destination = req.body.destination;
     var dest_state = req.body.dest_state;
-    var phoneNumber = req.body.phoneNumber;
+    var phoneNumber = req.body.phone_id;
     var source_state=req.body.source_state;
 
     var trip = req.body.trip;
@@ -75,7 +74,7 @@ app.post("/status", function (req, res) {
             .create({
                 body: '\n' + '\n Govt of Telangana e-Pass Approved' + '\n  Your Request for E-pass  has been Approved. Your Details are' + '\n First Name: ' + [req.body.fname] + '\n Last Name: ' + [req.body.lname] + '\n Email: ' + [req.body.email] + '\n Aadhar: ' + [req.body.idcard] + '\n Source State: ' + [req.body.source_state] + '\n Source: ' + [req.body.source] + '\n Destination State: ' + [req.body.dest_state] + '\n Destination: ' + [req.body.destination] + '\n Date: ' + [req.body.trip],
                 from: '+12052368255',
-                to: [req.body.phoneNumber]
+                to: [req.body.phone_id]
             })
             .then(message => console.log(message.sid))
             .catch((err) => console.log(err));
@@ -83,12 +82,12 @@ app.post("/status", function (req, res) {
     else {
         var status = "Rejected";
         console.log("not here");
-        console.log(phoneNumber);
+        console.log(phone_id);
         client.messages
             .create({
                 body: '\n' + '\n Govt of Telangana e-Pass Rejected' + '\n Sorry your Request for E-pass  has been rejected. Please try applying to the Pass 3 days later. Your Details are' + '\n First Name: ' + [req.body.fname] + '\n Last Name: ' + [req.body.lname] + '\n Email: ' + [req.body.email] + '\n Aadhar: ' + [req.body.idcard] + '\n Source State: ' + [req.body.source_state] + '\n Source: ' + [req.body.source] + '\n Destination State: ' + [req.body.dest_state] + '\n Destination: ' + [req.body.destination] + '\n Date: ' + [req.body.trip],
                 from: '+12052368255',
-                to: [req.body.phoneNumber]
+                to: [req.body.phone_id]
             })
             .then(message => console.log(message.sid))
             .catch((err) => console.log(err));
@@ -115,37 +114,3 @@ app.listen(3000, console.log("Server up at 3000"));
 
 
 
-// axios.get('https://api.covid19india.org/v4/data.json').then((res) => {
-//     data = JSON.parse(JSON.stringify(res.data["AP"]["districts"]));
-//     console.log(data[con].total.confirmed);
-
-// }).catch(function (error) {
-//     console.log("No res data from api")
-// })
-
-// app.use('/e-passgen', urlencodedParser, function (req, res) {
-//     console.log(data);
-
-//     console.log(req.body);
-//     if (data[con].total.confirmed >= data["Chittoor"].total.confirmed) {
-//         status = 1;
-//     }
-//     else { status = 0; }
-//     console.log(status);
-//     const pdfRoute = require('./routes/pdfmake')(status,req.body);
-//     app.use('/pdfMake', pdfRoute);
-//     res.send('welcome, ' + req.body.username)
-//   })
-
-
-// app.use('/api',(req,res )=>{
-
-
-//     console.log(data);
-//      res.json(data);});
-//      console.log(data);
-//  if(data.districts.Anantapur.total.confirmed>=data.districts.Chittoor.total.confirmed)
-//   {
-//     status=1;
-//     }
-//    else{   status=0;}
