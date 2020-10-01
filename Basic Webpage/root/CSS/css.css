@@ -1,0 +1,13 @@
+*{margin:0;padding:0}
+h{display:block;color:white;font-weight:bold;text-align:right}
+p{color:red}
+img{width:280px;height:373px;}
+.rght{width:280px;height:373px;position:fixed;right:0}
+body{background:black}
+a:link{color:blue}
+a:visited{color:green}
+a:hover{color:white}
+a:active{color:yellow}
+footer{bottom:76px;position:fixed;width:100%}
+#footer{text-align:center;font-family:impact;background:#e3d802;bottom:0;position:fixed;width:100%;height:80px}
+#gap{display:inline-block;width:20px}
