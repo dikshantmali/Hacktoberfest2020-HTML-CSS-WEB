@@ -1,0 +1,75 @@
+body {
+    background: #E2C8A3;
+    font-family: "Nunito", sans-serif;
+}
+
+.coffee h2 {
+   color:#7A4526;
+   font-weight: 100;
+   font-size: 2.5rem;
+}
+
+.coffee p {
+    /* color: #37170F; */
+    color: #37170A;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.navbar-brand{
+    width: 20%;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #7A4526;
+}
+
+#mainNavbar .navbar-brand {
+    color: #37170A;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color:#835941;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #D79E69;
+    transition: background 500ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .coffee h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
