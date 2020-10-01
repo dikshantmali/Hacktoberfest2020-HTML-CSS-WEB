@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+.navbar{
+	position: relative;
+	text-decoration: none;
+	width: 80%;
+
+
+	margin: auto;
+	align-items: center;
+
+
+}
+.container {
+
+	width: 100%;
+	height: 100vh;
+
+	background: linear-gradient(45deg ,#22046b ,#e14e42);
+
+	color :#fff;
+	position: relative;
+}	
+
+nav {
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+
+	margin-left : 60px;
+
+
+}
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	padding : 8px 5px;
+}
+nav ul li a:hover {
+	color: orange;
+	font-size: 17px;
+
+	transition: ease-in .3s;
+	
+}
+
+nav ul li a:active{
+
+transform: rotateX(-10deg);
+}
+.content {
+	position: absolute;
+	left: 80px;
+	bottom: 300px;
+}
+
+.content b {
+	color: black;
+	text-shadow: 2px 2px 2px orange;
+	font-size:50px;
+}
+ .icon img {
+ 	width: 80px;
+ 	border-radius: 40px;
+ 	margin-left: 20px;
+ 	display: block;
+ 	padding: 5px;
+ }
+ .icon {
+ 	width: 0px;
+ 	height: 0px;
+ 	background-color: white;
+ }
+.komik{
+position: relative;
+margin-top: 80px;
+width: 450px;
+height: auto;
+left: 800px;
+
+
+
+} 
+ .komik img{
+ 	align-content: center;
+ 	align-items: center;
+left:80%;
+padding: 10px;
+border: 5px solid orange;
+width: 200px;
+height: 200px;
+box-sizing: border-box;
+transition: .5s;
+
+ }
+ .komik .one img:hover {
+ 	transform: translateY(-10px);
+
+
+ 	border: 4px solid red;
+ }
+ .komik .two img:hover {
+ 	transform: translateY(10px);
+
+ 	border: 4px solid red;
+}
+.content .isi {
+
+	bottom: 0px;
+	top: 70px;
+	font-size: 20px;
+	text-indent: 10px;
+ 	margin-left : 4px;
+ 	left: 10px;
+ }
+
+ .navbar {
+ 	box-sizing: border-box;
+ 	
+ }
