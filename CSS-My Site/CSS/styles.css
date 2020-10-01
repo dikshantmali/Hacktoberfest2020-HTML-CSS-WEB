@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: white;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  margin: 50px auto 0;
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: bold;
+
+}
+hr{
+  border-style: none;
+border-top-style: dotted;
+border-color:#11999E;
+margin: 5.5rem auto 5.5rem auto;
+border-width: 7px;
+width: 4%;
+}
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+p{
+  line-height: 2;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #40514E;
+}
+.top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 4.5rem;
+}
+.git{
+  margin: 50px auto 0;
+}
+.btn {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+.butt{
+  margin-bottom: 4rem;
+}
+.profile{
+  display: inline-block;
+  width: 30%;
+  height: auto;
+}
+.hello{
+  padding-bottom: 10px;
+}
+.skill-row {
+margin: 100px auto 100px auto;
+  width: 50%;
+  padding: 100px auto 100px auto;
+  font-weight: normal;
+  text-align: left;
+  line-height: 2;
+}
+
+.contact-me{
+  margin: 100px auto 20px auto;
+    width: 40%;
+    font-weight: bold;
+
+    line-height: 2;
+
+}
+a {
+  color: #11999E;
+}
+
+.c {
+  border-radius: 100%;
+  float: left;
+margin-right: 30px;
+  width: 25%;
+}
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 2.5rem;
+}
+.foot{
+  color: #EAF6F6;
+}
+.footer-link{
+  margin: 3rem;
+}
+.ht {
+  float: right;
+  margin-left: 30px;
+  width: 25%;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
