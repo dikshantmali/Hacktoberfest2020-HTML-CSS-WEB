@@ -1,0 +1,24 @@
+#main.row{
+  width: 1500px;
+}
+
+body#bg.bg-light{
+  background-attachment: fixed;
+		background-image: url("images/intro.svg") !important;
+		background-position: top right;
+		background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color:rgba(69, 51, 110, 0.9) !important;
+    color: white;
+
+}
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+  margin: .4rem 0;
+}
+
