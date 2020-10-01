@@ -1,14 +1,162 @@
-.div1 {background-color: #3b5998;width:40%; height:75px; text-align: right;
-    color: WHITE; float: left; padding-top: 18px}
-.div2 {background-color: #3b5998;width:30%; height:75px; text-align: right;
-  color: WHITE; float:left;padding-top: 18px;}
-  .div3 {background-color: #3b5998;width:15%; height:75px; text-align: center;
-    color: WHITE; float:left; padding-top: 18px;}
-    .div4 {background-color: #3b5998;width: 15%; height: 75px; text-align:left; float: left;padding-top: 18px;
-    }
+* {
+  margin: 0;
+}
 
-    .button1 { margin-top: 15px;
-      font-size: 18px;
+header {
+  display: flex;
+  align-items: center;
+  background-color: #4267B2;
+  color: white;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+header h1 {
+  flex: .5;
+}
+
+.header-form {
+  display: flex;
+  align-items: center;
+}
+
+.header-form form {
+  margin: 0 10px;
+}
+
+header button {
+  background-color: #467be4;
+  padding: 8px 18px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+header button:hover {
+  background-color: #386dd8;
+}
+
+main {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #E5E8ED;
+}
+
+aside.left-side {
+  flex: .6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+aside.left-side h1 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+aside.left-side p {
+  margin: 10px 0;
+}
+
+
+aside.right-side>* {
+  margin: 10px 0;
+}
+
+aside.right-side h1 {
+  font-size: 35px;
+}
+
+aside.right-side form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+aside.right-side form button {
+  background-color: rgb(56, 187, 56);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+}
+
+aside.right-side .terms-register {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  color: #386dd8;
+}
+
+footer .language {
+  display: flex;
+  list-style: none;
+  margin: auto;
+  justify-content: space-evenly;
+  width: 80%;
+  padding-left: 0;
+}
+
+footer .menu {
+  margin: 10px;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .menu li {
+  margin: 0 10px;
+}
+
+
+
+/* .div1 {
+  background-color: #3b5998;
+  width: 40%;
+  height: 75px;
+  text-align: right;
+  color: WHITE;
+  float: left;
+  padding-top: 18px
+}
+
+.div2 {
+  background-color: #3b5998;
+  width: 30%;
+  height: 75px;
+  text-align: right;
+  color: WHITE;
+  float: left;
+  padding-top: 18px;
+}
+
+.div3 {
+  background-color: #3b5998;
+  width: 15%;
+  height: 75px;
+  text-align: center;
+  color: WHITE;
+  float: left;
+  padding-top: 18px;
+}
+
+.div4 {
+  background-color: #3b5998;
+  width: 15%;
+  height: 75px;
+  text-align: left;
+  float: left;
+  padding-top: 18px;
+}
+
+.button1 {
+  margin-top: 15px;
+  font-size: 18px;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -19,21 +167,47 @@
   box-shadow: 0 6px #999;
 }
 
-.button1:hover {background-color: #3e8e41}
+.button1:hover {
+  background-color: #3e8e41
+}
 
 .button1:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-    .div5 {background-color: #dfe3ee; width:790px; height:450px; text-align:center;color: black;
-       float:left;  padding: 4px; line-height: 50px}
-.div6{background-color: #dfe3ee;width:535px; height: 458px; text-align: left;
-  color:black; float:left;line-height:15px; }
-  .div7 {background: #ffff; width: 100%; height:30%; text-align: center; 
-    color:#3b5998; word-spacing: 25px;}
 
-    .button {
+.div5 {
+  background-color: #dfe3ee;
+  width: 790px;
+  height: 450px;
+  text-align: center;
+  color: black;
+  float: left;
+  padding: 4px;
+  line-height: 50px
+}
+
+.div6 {
+  background-color: #dfe3ee;
+  width: 535px;
+  height: 458px;
+  text-align: left;
+  color: black;
+  float: left;
+  line-height: 15px;
+}
+
+.div7 {
+  background: #ffff;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  color: #3b5998;
+  word-spacing: 25px;
+}
+
+.button {
   font-size: 18px;
   text-align: center;
   cursor: pointer;
@@ -45,10 +219,12 @@
   box-shadow: 0 6px #999;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {
+  background-color: #3e8e41
+}
 
 .button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
+} */
