@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Loader </title>
+  <link rel="stylesheet" type="text/css" href="loaderStyle.css">
+
+</head>
+<body >
+  <!--add onload="myFunction()" in body tag of this file(footer.html) to play loader on a website untill all the content gets loaded-->
+  <!--loader -->
+  <div id="loading">
+    <section class="wrapper">
+      <div class="spinner">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+    </section>
+  </div>
+  <!--loader-->
+  <script type="text/javascript">
+    var preloader = document.getElementById("loading");
+    function myFunction(){
+      preloader.style.display = 'none';
+    };
+  </script>
+</body>

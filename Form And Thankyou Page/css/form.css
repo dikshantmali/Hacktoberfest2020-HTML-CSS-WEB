@@ -36,7 +36,7 @@ h1,h2{
 
 .form input{
     width: 100%;
-    background: local; 
+    background: local;
     border: none;
     outline: none;
     border-bottom: 1px solid gray;
@@ -62,4 +62,13 @@ h1,h2{
 #submit:hover{
     background-color: black;
     color: white;
+}
+#left{
+  padding-top: 130px;
+
+  padding-left: 20px;
+}
+.d-block{
+  width:280px;
+  height: 240px;
 }
