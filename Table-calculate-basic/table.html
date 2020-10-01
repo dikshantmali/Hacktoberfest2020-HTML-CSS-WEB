@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/table.css">
+</head>
+<body>
+
+<h2>Table Calculate Basic</h2>
+
+<table>
+  <tr>
+    <th>No.</th>
+    <th>Item</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>
+      Tomato
+    </td>
+    <td>
+      <input value=10 style="width: 15px;" type=text readonly/>THB
+    </td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Apple</td>
+    <td>
+      <input value=20 style="width: 15px;" type=text readonly/>THB
+    </td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>Orange</td>
+    <td>
+      <input value=5 style="width: 15px;" type=text readonly/>THB
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">sum</td>
+    <td>
+      <span id="result"></span>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<script>
+  var inputs = document.getElementsByTagName('input'); 
+  var sum = 0;
+  for(var i=0; i < inputs.length; i++){
+    sum = sum + parseInt(inputs[i].value);
+  }
+  var output = document.getElementById('result');
+  output.innerHTML = sum + " THB";
+</script>
