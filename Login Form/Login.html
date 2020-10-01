@@ -1,45 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
     <title>ShrutiJha31</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <Fragment>
-        <section className="container">
-        <h1 className="large text-primary">
-          Sign In
-        </h1>
-        <p className="lead"><i className="fas fa-user"></i> Sign Into your Account?</p>
-        <form  className="form">
-         
-          <div className="form-group">
-            <input type="email" placeholder="Email Address"
-            name="email"
-            
-           >
-          
-          </div>
-          <div className="form-group">
-            <input type="password" placeholder="Password" name="password" value={password} >
-          </div>
-          
-          <input type="submit" value="Login" className="btn btn-primary" />
-        </form>
-        <p className="my-1">
-          Don't you have an account? <Link to="/register">Sign Up</Link>
+      <section style="margin-left: 25px" className="container">
+        <h1 className="large text-primary">Sign In</h1>
+        <p className="lead">
+          <i className="fas fa-user"></i> Sign Into your Account Here!
         </p>
+        <form className="form">
+          <div className="form-group">
+            <input type="email" placeholder="Email Address" name="email" />
+          </div>
+          <br />
+          <div className="form-group">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              value="{password}"
+            />
+          </div>
+          <br />
+          <input type="submit" value="Login" className="btn btn-primary" />
+          <br />
+          <p className="my-1">
+            Don't you have an account?
+            <input type="submit" value="Sign Up" className="btn btn-primary" />
+          </p>
+        </form>
       </section>
-      </Fragment>
-</body>
-
+    </Fragment>
+  </body>
 </html>
