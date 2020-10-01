@@ -1,0 +1,17 @@
+.display-1{
+    color: red;
+}
+@keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+.btn-primarey{
+    background-color: blue;
+    color: white;
+}
+.display-1{
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+    animation-duration: 1.7s;
+}
