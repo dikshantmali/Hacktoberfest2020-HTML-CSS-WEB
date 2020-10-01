@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #000000 !important;
+}
+
+.diamond-grid{
+    width: 70%;
+    margin: 150px auto 0;
+}
+
+.item{
+    width: 220px;
+    height: 220px;
+    background: #ffffff;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.item:hover{
+    opacity: 1;
+}
+
+.item img{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scale(2);
+}
+
+@media (max-width: 767px)
+{
+    .diamond-grid{
+        width: 100%;
+        margin: 0px auto;
+    }
+    
+}
+
+@media (max-width: 360px)
+{
+    .diamond-grid{
+        width: 100%;
+        margin: 150px auto 0;
+    }
+    .item{
+        width: 100%;
+    }
+}
