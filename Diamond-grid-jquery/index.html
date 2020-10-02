@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Major learning : just look at .item img in style.css -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="Fancy-Responsive-jQuery-Diamond-Layout-Plugin-diamonds-js/src/diamonds.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="diamond-grid">
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+        <div class="item"><img src="img.PNG"></div>
+    </div>
+
+    <footer>
+        <a href="https://www.jqueryscript.net/layout/Fancy-Responsive-jQuery-Diamond-Layout-Plugin-diamonds-js.html">Plugin
+            used to create the grid</a>
+    </footer>
+
+    <!-- JQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Diamond grid JQuery -->
+    <script src="Fancy-Responsive-jQuery-Diamond-Layout-Plugin-diamonds-js/src/jquery.diamonds.js"></script>
+    <!-- Script from website of diamond grid jquery -->
+    <script type="text/javascript">
+        $(".diamond-grid").diamonds({
+            size : 250, // Size of diamonds in pixels. Both width and height. 
+            gap : 10, // Pixels between each square.
+            hideIncompleteRow : false, // Hide last row if there are not enough items to fill it completely.
+            autoRedraw : true, // Auto redraw diamonds when it detects resizing.
+            itemSelector : ".item" // the css selector to use to select diamonds-items.
+        });
+    </script>
+</body>
+
+</html>
