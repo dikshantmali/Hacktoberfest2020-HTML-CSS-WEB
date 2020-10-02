@@ -1,0 +1,179 @@
+/* mobile styling responsiveness */
+@media screen and (max-width: 992px) {
+    .thankpageStyle {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        margin-left: 10px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-image: linear-gradient(to right bottom, #4f5ce3, #007af1, #0093f4, #00a8ef, #00bae6, #00c4e3, #00cddd, #1fd5d5, #16dad4, #10ded2, #12e3cf, #1be7cc);
+        width: 500px;
+        color: white;
+        overflow: hidden;
+        position: relative;
+        border: 25px inset #2196f3;
+    }
+
+    .heading4 {
+        margin-left: 20px;
+        text-align: center;
+        font-size: 40px;
+        font-family: Georgia, serif;
+    }
+
+    h2 {
+        padding-top: 0px;
+        font-size: 30px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .table1 th {
+        text-align: left;
+        margin-top: 0px;
+        width: 150px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .table1 td {
+        font-size: 20px;
+
+    }
+
+}
+
+/* original styling */
+.nav-wrapper {
+    background-image: linear-gradient(to right top, #8719c2, #5756df, #0078ec, #0092ed, #00a8e6, #00b6e6, #00c2e3, #36cede, #3ed9e4, #47e5e9, #52f0ed, #5ffbf1);
+}
+
+.slider .indicators .indicator-item.active {
+    background-image: linear-gradient(to right top, #8719c2, #5756df, #0078ec, #0092ed, #00a8e6, #00b6e6, #00c2e3, #36cede, #3ed9e4, #47e5e9, #52f0ed, #5ffbf1);
+}
+
+.brand-logo {
+    margin-left: 30px;
+    font-family: cursive;
+}
+
+.move {
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+}
+
+.parallax-container {
+    min-height: 250px;
+    height: auto;
+}
+
+
+
+.footer-one {
+    background-image: linear-gradient(to right top, #8719c2, #5756df, #0078ec, #0092ed, #00a8e6, #00b6e6, #00c2e3, #36cede, #3ed9e4, #47e5e9, #52f0ed, #5ffbf1);
+}
+
+.footer-two {
+    background-image: linear-gradient(to right top, #8719c2, #5756df, #0078ec, #0092ed, #00a8e6, #00b6e6, #00c2e3, #36cede, #3ed9e4, #47e5e9, #52f0ed, #5ffbf1);
+}
+
+.list-style {
+    margin-left: 900px;
+}
+
+.list-text-style {
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.list-text-style1 {
+    margin: 0;
+}
+
+.slider {
+    font-family: cursive;
+}
+
+.header {
+    font-family: cursive;
+    text-align: center;
+    color: #0084FF;
+}
+
+.shade {
+    background-image: linear-gradient(to right top, #8719c2, #5756df, #0078ec, #0092ed, #00a8e6, #00b6e6, #00c2e3, #36cede, #3ed9e4, #47e5e9, #52f0ed, #5ffbf1);
+}
+
+h1 {
+    font-size: 40px;
+
+    color: #2cb0b8;
+}
+
+
+/* h3 {
+    text-align: center;
+} */
+.inspire {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.thankpageStyle {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: linear-gradient(to right bottom, #4f5ce3, #007af1, #0093f4, #00a8ef, #00bae6, #00c4e3, #00cddd, #1fd5d5, #16dad4, #10ded2, #12e3cf, #1be7cc);
+    width: 1000px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    border: 25px inset #2196f3;
+}
+
+.heading4 {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+h2 {
+    padding-top: 0px;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.headers {
+    color: #0084FF;
+    font-size: 40px;
+    text-align: center;
+}
+
+.table1 th {
+    text-align: left;
+    margin-top: 0px;
+    width: 300px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.table1 td {
+    font-size: 20px;
+
+}
