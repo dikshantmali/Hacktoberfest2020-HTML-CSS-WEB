@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.color-name {
+  margin: 20px;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000000;
+  text-transform: uppercase;
+}
+.btn {
+  padding: 10px 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: inherit;
+  border: none;
+  text-shadow: 2px 2px 5px #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+.btn:focus {
+  outline: none;
