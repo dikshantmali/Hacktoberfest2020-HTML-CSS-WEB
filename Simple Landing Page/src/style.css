@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Austin Cyr';
+  src: url('./fonts/AustinCyr-Semibold.eot');
+  src: url('./fonts/AustinCyr-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/AustinCyr-Semibold.woff2') format('woff2'),
+  url('./fonts/AustinCyr-Semibold.woff') format('woff'),
+  url('./fonts/AustinCyr-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+.hero {
+  background: #E9967A;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero__inner {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .hero__inner {
+    padding: 0 40px;
+  }
+}
+
+.hero__title {
+  font-family: 'Austin Cyr';
+}
+
+.hero__title h1 {
+  margin: 0 0 16px 0;
+  line-height: 1;
+  font-size: calc(32px + (128 - 32) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media (min-width: 768px) {
+  .hero__title h1 {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__copy {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .hero__copy {
+    font-size: 20px;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 50vw;
+  }
+}
