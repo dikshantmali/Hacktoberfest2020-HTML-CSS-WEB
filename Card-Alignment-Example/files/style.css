@@ -1,0 +1,47 @@
+#logo {
+    height: 70px;
+    width: 70px;
+}
+
+#logo2 {
+    height: 300px;
+    width: 300px;
+}
+
+#logo3 {
+    height: 100px;
+    width: 100px;
+}
+
+#font1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#font2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+.bannersize {
+    height: 100px;
+    max-height: 200px;
+}
+
+.cardbutton {
+    width: 100%;
+    max-width: 300px;
+}
+
+.cardfont {
+    font-weight: bolder;
+}
+
+.csize {
+    padding: 70px;
+    height: 500px;
+}
+
+.footerend {
+    max-height: 300x;
+    height: 200px
+}

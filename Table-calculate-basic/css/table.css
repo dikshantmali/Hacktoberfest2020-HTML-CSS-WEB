@@ -1,0 +1,24 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: separate;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+input {
+  background-color:rgba(0, 0, 0, 0);
+  border: none;
+  outline:none;
+  height:30px;
+  transition:height 1s;
+  -webkit-transition:height 1s;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

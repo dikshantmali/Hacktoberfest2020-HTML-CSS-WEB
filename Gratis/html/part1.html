@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../css/part1.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>HTML,CSS Design</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- <header>
+                <div style="display: flex; flex-wrap: wrap">
+                    <img src="../media/menu.svg" alt="menu" id="menu" />
+                    <button id="sitename">Site Name</button>
+                    <button id="posterror">Post Error!</button>
+                    <select name="selector" id="selector">
+                        <option value="default" selected>
+                            Select Language
+                        </option>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                    </select>
+                    <input
+                        type="text"
+                        id="searchBox"
+                        placeholder="Ask Your Doubts"
+                        style="text-align: center"
+                    />
+                    <button type="submit" id="searchBtn">
+                        <img
+                            src="../media/search.svg"
+                            alt="search"
+                            id="searchImg"
+                        />
+                    </button>
+                    <button id="login">Login</button>
+                    <button id="signup">Sign Up</button>
+                </div>
+            </header> -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">Site Name</a>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <button id="sitename"><a class="nav-link" href="#">Link 1</a></button>
+                  </li>
+                  <li class="nav-item">
+                    <button id="posterror"><a class="nav-link" href="#">Link 2</a></button>
+                  </li>
+              
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Select Language
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">English</a>
+                      <a class="dropdown-item" href="#">Spanish</a>
+                      <a class="dropdown-item" href="#">French</a>
+                    </div>
+                  </li>
+                  <li>
+                    <form class="form-inline" action="#" method="">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                  </li>
+                  <li class="nav-item">
+                    <button id="login"><a href="#">Log-IN</a></button>
+                  </li>
+                  <li class="nav-item">
+                    <button id="signup"><a href="#">Sign-UP</a></button>
+                  </li>
+                </ul>
+            </nav>
+            <br /><br />
+            <div class="fields" style="display: flex; flex-wrap: wrap">
+                <span class="card">Cloud</span>
+                <span class="card">Devops</span>
+                <span class="card">Enterprise Tech</span>
+                <span class="card">Programming</span>
+                <span class="card">Development</span>
+                <span class="card">Tech Facts</span>
+                <span class="card">Linux</span>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <!-- Image Slider -->
+
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="../media/pic1.jpg" style="width: 100%" />
+                </div>
+
+                <div class="mySlides">
+                    <img src="../media/pic2.jpg" style="width: 100%" />
+                </div>
+
+                <div class="mySlides">
+                    <img src="../media/pic3.jpg" style="width: 100%" />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br />
+
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <br />
+            <hr />
+            <br />
+            <center>
+                <h4>For Learners / By Learners</h4>
+                <br />
+                <br />
+                <div
+                    style="
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    "
+                >
+                    <span class="myCard">Card 1</span>
+                    <span class="myCard">Card 2</span>
+                    <span class="myCard">Card 3</span>
+                </div>
+            </center>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <hr />
+            <br />
+            <br />
+            <br />
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+                showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </body>
+</html>

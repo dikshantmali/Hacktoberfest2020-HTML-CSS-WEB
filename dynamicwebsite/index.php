@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <link href = "https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<?php include 'menu.php'; ?>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/1.jpg" alt="Los Angeles" width="1100" height="500">
+     <div class="carousel-caption">
+      
+        <h3>The cutest are here!</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/4.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+     
+        <h3>The funniest are here!</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/3.jpg" alt="New York" width="1100" height="500">
+       <div class="carousel-caption">
+       
+        <h3>We love dogs!</h3>
+      </div> 
+    </div>
+  </div>
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<section class="my-5">
+	<div class="py-5">
+		<h2 class="text-center">About Us</h2>
+	</div>
+	<div class="container-fluid"> 
+	  <div class="row">
+		<div class="col-lg-6 col-md-6 col-12">
+			<img src="images/6.jpg" class="img-fluid aboutimg">
+		</div>
+		<div class="col-lg-6 col-md-6 col-12">
+		<h2 class="display-4">We are Funny Dogs.</h2>	
+		<p class="py-3">If you're looking for a fun pet-related way to spend a little time with, we offer endless options. Whether you want to look at funny photos, watch videos or want you pet to be featured, this website will provide you with a bit of pet themed entertainment.</p>
+		<a href="about.php" class="btn btn-success"> Check More </a>
+		</div>
+	  </div>	
+	</div>
+
+</section>
+
+<section class="my-5">
+	<div class="py-5">
+		<h2 class="text-center">Our Services</h2>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-12">
+				<div class="card">
+  					<img class="card-img-top" src="images/7.jpg" alt="Card image">
+  					<div class="card-body">
+   							 <h4 class="card-title">Pictures</h4>
+    						 <p class="card-text">Get funny pictures.</p>
+    						 <a href="services.php" class="btn btn-success">See Profile</a>
+  					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-12">
+				<div class="card">
+  					<img class="card-img-top" src="images/giphy1.gif" alt="Card image">
+  					<div class="card-body">
+   							 <h4 class="card-title">Videos</h4>
+    						 <p class="card-text">Get funny videos.</p>
+    						 <a href="services.php" class="btn btn-success">See Profile</a>
+  					</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-4 col-md-4 col-12">
+				<div class="card">
+  					<img class="card-img-top" src="images/8.jpg" alt="Card image">
+  					<div class="card-body">
+   							 <h4 class="card-title">Get featured</h4>
+    						 <p class="card-text">See your pet here.</p>
+    						 <a href="services.php" class="btn btn-success">See Profile</a>
+  					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="my-5">
+	<div class="py-5">
+		<h2 class="text-center">Gallery</h2>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-lg-4 col-md-4 col-12">
+				<img src="images/16.jpg" class="img-fluid pb-4">
+				</div>
+
+			<div class="col-lg-4 col-md-4 col-12">
+				<img src="images/12.jpg" class="img-fluid pb-4">
+				</div>
+
+			<div class="col-lg-4 col-md-4 col-12">
+				<img src="images/17.jpg" class="img-fluid pb-4">
+				</div>
+
+			<div class="col-lg-4 col-md-4 col-12">
+				<img src="images/12.jpg" class="img-fluid pb-4">
+				</div>
+
+			<div class="col-lg-4 col-md-4 col-12">
+				<img src="images/16.jpg" class="img-fluid pb-4">
+				</div>
+			
+			<div class="col-lg-4 col-md-4 col-12">
+				<img src="images/14.jpg" class="img-fluid pb-4">
+				</div>
+
+			<div class="col-lg-4 col-md-4 col-12">
+				<img src="images/14.jpg" class="img-fluid pb-4">
+				</div>
+
+			<div class="col-lg-4 col-md-4 col-12">
+				<img src="images/12.jpg" class="img-fluid pb-4">
+				</div>	
+
+			<div class="col-lg-4 col-md-4 col-12">
+				<img src="images/17.jpg" class="img-fluid pb-4">
+				</div>
+		</div>
+		
+	</div>
+</section>
+
+
+<section class="my-5">
+	<div class="py-5">
+		<h2 class="text-center">Contact Us</h2>
+	</div>
+
+	<div class="w-50 m-auto">
+		<form action="userinfo.php" method="post">
+			<div class="form-group">
+				<label>Username</label>
+				<input type="text" name="user" autocomplete="off" class="form-control">
+			</div>
+			
+			<div class="form-group">
+				<label>Email id</label>
+				<input type="text" name="email" autocomplete="off" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label>Mobile</label>
+				<input type="text" name="mobile" autocomplete="off" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label>Comment</label>
+				<textarea class="form-control" name="comments">
+				</textarea>
+			</div>
+			<button type="submit" class="btn btn-success">Submit</button>
+		</form>
+	</div>
+</section>
+
+<footer>
+	<p class="p-3 bg-dark text-white text-center">@funnydogs</p>
+</footer>	
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

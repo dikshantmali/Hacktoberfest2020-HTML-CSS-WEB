@@ -1,0 +1,32 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  background-image: url("http://www.impawards.com/2012/posters/dark_knight_rises_ver13_xlg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.row {
+  display: flex;
+  overflow-y: hidden;
+}
+
+.row > img {
+  margin: 8px;
+  transition: transform 0.5s;
+}
+
+.row > img:hover {
+  transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

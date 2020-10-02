@@ -1,0 +1,72 @@
+<!––coded by utkarsh-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>codeplayer</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+  <body>
+    <div class="header">
+      <div id="logo">CodePlayer</div>
+      <div id="container">
+          <div class="toggle active" id=html>html</div>
+          <div class="toggle" id=css>css</div>
+          <div class="toggle" id=js>js</div>
+          <div class="toggle active" id=outputdiv >output</div>
+      </div>
+    </div>
+    <div id="bodyContainer">
+      <textarea id="textareahtml" class="panel"placeholder="enter html here"></textarea>
+      <textarea id="textareacss" class="panel hidden"placeholder="enter css here"></textarea>
+      <textarea id="textareajs" class="panel hidden"placeholder="enter js here"></textarea>
+    </div>
+
+      <iframe id="outputPanel" class="panel"></iframe>
+      <script type="text/javascript">
+        function updateoutput() {
+          $("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#textareacss").val() + "</style></head><body>" + $("#textareahtml").val() + "</body></html>");
+
+          document.getElementById("outputPanel").contentWindow.eval($('#textareajs').val());
+        }
+
+        $(".toggle").hover(function () {
+          $(this).addClass("highlight");
+
+        }, function () {
+          $(this).removeClass("highlight");
+
+        });
+
+        $(".toggle").click(function () {
+          $(this).toggleClass("active");
+          $(this).removeClass("highlight");
+          var textareaId = "textarea" + $(this).attr("id")
+
+          // so we have got the id of the clicked button
+          $("#" + textareaId).toggleClass("hidden");
+
+          //iframes cant be set to hidden by css since it only affeftgs the html and not the dom
+          var countpanels = 4 - $(".hidden").length;
+          
+          //we will count the number of elements having a class active using jq func
+          $(".panel").width($(window).width() / countpanels - 15);
+        });
+
+        $(".panel").height($(window).height() - $(".header").height() - 20);
+
+        // also we need to disable resizable
+        $(".panel").width($(window).width() / 2 - 15);
+
+        $("textarea").on("change keyup paste", function () {
+          updateoutput();
+          //using the function eval() we may use js
+        });
+      </script>
+  </body>
+</html>
