@@ -1,0 +1,157 @@
+* {
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hero Section Starts */
+
+.hero-section {
+    background-image: url('./BG.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: fit-content;
+}
+
+.menu {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+.menu > img {
+    width: 250px;
+}
+
+.nav-buttons > button {
+    padding: 10px 25px;
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    color: #3dc28f;
+}
+
+.signup {
+    background-color: #3dc28f;
+    color: #fff;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.banner {
+    text-align: center;
+    padding: 75px 0 150px;
+    background-image: url('./banner.png');
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.banner-text > h1 {
+    font-size: 62px;
+    margin-bottom: -5px;
+}
+
+.banner-text > h4 {
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 794px;
+    height: 66px;
+    margin: 40px auto 15px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.search > img {
+    margin: 5px;
+}
+
+.search > input {
+    outline: none;
+    margin: 0 5px;
+    padding: 10px 5px;
+    border: 0;
+    flex: 75%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search > button {
+    outline: none;
+    flex: 15%;
+    margin: 0 5px;
+    padding: 10px 5px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #3dc28f;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.loc-links {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+.loc-links > a {
+    flex: 14.27%;
+    text-decoration: none;
+    color: #020313;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Hero Section Ends */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+}
+
+.gallery-div {
+    padding: 10px;
+    width: 100%;
+}
+
+.gallery-div > img {
+    width: 100%;
+}
+
+.myContainer {
+    width: 70%;
+    margin: 30px auto;
+}
+
+::selection {
+    color: #fff;
+    background: #3dc28f;
+}
