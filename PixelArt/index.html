@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="icon/png" href="ico.png" />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="preload stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <title>Pixel Drawing</title>
+    <style>
+      .container {
+        flex-wrap: wrap;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        font-family: Comic Sans MS;
+        cursor: pointer;
+      }
+      h1 {
+        font-size: 60px;
+        font-weight: bolder;
+        text-shadow: 3px 3px 5px grey;
+      }
+      h4 {
+        padding-top: 15px;
+      }
+      .jumbotron {
+        width: 100%;
+        height: 100%;
+        background-image: url("bce.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 80px black;
+      }
+      form {
+        font-family: sans-serif;
+      }
+      input {
+        width: 70px;
+      }
+      table,
+      tr,
+      td {
+        border: 4px solid black;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        background-color: white;
+      }
+
+      tr {
+        height: 50px;
+      }
+
+      td {
+        width: 50px;
+      }
+
+      #sizePicker {
+        margin-top: 25px;
+        font-size: 15px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container container-fluid" align="center">
+      <div class="jumbotron jumbotron-fluid">
+        <h1 id="had">Lab:Pixel Drawing</h1>
+        <h2 style="color: white">Choose Grid Size</h2>
+        <form id="sizePicker">
+          <strong
+            >Grid Height:
+            <input
+              type="number"
+              id="input_height"
+              name="height"
+              min="1"
+              value="1" />
+            Grid Width:
+            <input
+              type="number"
+              id="input_width"
+              name="width"
+              min="1"
+              value="1" />
+            <input
+              class="btn btn-success"
+              type="submit"
+              style="width: 75px"
+              id="input_submit"
+          /></strong>
+        </form>
+        <h2 style="margin-top: 25px; color: white">Pick A Color</h2>
+        <input type="color" value="#A150E4" id="colorPicker" />
+        <h3 style="margin-top: 25px; color: White">Design Canvas</h3>
+        <h5>Click to add color on box</h5>
+        <h5>Double click to erase color on box</h5>
+        <table id="pixel_canvas"></table>
+      </div>
+    </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
