@@ -1,0 +1,110 @@
+
+.rounded-circle.mb-3.mt-4{
+    border: 5px solid #6bddcc;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+
+}
+
+.btn.btn-primary.btn-sm{
+    color:white;
+    font-weight: 700;
+    background-color: #6bddcc;
+    border: 1px solid #6bddcc;
+    width: 120px;
+
+    height: 50px;
+
+}
+.card-header.py-3{
+    font-weight: 1000;
+    font-size: x-large;
+}
+
+#user.card-body:hover{
+    background-image: linear-gradient(to bottom right, white,white);
+
+
+}
+#user.card-body{
+
+    color: black;
+    font-weight: 500;
+
+}
+#user2.card-body{
+    color: black;
+    font-weight: 500;
+}
+#perfo.card-header.py-3{
+    padding: 0px 0px 0px 0px !important;
+    border: 0px solid white;
+    
+}
+#perfo.card-header.py-3:hover{
+    border: 0px solid white;
+}
+#pro.card.shadow.mb-4{
+    padding-top: 0px 0px 0px 0px !important;
+}
+#card.card-body{
+    height: 300px;
+
+}
+#pic.container-fluid{
+    margin-top: 10px;
+}
+body#page-top{
+    background-attachment: fixed;
+          background-image: url("images/intro.svg") !important;
+          background-position: top right;
+          background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color:rgba(69, 51, 110, 0.9) !important;
+      color: white;
+  
+  }
+li{
+    text-align: left;
+    margin-left: 60px;
+
+}
+#tp{
+    text-align: left;
+    margin-left: 60px;
+    
+
+}
+#sec{
+    margin-top: 10px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+#res{
+    color: black;
+    width: 1000px;
+    margin-left: 100px;
+}
+#hd{
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+}
+li{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+#tp{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+#stat{
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+}

@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+.envelope-container {
+    width: 160px;
+    height: 180px;
+    padding-top: 60px;
+}
+
+.envelope {
+    position: relative;
+    width: 160px;
+    height: 120px;
+    background: #d39d6f;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 0 1px #ce935f inset;
+
+}
+
+.envelope::before, .envelope::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-width: 60px 80px;
+}
+
+.envelope::before {
+    border-bottom-color: #d6a57a;
+    top: -100%;
+    left: 0px;
+}
+.envelope::after {
+    border-right-color: #d6a57a;
+    border-left-color: #daad86;
+    border-bottom-color: #daad86;
+    top: 0;
+    border-radius: 0 0 6px 6px;
+    transform: rotate(360deg);
+}
+
+
+.envelope:hover > .paper{
+    top: -40px;
+}
+
+
+.paper {
+    position: absolute;
+    width: 140px;
+    left: 10px;
+    height: 120px;
+    margin: 0 auto;
+    background: #fff;
+    top: -4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    overflow: hidden;
+    transition: top 0.5s ease;
+    animation: mail 30s forwards infinite;
+}
+.paper::before, .paper::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    background: #eee;
+    height: 4px;
+    border-radius: 6px;
+}
+
+.paper::before {
+    top: 30px;
+    width: 40px;
+}
+.paper::after {
+    right: 20px;
+    top: 50px;
+    box-shadow: 0 20px 0 #eee, 0 40px 0 #eee, 0 80px 0 #eee;
+}
+
+@keyframes mail {
+    0% {
+        top: -4px;
+    }
+    3% {
+        top: -40px;
+    }
+    16% {
+        top: -40px;
+    }
+    17% {
+        top: -4px;
+    }
+}
+
+body {
+    background: #98dafc;
+}
+
+
+.envelope-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}

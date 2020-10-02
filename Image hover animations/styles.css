@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 50px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    padding: 50px 100px;
+}
+
+article:nth-of-type(1) {
+    background-image: url("https://cf.bstatic.com/images/hotel/max1024x768/222/222636340.jpg");
+}
+
+article:nth-of-type(2) {
+    background-image: url("https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/317/317897/plane-flying-in-sunset.jpg?w=1155&h=1541");
+}
+
+article:nth-of-type(3) {
+    background-image: url("https://cdn.nohat.cc/thumb/f/720/a8adcc6c360c4f97a1d4.jpg");
+}
+
+article {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .6s ease-in-out;
+    -webkit-transition: .6s ease-in-out;
+    -moz-transition: .6s ease-in-out;
+}
+
+
+/* beach image */
+
+article:nth-of-type(1) p {
+    position: absolute;
+    top: 10%;
+    text-shadow: 1;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: .6s ease-in-out;
+    -webkit-transition: .6s ease-in-out;
+    -moz-transition: .6s ease-in-out;
+}
+
+article:nth-of-type(1):hover {
+    box-shadow: 0px 3px 15px -2px rgba(0, 0, 0, .5);
+    filter: saturate(2);
+}
+
+article:nth-of-type(1):hover p {
+    opacity: 1;
+}
+
+
+/* plane image*/
+
+article:nth-of-type(2) p {
+    position: absolute;
+    bottom: -20%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient( rgba(0, 0, 0, 0) -2%, rgba(0, 0, 0, .8) 66%);
+    transition: .6s ease-in-out;
+    -webkit-transition: .6s ease-in-out;
+    -moz-transition: .6s ease-in-out;
+}
+
+article:nth-of-type(2):hover {
+    filter: grayscale(1);
+    background-image: url("https://10mag.com/wp-content/uploads/2015/09/MaxPixel.freegreatpicture.com-Trip-Suitcase-Luggage-Airport-Journey-Travel-778338-1155x770.jpg");
+    background-size: 120% 120%;
+}
+
+article:nth-of-type(2):hover p {
+    bottom: 0;
+    padding-bottom: 5%;
+}
+
+
+/* burger image */
+
+article:nth-of-type(3)::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+    opacity: 0;
+    transition: .6s ease-in-out;
+    -webkit-transition: .6s ease-in-out;
+    -moz-transition: .6s ease-in-out;
+}
+
+article:nth-of-type(3) p {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -70%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+}
+
+article:nth-of-type(3):hover::after {
+    opacity: 1;
+}
+
+article:nth-of-type(3):hover p {
+    left: 50%;
+}

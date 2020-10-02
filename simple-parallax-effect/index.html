@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Parallax Effect</title>
+    <style>
+        .parallax {
+          /* The image used */
+          background-image: url("./pro.jpg");
+
+          /* Set a specific height */
+          min-height: 500px;
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h3>Scroll Up and Down this page to see the parallax scrolling effect.</h3>
+
+    <div class="parallax"></div>
+
+    <div style="height:1000px;background-color:rgb(83, 83, 231);font-size:36px">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+</body>
+</html>

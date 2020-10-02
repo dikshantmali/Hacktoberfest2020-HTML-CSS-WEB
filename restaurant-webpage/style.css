@@ -1,0 +1,163 @@
+html{
+    height: 100%;
+    
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: url("./img/img2.jpg") no-repeat ;
+    background-position: center, center;
+    background-size: cover;
+    height:800px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    top:0;
+    left: 0;
+    width: 100%;
+    color:#fff;
+    background-color: rgb(22, 21, 21 , 0.5);
+
+}
+
+#header-logo{
+    height: 100px;
+    width: 150px;
+    background-position: top left;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start; 
+    
+}
+
+
+a {
+    padding: 1em;
+    text-decoration: none;
+    color:#fff;
+    font-size:30px;
+  }
+
+  nav{
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 80%;
+  }
+  nav ul{
+    margin:0px;
+    padding:5px 0px 5px 30px;
+  }
+  nav li{
+    display:inline;
+    margin-right:50px;
+    margin-left:50px;
+    
+  }
+
+  button{
+
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 20px;
+     border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    justify-items: self-ends;
+    align-items: flex-end;
+    font-family: "Varela Round", sans-serif;
+}
+
+  .main{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin: auto;
+     margin: 75px 0 0 0;
+     
+
+  }
+
+  .heading{
+    font-size: 90px;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .sub_heading{
+    font-size: 40px;
+    
+  }
+
+  footer {
+    background: rgb(22, 21, 21 ); 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    border-radius: 2px;
+    font-family: "Varela Round", sans-serif;
+  }
+
+  footer iframe{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 10px;
+    
+  }
+
+  footer ul {
+    list-style: none;
+    display: flex;
+    font-size: 15px;
+    justify-content:space-evenly;
+    margin: 0;
+    padding: 10px 0 10px 0;
+  }
+  
+  footer ul li {
+    padding: 0 20px;
+    margin: 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .copyright {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  
+  
+  

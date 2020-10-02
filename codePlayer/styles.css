@@ -1,0 +1,64 @@
+.header {
+    background-color: tomato;
+    height: 40px;
+    padding: 5px;
+}
+
+#logo {
+    font-size: 120%;
+    margin-top: 0px;
+    padding: 3px 5px 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    float: left;
+}
+
+.toggle {
+    float: left;
+    border: 1px solid black;
+    border-right: 0px;
+    border-radius: 2px;
+    width: auto;
+    font-size: 10px;
+    font-family: sans-serif;
+    margin-left: 1px;
+    padding: 6px;
+    font-size: 90%;
+}
+
+#outputdiv {
+    border-right: 1px solid black;
+}
+
+textarea {
+    resize: none;
+    width: 50%;
+    border-top: none;
+    border-left: none;
+}
+
+#container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.highlight {
+    background-color: grey;
+}
+
+.active {
+    background-color: lightblue;
+}
+
+.panel {
+    float: left;
+}
+
+iframe {
+    float: left;
+    border: none
+}
+
+.hidden {
+    display: none;
+}

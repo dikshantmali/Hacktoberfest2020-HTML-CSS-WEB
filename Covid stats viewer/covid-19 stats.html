@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Covid-19 Statistics Viewer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <p id="demo"></p>
+    <div class="container">
+        <div id="form-main">
+            <div id="form-div">
+                <form class="montform" method="post" name="myform">                    
+                    <h2 style="color: #10baee;">Covid-19 Statistics Checker</h2>
+
+                    <p class="name">
+                        <input name="country" type="text" class="feedback-input" required placeholder="Enter Country Name" id="country" />
+                    </p>
+
+                    <p class="text">
+                        <textarea name="stats1" class="feedback-input"  id="stats1" placeholder="Confirmed:??"></textarea>
+                        <textarea name="stats2" class="feedback-input"  id="stats2" placeholder="Recovered:??"></textarea>
+                        <textarea name="stats4" class="feedback-input"  id="stats4" placeholder="Deaths:??"></textarea>
+                    </p>
+                    <div class="submit">
+                        <input type="button" class="button-blue" value="Show Stats" onClick="getData()"></input>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>        
+        document.getElementById("stats2").disabled = true;
+        document.getElementById("stats1").disabled = true;
+        document.getElementById("stats4").disabled = true;
+        
+        function getData() {
+          var country = document.getElementById('country').value;
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.myform.stats1.value='Confirmed Cases - ' + JSON.parse(this.responseText)['confirmed'].value
+                document.myform.stats2.value='Recovered - ' + JSON.parse(this.responseText)['recovered'].value
+               
+                document.myform.stats4.value='Death(s) - ' + JSON.parse(this.responseText)['deaths'].value
+            }
+          };
+          xhttp.open("GET", "https://covid19.mathdro.id/api/countries/" + country, true);
+          xhttp.send();
+        }
+    </script>
+</body>
+
+</html>
