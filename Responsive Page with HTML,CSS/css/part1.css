@@ -1,0 +1,152 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+    border: 1px solid rgb(90, 90, 90);
+    padding: 10px;
+    margin: 100px 25vw;
+}
+
+#menu {
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#searchImg {
+    width: 20px;
+}
+
+#searchBtn {
+    background: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid black;
+}
+
+#selector {
+    border-radius: 5px 0 0 5px;
+}
+
+#searchBox {
+    border-right: none;
+    border: 1px solid black;
+}
+
+button:not(#searchBtn) {
+    margin: 0 10px;
+}
+
+.fields {
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.card {
+    border: solid black 2px;
+    padding: 10px 7px;
+    height: 50px;
+    margin: 10px 0;
+    font-size: 14px;
+    width: 72px;
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(
+        90deg,
+        rgb(212, 211, 211),
+        rgb(236, 234, 234),
+        rgb(236, 226, 226)
+    );
+    word-break: break-all;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Image Slider */
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.myCard {
+    margin: 10px 50px;
+    border: 1px solid black;
+    padding: 50px 20px;
+    background: linear-gradient(
+        90deg,
+        rgb(212, 211, 211),
+        rgb(236, 234, 234),
+        rgb(236, 226, 226)
+    );
+    border-radius: 20px;
+}
