@@ -1,0 +1,58 @@
+.card {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+    background-image: none;
+}
+
+header {
+    font-size: 1rem;
+}
+
+header {
+    min-height: 10vh;
+}
+
+form {
+    min-height: 15vh;
+    display: block;
+}
+
+form input,
+form button {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+form button {
+    margin-left: -1rem;
+}
+
+.todo-list {
+    min-height: 70%;
+}
+
+.todo {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.trash-btn,
+.complete-btn {
+    padding: 0.3rem;
+}
+
+select {
+    padding: 0.3rem;
+    float: right;
+}
+
+.select {
+    margin: 0.3rem;
+}
+
+.select::after {
+    padding: 0.1rem;
+}
