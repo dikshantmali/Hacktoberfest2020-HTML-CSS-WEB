@@ -1,8 +1,8 @@
 .events {
-    position: relative;
-    display: flex;
-    width: 100vh;
-    margin: 0 auto;
+	position: relative;
+	display: flex;
+	width: 100vh;
+	margin: 0 auto;
 }
 .events .years {
 	display: inline-block;
