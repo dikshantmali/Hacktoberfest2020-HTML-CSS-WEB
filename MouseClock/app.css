@@ -1,0 +1,46 @@
+.time,
+.date {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+.time {
+	width: 16px;
+	height: 16px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.time .hour {
+	color: #00ff00;
+}
+
+.time .minute {
+	color: #00ff00;
+}
+
+.time .seconds {
+	color: #0ec8e9;
+}
+
+.face {
+	color: #0ec8e9;
+}
+.date {
+	width: 10px;
+	height: 10px;
+	font-size: 10px;
+	color: #00ff00;
+}
+
+ .container {
+   display: flex;
+   flex-flow: column;
+   margin: 0 auto;
+   position: relative;
+   text-align: center;
+   width: 250px;
+ }
