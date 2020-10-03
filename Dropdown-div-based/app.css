@@ -1,0 +1,103 @@
+.events {
+    position: relative;
+    display: flex;
+    width: 100vh;
+    margin: 0 auto;
+}
+.events .years {
+	display: inline-block;
+	top: 0;
+	color: green;
+}
+.events .years .year {
+	display: none;
+}
+.events .years .year.active {
+	color: rgba(82, 221, 168, 0.185);
+	display: block;
+}
+.events .months {
+	display: inline-block;
+	top: 0;
+	color: yellow;
+}
+.events .months .event {
+	color: pink;
+}
+.select-hidden {
+	display: none;
+	visibility: hidden;
+	padding-right: 10px;
+}
+.select {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	font-size: 16px;
+	width: 120px;
+	height: 50px;
+	margin: 0 10px;
+	text-indent: 5px;
+	border: 5px;
+}
+.select-styled {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(82, 221, 168, 0.185);
+	padding: 8px 15px;
+	border-radius: 5px;
+}
+.select-styled:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-color: rgba(115, 37, 218, 0.747) transparent transparent transparent;
+	position: absolute;
+	top: 16px;
+	right: 10px;
+	cursor: pointer;
+	-webkit-transition: 0.25s all ease;
+	-o-transition: 0.25s all ease;
+	transition: 0.25s all ease;
+}
+.select-styled:hover {
+	background-color: rgb(61, 233, 190);
+}
+.select-styled:active,
+.select-styled.active {
+	background-color: rgb(179, 211, 35);
+}
+.select-styled:active:after,
+.select-styled.active:after {
+	top: 9px;
+	border-color: transparent transparent rgb(61, 233, 190) transparent;
+}
+.select-options {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(154, 192, 184);
+}
+.select-options li {
+	margin: 0;
+	padding: 12px 0;
+	text-indent: 15px;
+	list-style: none;
+	border-top: 1px solid rgb(30, 255, 0);
+}
+.select-options li:hover {
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+}
+.select-options li[rel='hide'] {
+	display: none;
+}
