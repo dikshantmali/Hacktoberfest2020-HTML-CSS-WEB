@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.morphism {
+  border-radius: 6px;
+  background: #fbfdfe;
+  box-shadow: -9px 9px 39px #adafaf,
+    9px -9px 39px #ffffff;
+}
+
+#bg-img-container {
+  height: 110vh;
+  background-image: url('../images/drive.png');
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  font-size: 25px !important;
+  height: 40px;
+  padding-left: 20px;
+  color: white !important;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar-nav li a {
+  font-weight: 600;
+  float: right;
+  text-align: left;
+  color: black !important;
+}
+
+.fa-bars {
+  font-size: 30px !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+/* Banner Section */
+#banner {
+  padding-top: 5%;
+}
+
+.promo-title-responsive {
+  display: none;
+}
+
+/* Intro */
+#intro {
+  padding: 20px 0 15px 0;
+}
+
+#blogs {
+  padding: 20px 0 15px 0;
+}
+
+#intro img {
+  border-radius: 0 50px 0 50px;
+  padding-bottom: 20px;
+}
+
+button {
+  border-radius: 0px 20px 0px 20px !important;
+  box-shadow: black !important;
+}
+
+/* Services */
+#services img {
+  width: 80px;
+  height: 80px;
+}
+
+/* client */
+#client .col-md-5 {
+  /* padding-left: 100px; */
+}
+
+/* Brands */
+#brand img {
+  width: 100px;
+  height: auto;
+}
+
+/* Footer */
+#footer {
+  background-color: black;
+  padding-top: 50px;
+}
+
+
+/* Social Media */
+#footer .social-icons a {
+  width: 50px;
+  height: 50px;
+}
+
+#footer .social-icons i.fa {
+  color: white;
+}
+
+hr {
+  border: 0.5px solid white !important;
+}
+
+
+
+
+
+
+
+
+#responsiveFooter {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  #bg-img-container {
+    height: 105vh;
+    background-image: url("../images/drivemob.png");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* .bottom-navbar {
+    display: none;
+  } */
+
+  /* .bottom-logo {
+    display: none !important;
+  } */
+
+  /* .promo-title {
+    padding-top: 30px;
+  } */
+}
