@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.banner{
+    background-image: url('https://images.unsplash.com/photo-1519823038424-f8dbabca95f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,0.7) 81.3% );
+    padding: 15px;
+    border-bottom: 2px whitesmoke;
+    border-radius: 10px ;
+   
+
+}
+
+#sitename {
+    display: inline-block;
+    margin-top: 0rem ;
+    font-size: 20px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+nav{
+    display: inline-block;
+    float: right;
+
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 1px 6px;
+    margin-top: 0rem;
+}
+
+nav a{
+    color: whitesmoke;
+    padding: 10px;
+}
+
+#paralink{
+    text-decoration: none;
+    width: 4rem;
+    position: relative;
+    top:12rem;
+    left:6rem;
+    font-size: 2.5rem; 
+    color: black;
+    padding: 0rem;
+}
+
+#paralink:hover{
+    color:white;
+}
+
+
+.drag{
+    background-image: url('https://images.unsplash.com/photo-1494177310973-4841f7d5a882?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.formintro{
+    width: 400px;
+    position: absolute;
+    top: 152%;
+    left: 23%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+#form-header{
+    float: left;
+    font-size: 2.25rem;
+    border-bottom: 1.5px solid;
+}
+
+#form-desc{
+    float: left;
+    font-size:-0.5rem;
+    margin-bottom: 2rem;
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 2rem;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    width: 85%;
+    float: left;
+    margin: 0 1rem;
+
+}
+
+#submit{
+    width: 60%;
+    background: white;
+    border: 2px solid white;
+    color: black;
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 12px 0;
+    border-radius: 1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Francois One', sans-serif;
+    font-weight: bold;
+}
+
+#submit:hover{
+    background: none;
+    border: 2px solid black;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+    font-size: 1rem;
+    
+}
+
+@keyframes fade-in {
+    from{
+        opacity:0;
+        transform: translateX(-60px) ;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+#paralink{
+    animation-name: fade-in;
+    animation-timing-function: ease-in ;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@media screen and (max-width: 950px){
+    .formintro{
+        left:35%;
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    #paralink{
+        left: 0rem;
+    }
+    #submit{
+        width: 60%;
+        background: white;
+        border: 2px solid white;
+        color: black;
+        padding: 0.25rem;
+        font-size: 0.75rem;
+        cursor: pointer;
+        margin: 12px 0;
+        border-radius: 1rem;
+        letter-spacing: 0.12rem;
+        font-family: 'Francois One', sans-serif;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 485px){
+    .container{
+        width: 100%;
+    }
+}
