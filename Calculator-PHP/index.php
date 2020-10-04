@@ -27,7 +27,7 @@ if(!isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator PHP Web Version</title>
+    <title>Calculator PHP Web Version 0.1</title>
 </head>
 <body>
     <?php echo $message; ?>
