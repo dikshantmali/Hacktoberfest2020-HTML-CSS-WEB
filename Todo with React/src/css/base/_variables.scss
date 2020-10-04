@@ -1,0 +1,24 @@
+/// @type Length
+$width--s-mobile: 375px !default;
+/// @type Length
+$width--mobile: 432px !default;
+/// @type Length
+$width--tablet: 768px !default;
+/// @type Length
+$width--desktop: 1280px !default;
+/// @type Length
+$width--l-desktop: 1920px !default;
+/// @type Length
+$width--4K: 3840px !default;
+/// @type Length
+$width--8K: 7680px !default;
+
+$breakpoints: (
+    's-mobile': $width--s-mobile,
+    'mobile': $width--mobile,
+    'tablet': $width--tablet,
+    'desktop': $width--desktop,
+    'l-desktop': $width--l-desktop,
+    '4K': $width--4K,
+    '8K': $width--8K,
+) !default;
