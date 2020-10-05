@@ -27,7 +27,7 @@ body {
 
 #buttons-grid {
   display: grid;
-  grid-template-rows: 250px;
+  grid-template-rows: 250px 250px;
   grid-template-columns: repeat(5, 14fr);
   grid-gap: 30px;
 }
