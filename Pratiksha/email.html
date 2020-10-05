@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+background-image:url(ci.png);
+}
+div{
+margin-top:100px;
+border-radius:20px;
+background-color: white;
+}
+button{
+background-color: whitesmoke;
+ border: none;
+ color: blue;
+ padding: 10px 15px;
+ text-align: center;
+ display: inline-block;
+ font-size: 15px;
+}
+#cpsw{
+border:2px solid black;
+}
+#psw{
+border:2px solid black;
+}
+#email{
+border:2px solid black;
+}
+#phone{
+border:2px solid black;
+}
+#regbutton{
+border:2px solid black;
+}
+</style>
+</head>
+<body>
+<script>
+function valemail() {
+var mail=document.myform.email.value;
+var at=mail.indexOf("@");
+var dot=mail.lastIndexOf(".");
+var phone=document.myform.phone.value;
+var upperCaseLetters = /[A-Z]/g;
+var lowerCaseLetters = /[a-z]/g;
+var pass=document.myform.pass.value;
+var numbers = /[0-9]/g;
+if (at<1||dot<at+2||dot+2>=mail.length) {
+alert("enter valid email");
+return false;
+}
+if (phone.length!==10) {
+alert("Enter 10 digit Number")
+return false;
+}
+else if (phone.match(upperCaseLetters)||phone.match(lowerCaseLetters)) {
+alert("enter digits Only")
+return false;
+}
+if (pass.length<8 || pass.length>16) {
+alert("Password should be 8 to 16 characters long")
+return false;
+}
+else if (!pass.match(numbers)) {
+alert("enter a number");
+return false;
+}
+else if (!pass.match(upperCaseLetters)) {
+alert("enter a Upper Case Character");
+return false;
+}
+else if (!pass.match(lowerCaseLetters)) {
+alert("enter a Lower Case Character");
+return false;
+}
+else{
+return true;
+}
+var cpass=document.myform.cpsw.value;
+if(cpass!==pass){
+alert("Both Password should Match")
+}
+}
+</script>
+<br>
+<h1><font color="white">Email Registration Form</font></h1>
+<form name="myform" method="get" onsubmit="return valemail();">
+<div class="w3-container w3-white w3-padding">
+Email:<br>
+<input id="email" type="text" name="email" class="form-control"
+placeholder="email@gmail.com" required><br>
+Phone No:<br>
+<input id="phone" type="text" name="phone" class="form-control"
+placeholder="999999999" required><br>
+Password:<br>
+<input id="psw" type="password" name="pass" class="form-control"
+placeholder="Password" required><br>
+Confirm Password:<br>
+<input id="cpsw" type="password" name="cpsw" class="form-control"
+placeholder="Password" required><br>
+<br>
+<button class="regbutton" type="submit" name="button">Register</button>
+</div>
+</form>
+</body>
+</html>
