@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: darkgrey;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 180px;
+    height: 180px;
+    background: rbg(92,92,92);
+    border: 6px solid greenyellow;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.box::before{
+    content: "Loading";
+    font-family: cursive;
+    font-size: 2rem;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+.box::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: whitesmoke;
+    transform: scale(1.6);
+    border-radius: 30%;
+    animation: animate 15s ease-in-out infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0) scale(1.6);
+    }
+    50%{
+        transform: translateY(-150%) rotate(500deg) scale(1.6);
+
+    }
+    100%{
+        transform: translateY(0) rotate(0) scale(1.6);
+    }
+}
