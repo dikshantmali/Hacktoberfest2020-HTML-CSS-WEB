@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Quote of the day by VectorXz | In contribution to Hacktoberfest 2020!</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <h1 style="color:#ffffff; text-shadow: 0px 0px 10px rgba(255,255,255,0.7);">Quote of the day</h1>
+                <h4 style="color:#ffffff; text-shadow: 0px 0px 10px rgba(255,255,255,0.7);" id="date"></h4>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 p-5" style="background-color: #e6e6e6; border-radius: 10px; color:183028; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="48px" height="48px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"><path d="M10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3z" fill="#626262"/><rect x="0" y="0" width="24" height="24" fill="rgba(0, 0, 0, 0)" /></svg>
+                <h5 class="ml-5" id="quote">Quote here</h5>
+                <br />
+                <div class="text-right">
+                    <h5 id="author">Author here</h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-center text-white">
+                <p>Created by <a class="text-warning" href="https://github.com/VectorXz" target="_blank">VectorXz</a> for contributing in Hacktoberfest 2020</p>
+                <p>Thanks Quote API from <a class="text-white" href="https://quotes.rest/">They Said So Quotes API</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(event) {
+            fetch('https://quotes.rest/qod').then(function(response) {
+                // The API call was successful!
+                return response.json();
+            }).then(function(data) {
+                // This is the JSON from our response
+                console.log(data["contents"]);
+                document.getElementById('quote').innerText = data["contents"]["quotes"][0]["quote"]
+                document.getElementById('author').innerText = "- " + data["contents"]["quotes"][0]["author"]
+                document.getElementById('date').innerText = data["contents"]["quotes"][0]["date"]
+                document.body.style.backgroundImage = "url('" + data["contents"]["quotes"][0]["background"] + "')";
+            }).catch(function(err) {
+                // There was an error
+                console.warn('Something went wrong.', err);
+            });
+        });
+    </script>
+</body>
+
+</html>
