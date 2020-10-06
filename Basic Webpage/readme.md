@@ -1,2 +1,2 @@
-# My_Website</br>
-This is my first website build using only HTML and CSS  using different tags.
+# My_Website
+This is my first website built using only HTML and CSS  using different tags.
