@@ -1,0 +1,161 @@
+.mycontainer * {
+	color: #423F3F;
+	text-align: center;
+}
+
+.mycontainer {
+	padding-bottom: 10vh;
+}
+
+.column {
+	background-position: 25% 15%;
+	min-height: 15.125em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+
+.image-1 {
+	background-image:
+		url('images/hp5-large.jpg');
+}
+
+.image-2 {
+	background-image:
+    url('images/hp6-large.jpg');
+}
+
+.image-3 {
+	background-image:
+    url('images/hp1-large.jpg');
+}
+
+.image-4 {
+	background-image:
+    url('images/hp3-large.jpg');
+}
+
+.banner-container {
+	height: 200vh;
+	padding-top: 5vh;
+}
+
+.w-banner, .m-banner {
+	background-image:
+    url('images/hp4-large.jpg');
+	height: 25vw;
+	background-size: cover;
+	width: 100%;
+	border-radius: 0%;
+	background-position: 55% 18%;
+	background-repeat: no-repeat;
+	position: sticky;
+	top: 0;
+}
+
+.grid {
+	margin-left: 50%;
+	pointer-events: all;
+	display: grid;
+	grid-template-columns: 0.6fr 1fr;
+	grid-column-gap: 5%;
+	padding-right: 10%;
+}
+
+.left-label {
+	position: sticky;
+	top: 50%;
+	width: 25%;
+	margin-left: 15%;
+	font-size: 50px;
+	line-height: 1.0625;
+	font-weight: 500;
+}
+
+.cat-label {
+	position: sticky;
+	width: 25%;
+	font-size: 50px;
+	line-height: 1.0625;
+	font-weight: 500;
+	margin-top: 0vh;
+}
+
+.banner-right {
+	float: right;
+}
+
+.left {
+	float:left;
+	padding-left: 10vh;
+}
+
+.right {
+	float: right;
+	padding-right: 10vh;
+}
+
+.mt-25 {
+	margin-top: 25vh;
+}
+
+.mt-15 {
+	margin-top: 15vh;
+}
+
+.mt-10 {
+	margin-top: -10vh;
+}
+
+.mt-5 {
+	margin-top: -5vh;
+}
+
+.description {
+	font-size: 20px;
+	line-height: 35px;
+	font-weight: normal;
+	width: 80%;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+.dim {
+	opacity: 0.4;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.m {
+	width: 30vh;
+}
+
+.light {
+	opacity: 1;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.bullets {
+	font-size: 70px;
+	line-height: 1.0625;
+	font-weight: 700;
+	letter-spacing: -.0045em;
+	text-align: center;
+}
+
+.copy-scroll-container {
+	margin-left: auto;
+	margin-right: auto;
+	height: 800vh;
+	background: linear-gradient(0deg, rgb(255, 222, 233) 0%,
+		rgb(181, 255, 252) 100%);
+}
+
+.sticky-copy-lockup {
+	height: 100vh;
+	position: sticky;
+	top: 0;
+}
+
+.pd-10 {
+	padding: 5vh;
+}
