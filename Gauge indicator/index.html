@@ -1,0 +1,75 @@
+<html>
+<body>
+	<style>		
+		.arrow2 {
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 6px;
+			left: 160px;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-bottom: 150px solid #333;
+			transform-origin: bottom center;
+			transition: transform 1s ease-out;
+			transform: rotate(-90deg);
+		}           
+
+		div.top {			
+			background-color: red;
+			background-image: linear-gradient( to right, green,rgb(255, 216, 0), red );
+			display: inline-block;
+			position: relative;
+			margin: 0 1em 1em 0;
+			height: 150px;
+			width: 300px;
+			border-top-left-radius: 300px;
+			border-top-right-radius: 300px;
+			border-top: solid 2px #aaa;
+		}
+		
+		div.middle {
+			background-color: white;
+			display: inline-block;
+			position: relative;
+			top: -12px;
+			left: -300px;
+			height: 100px;
+			z-index: 5;
+			width: 200px;
+			border-top-left-radius: 200px;
+			border-top-right-radius: 200px;
+			border-top: solid 2px #aaa;
+		}
+
+        div.bottom {
+            background-color: #444;
+            display: inline-block;
+            position: relative;
+            top: -13px;
+            left: -178px;
+            height: 15px;
+            z-index: 10;
+            width: 30px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+	</style>
+
+	<div class="top"></div>
+	<div class="bottom"></div>
+	<div class="middle"></div>
+	<div class="arrow2"></div>
+	
+	<button type="button" onclick="javascript:doAnimate(20);">Animate</button>
+	<button type="button" onclick="javascript:doAnimate(-90);">Reset</button>
+
+	<script type="text/javascript">
+		function doAnimate(to) {
+			var elem = document.querySelector('div.arrow2');
+			elem.style.transform = 'rotate(' + to + 'deg)';
+		}
+	</script>
+</body>
+</html>
