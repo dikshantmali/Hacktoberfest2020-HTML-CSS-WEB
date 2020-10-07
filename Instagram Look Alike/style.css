@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;  
+}
+/* --------------------- */
+/* DISCO BAR */
+/* --------------------- */
+#disco{
+    position: sticky;
+    top: 0;
+    z-index: +3;
+    background-color:#ee82eec5;
+    animation: rainbow 8s infinite forwards;
+}
+
+@keyframes rainbow{
+    0%{
+        background-color:#ee82eec5;
+    }
+    14%{
+        background-color:#4c0082be;        
+    }
+    28%{
+        background-color:#0000ffb0;
+    }
+    42%{
+        background-color:#008000c0;
+    }
+    57%{
+        background-color:#ffff00be;        
+    }
+    72%{
+        background-color:#ffa600c4;
+    }
+    86%{
+        background-color:#ff0000bd;
+    }
+    100%{
+        background-color:#ee82eec5;
+    }
+}
+#disco table{
+    min-height: 10px;
+}
+
+
+/* ======================== */
+/* DEFAULTS */
+/* ========================= */
+
+
+
+.shadow{
+    border: 1px solid  #c7c7c7;
+    background-color: #ffffff;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    margin: 0;
+}
+a, a:visited, a:active{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.7rem;
+}
+input{
+    width: 250px; 
+    padding: 8px 7px;
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+input:focus{
+    border: 1px solid #c0c0c0;
+    outline: none;
+}
+input::placeholder{
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+/* ============== */
+/* ALIGN */
+/* ============== */
+.main{
+    margin-top: 60px;
+}
+.phone{
+    margin: -10px 25px 0 0;
+}
+.align-log-box, .log-acc-box, .get-app, .store-img{
+    width: 350px;
+    text-align: center;
+}
+
+
+/* ============== */
+/* LOG-BOX */
+/* ================ */
+
+.log-head p{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+/* ============== */
+/* LOG-INPUT FIELDS */
+/* ================ */
+
+.log-inputs input:nth-child(1){
+    margin: 25px auto 10px auto;
+}
+
+/* ============== */
+/* LOG IN BUTTON */
+/* ================ */
+
+.log-btn button{
+    width: 250px;
+    margin: 25px auto;
+    padding: 6px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #0093f5;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+/* ============== */
+/* LOG OR LINE */
+/* ================ */
+.log-or hr{
+    align-self: center;
+    width: 90px;
+    margin: 0px 14px;
+    border: 0.5px solid #dbdbdb;
+}
+.log-or p{
+    color: #757575;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ============== */
+/* LOG FB LINE */
+/* ================ */
+
+.log-fb {
+    margin: 25px auto;
+    cursor: pointer;
+}
+.log-fb img{
+    width: 15px;
+    margin: 0 8px;
+}
+.log-fb p{
+    align-self: center;
+    color: #385185;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ============== */
+/* LOG FORGET PASSWORD */
+/* ================ */
+
+.log-fog-pass{
+    color: #00376B;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* ============== */
+/* NO ACC BOX  */
+/* ================ */
+.log-acc-box{
+    margin-top: 25px;
+}
+.acc-con{
+    margin: 16px;
+    font-size: 15px;
+}
+
+/* ============== */
+/* GET APP  */
+/* ================ */
+
+.get-app{
+    padding: 20px;
+}
+
+/* ============== */
+/* GET IMAGES  */
+/* ================ */
+
+.store-img a img{
+    width: 150px;
+    margin: 8px;
+}
+
+/* ============== */
+/* FOOTER  */
+/* ================ */
+
+.footer{
+    margin: 40px 0;
+    justify-content: space-around;
+}
+.norm{
+    flex-wrap: wrap;
+}
+.norm li{
+    margin: 0 6px;
+    color: #00376B;
+}
+.copy li{
+    color: #8E8E8E;
+}
+
+
+/* ================================ */
+/* SLIDESHOW IMAGES PHONE */
+/* ================================= */
+
+#slide{
+    position: relative;
+}
+#slide table{
+    position: absolute;
+    top: -510px;
+    left: 119.2px;
+    height: 431px;
+    width: 240px;
+    background-image: url('images/1.jpg');
+    animation : slideshow 10s  infinite alternate;
+}
+@keyframes slideshow{
+    0%{
+        background-image: url('images/1.jpg');
+    }
+    25%{
+        background-image: url('images/2.jpg');        
+    }
+    50%{
+        background-image: url('images/3.jpg');        
+    }
+    75%{
+        background-image: url('images/4.jpg');        
+    }
+    100%{
+        background-image: url('images/5.jpg');
+    }
+}
+
+
+/* ================================ */
+/* RESPONSIVE*/
+/* ================================= */
+@media only screen and (max-width:1000px){
+    .phone{
+        display: none;
+    }
+    .footer{
+        display: block;
+    }
+}

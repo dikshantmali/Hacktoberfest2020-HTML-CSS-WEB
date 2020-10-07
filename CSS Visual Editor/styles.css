@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial;
+}
+
+.box-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color, #FFF);
+}
+
+.sidebar {
+  min-width: 130px;
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  padding: .5rem 1rem;
+  background-color: #222;
+  color: white;
+}
+
+.sidebar label {
+  margin-top: .75rem;
+  margin-bottom: .15rem;
+  font-weight: bold;
+}
+
+.divider {
+  margin: 1rem -1rem .4rem -1rem;
+  border-bottom: 1px solid #999;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  margin: 25px;
+  background-color: var(--box-color, #FFD700);
+  box-shadow: 
+    calc(var(--x-position, 3) * 1px)
+    calc(var(--y-position, 3) * 1px)
+    calc(var(--blur, 5) * 1px)
+    calc(var(--spread, 6) * 1px)
+    var(--shadow-color, #000)
+}
+
+input:not([type="color"]) {
+  padding: .25em .5em;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid transparent;
+  border-radius: .3em;
+  outline: none;
+}
+
+input:not([type="color"]):focus {
+  border-color: #0AF;
+}
+
+input[type="color"] {
+  width: 100%;
+  border-radius: .3em;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}

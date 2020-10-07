@@ -1,0 +1,27 @@
+body {
+  font-family: Courier, monospace;
+  background-color: #0099cc;
+  color: #e0f7ff;
+  text-shadow: 0 0 5px rgba(255,255,255,0.9);
+  line-height: 1.5em;
+}
+
+label {
+  font-size: 1.3em;
+}
+
+button {
+  font-family: Courier, monospace;
+  background-color: #cc3300;
+  color: #fff;
+}
+
+input {
+  caret-color: #cc3300;
+  
+}
+
+p {
+  line-height: 1em;
+}
+

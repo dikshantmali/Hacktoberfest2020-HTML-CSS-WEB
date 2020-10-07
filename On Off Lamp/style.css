@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  margin: 30px;
+  font-size: 50px;
+  font-family: cursive;
+  user-select: none;
+}
+
+.lamp {
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  background-image: url(img/bulb-off.svg);
+}
+.active {
+  background-image: url(img/bulb-on.svg);
+}

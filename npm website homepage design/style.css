@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-size: 10px;
+}
+
+.npmheader {
+    display: flex;
+    font-family: 'Poppins';
+    flex-direction: normal;
+    justify-content: center;
+    align-items: center;
+    background-color: #231f20;
+    color: white;
+    height: 80px;
+
+}
+
+.navbar {
+    border-bottom: 1px solid lightgray;
+}
+
+.npmheader .firstanchor {
+    color: white;
+    font-size: 2.5em;
+}
+
+nav span {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: black;
+    font-family: 'Poppins';
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: black;
+    font-family: 'Poppins';
+    padding-left: 0;
+    margin-left: 0;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Poppins';
+
+}
+
+.nav-link:hover {
+    color: grey;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+
+}
+
+#npmlogo2 {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#npmsearchlogo {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.search {
+    width: 750px;
+    height: 50px;
+}
+
+#searchbtn {
+    height: 50px;
+    width: 120px;
+    font-family: 'Poppins';
+    background-color: #231f20;
+    color: white;
+    margin-left: 0;
+    font-weight: 700;
+}
+
+#searchbtn:hover {
+    cursor: pointer;
+
+}
+
+#signupbtn {
+    height: 50px;
+    width: 120px;
+    font-family: 'Poppins';
+    color: black;
+    font-weight: 700;
+    border: 2px solid grey;
+    margin-left: 20px;
+}
+
+#signupbtn:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+#signinbtn {
+    height: 50px;
+    width: 120px;
+    font-family: 'Poppins';
+    color: black;
+    font-weight: 700;
+    border: 0 solid
+}
+
+#signinbtn:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner1 {
+    margin-top: 20px;
+    background: url(./assets/background2.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 800px;
+    font-family: 'Poppins';
+
+}
+
+.banner1 .heading1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 8em;
+    margin-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    color: white;
+}
+
+.banner1 .para1 {
+    font-size: 1.5em;
+    font-family: Poppins;
+    font-weight: 400;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    color: white;
+}
+
+.banner1 .heading2 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    color: white;
+}
+
+.banner1 .para2 {
+    font-size: 1.5em;
+    font-family: Poppins;
+    font-weight: 400;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    color: white;
+}
+
+.bubble1 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #231f20;
+    height: 550px;
+
+
+}
+
+.bubble1 .text1 {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 3.5em;
+    margin-left: 450px;
+    margin-right: 450px;
+    text-align: center;
+    color: #231f20;
+
+}
+
+.bubble1 .text2 {
+    font-size: 1.75em;
+    font-family: Poppins;
+    font-weight: 400;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    color: #231f20;
+}
+
+.banner1 .btn1 {
+    width: 230px;
+    height: 60px;
+    background-color: #c12127;
+    color: white;
+    font-family: 'Poppins';
+    border-bottom-color: orange;
+    border-right-color: black;
+    border-left-color: black;
+    border-top-color: black;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 5px;
+    font-weight: 900;
+    margin-bottom: 60px;
+    font-size: 1.5em;
+    cursor: pointer;
+
+
+}
+
+.banner1 .btn2 {
+    margin-left: 20px;
+    width: 230px;
+    height: 60px;
+    font-weight: 900;
+    color: white;
+    background-color: #e81aa8;
+    border-bottom-color: #b30ad2;
+    border-right-color: black;
+    border-left-color: black;
+    border-top-color: black;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    font-size: 1.5em;
+    border-bottom-width: 5px;
+    cursor: pointer;
+}
+
+.open {
+
+    margin-top: 100px;
+    background: url(./assets/background.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 300px;
+    font-family: 'Poppins';
+}
+
+.open .open1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    font-size: 5em;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    color: white;
+}
+
+.open .open2 {
+    font-size: 1.5em;
+    font-family: Poppins;
+    font-weight: 400;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
+.companies {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    height: 700px;
+    font-family: Poppins, sans-serif;
+}
+
+.companies .grateful {
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+    font-size: 3.5em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 430px;
+    margin-right: 430px;
+    text-align: center;
+    color: #303030;
+}
+
+
+.footer1 {
+    margin-top: 180px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    color: black;
+    height: 300px;
+    font-family: Poppins, sans-serif;
+}
+
+.footer1 ul {
+    list-style: none;
+    font-size: 1.5em;
+    line-height: 3em;
+    margin-left: 0;
+}
+
+.footer1 ul a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+}
+
+.footer1 .headingfoot {
+    font-size: 1.75em;
+    color: #231f20;
+    font-weight: 900;
+}

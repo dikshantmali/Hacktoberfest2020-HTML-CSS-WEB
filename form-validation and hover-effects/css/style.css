@@ -1,0 +1,157 @@
+.register {
+
+  background-image: url(../bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+}
+.login {
+
+  background-image: url(../bg2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+}
+.index {
+
+  background-image: url(../gradient.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+}
+.well{
+  border: 10px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 120px;
+}
+
+@media screen and (max-width: 600px) {
+  .padding{
+    padding: 10px;
+  }
+  .button1{
+    background-position: center center;
+
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+  }
+  .button-text{
+    color: white;
+    font-size: 30px;
+  }
+  .image{
+    width: 200px
+  }
+  .image:hover{
+    width: 205px;
+    box-shadow: 0 2px 3px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.22);
+  }
+  .ytvideo{
+    width: 200px;
+    height: 150px;
+  }
+  }
+
+@media screen and (min-width: 600px) {
+  .padding{
+    padding: 100px;
+  }
+  .button1{
+    background-position: center center;
+
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px;
+  }
+  .button-text{
+    color: white;
+    font-size: 50px;
+  }
+  .image{
+    width: 500px;
+
+  }
+  .image:hover{
+    width: 505px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.22);
+  }
+  .ytvideo{
+    width: 500px;
+    height: 400px;
+  }
+  }
+
+
+
+* {
+  box-sizing: border-box;
+}
+input[type=text]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.mapouter{position:relative;text-align:right;height:300px;width:500px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:500px;}

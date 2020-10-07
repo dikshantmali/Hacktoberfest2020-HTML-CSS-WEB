@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><title>Guess the Number</title>
+<link href = "css.css" type="text/css" rel = "stylesheet"> 
+<script src="index.js"></script>
+</head>
+<!--The "onLoad" will run the "getNumber" function from index.js immediately after loading the page.-->
+<body onload="getNumber()">
+  
+    <h1>Guess the Number</h1>
+      
+      <p>The computer is thinking of a number between 1 and 1000.</p></p>Guess what it is.</p>
+
+      <!--The id "guesser" refers to the guessNumber function in index.js. "onfocus" sets the value of the input back to an empty string when input is in focus. -->
+    <label>Guess <input id="guesser" onfocus="this.value=''" type="number" min="1" max="1000"></label>
+      
+    <!--The "onclick" runs the function "guessNumber" when the submit button is clicked.-->
+        <button id = "btn" type="submit" onclick="guessNumber()">Submit</button>
+    </body>
+    </html>

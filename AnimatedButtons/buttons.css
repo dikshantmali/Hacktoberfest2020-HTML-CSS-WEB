@@ -1,0 +1,226 @@
+.button {
+  cursor: pointer;
+  width: 200px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Button 1 */
+.first {
+  border-color: #f1c40f;
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f1c40f 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.first:hover {
+  background-position: 0;
+}
+
+/* Button 2 */
+.second {
+  border-color: #8e44ad;
+  border-radius: 0;
+  color: #8e44ad;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.second:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #8e44ad;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.second:hover {
+  color: #fff;
+}
+.second:hover:after {
+  width: 110%;
+}
+
+/* Button 3 */
+.third {
+  display: inline-flex;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.third:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.third:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.third:hover {
+  color: #fff;
+}
+.third:hover:before {
+  width: 100%;
+}
+
+/* Button 4 */
+.fourth:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease-out;
+}
+.fourth {
+  background-color: #fff;
+  color: #777;
+  position: relative;
+}
+.fourth::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.fourth::after {
+  background-color: #fff;
+}
+.fourth:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.fourth-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+/* Button 5 */
+.fifth {
+  background: #333;
+  color: #ccc;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 4px;
+  font-family: "Raleway", sans-serif;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+}
+
+.fifth:focus {
+  outline: 0;
+}
+.fifth:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.fifth:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.fifth:hover {
+  background: #338033;
+  cursor: pointer;
+}
+.fifth:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
+}
+.fifth:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+/* Animations */
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
