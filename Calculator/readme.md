@@ -1,13 +1,9 @@
 # Calculator</br>
-This is Calculator build using HTML, CSS, and JavaScript using different tags such as div tag, h1 tag, and more. There is only one thing is to be add is after we get result by equal to. After that we use any number so its starting with same result so that is some mistake but it will be correct soon.  </br>
+This is Calculator build using HTML, CSS, and JavaScript. The build uses tags like: div, h1, and more. After a user presses the 'equal' button, there is an issue. The solution does not clear at the next user action. </br>
 
-Like If we get result like 2 + 3 = 5 </br>
-if i want new calculation so i click like 7 so, </br>
-
+Example: </br>
+If the result is: 2 + 3 = 5 </br>
+then the user clicks '7', the screenshows: </br>
 => 57</br>
 
-but we want only 7 because its new calculation.</br>
-
 Solution => when we complete any calculation so after completed so we click AC so its come to new calculation.
-
-
