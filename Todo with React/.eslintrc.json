@@ -1,0 +1,26 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "serviceworker": true
+    },
+    "extends": ["eslint:recommended", "prettier", "plugin:react/recommended"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": ["react"],
+    "rules": {
+        "default-case": "error",
+        "eqeqeq": ["error", "always"],
+        "indent": "off",
+        "linebreak-style": ["error", "unix"],
+        "no-alert": "error",
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"]
+    },
+    "settings": { "react": { "version": "detect" } }
+}
