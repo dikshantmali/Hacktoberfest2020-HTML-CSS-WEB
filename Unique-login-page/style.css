@@ -1,0 +1,12 @@
+
+body,html {
+    background-image: url('https://images.pexels.com/photos/5422609/pexels-photo-5422609.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    height: 100%;
+}
+
+#profile-img {
+    height:180px;
+}
+.h-80 {
+    height: 80% !important;
+}
