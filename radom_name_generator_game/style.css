@@ -1,0 +1,106 @@
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.hidden {
+    display:none;
+}
+
+/*===============================
+      Application container
+=================================*/
+
+.applicant_container {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    width:100%;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    border:1px solid #d6d6d6;
+    padding:10px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color:#b8b8b8;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.applicant_input {
+    position: relative;
+}
+
+.applicant_input span {
+    position: absolute;
+    top:4px;
+    right: 5px;
+    background: #d9d9d9;
+    padding:11px;
+    border-radius: 50px;
+    font-size:10px;
+}
+
+.applicant_list {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.applicant_list_wrapper span{
+    background: #3F51B5;
+    color:#fff;
+    padding:1px 10px;
+    border-radius: 7px;
+    margin-right:5px;
+}
+
+.applicant_list_wrapper span:hover {
+    cursor: pointer;
+    background: darkred;
+}
+
+.button_container {
+    margin-top:20px;
+}
+
+.button_container div {
+    cursor: pointer;
+    border-radius: 27px;
+    background: #cccccc;
+    color:#fff;
+    display:block;
+    margin:0 auto;
+    width:120px;
+    text-align: center;
+    padding:10px 0;
+}
+
+/*===============================
+      Results container
+=================================*/
+
+.results_container {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.results_container h3{
+    color:darkred;
+}
+
+.results_container div {
+    cursor: pointer;
+}

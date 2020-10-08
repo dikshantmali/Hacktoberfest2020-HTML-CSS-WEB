@@ -1,0 +1,197 @@
+/*{
+    margin:0;
+    padding:0;
+    reset:sets all the margin padding and stuff to zero)
+}
+*/
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight:normal;
+    /* or you can use (font: normal 16px Arial, Helvatica, sans-serif;) instead of the above three lines*/
+
+    line-height: 1.6em;
+    margin: 0;
+  
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color: green;
+}
+
+a:visited{
+    /*color:black;*/
+}
+
+.container{
+    width:80%;
+    margin: auto;
+    
+}
+
+.button{
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+.button:hover{
+    background-color:red;
+    color: #fff ;
+}
+
+.clr{
+    clear: both;
+}
+
+.box-1{
+    background-color: #333333;
+    color:#fff;
+
+    border-top: 5px red solid;
+    border-right: 5px red solid;
+    border-bottom: 5px red solid;
+    border-left: 5px red solid;
+
+    /*border:5px red solid  (sets every border to 5px) */
+    border-width: 3px;
+    border-bottom-width:10px ;
+    border-top-style: dotted;
+
+    border:5px red solid; /*reset all the borders */
+
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+
+    /*same as above*/
+    padding:20px;
+
+    margin-top: 20px;
+    margin: 20px 0;
+
+}
+
+.box-1 h1{
+    font-family: tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2{
+    border:3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+text-align: center;
+}
+.categories ul{
+    padding: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333333;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block ;
+}
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+.block{
+    float: left;
+    width:33.3%;
+    border:1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#main-block{
+    float:left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#side-bar{
+    float: right;
+    width: 30%;
+    background-color: #333333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px ;
+    position: relative;
+    background-image: url(../images/bgimage.jpg);
+    background-position: center center;
+}
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.p-box h2{
+    position: absolute;
+    bottom: 250px;
+    right:650px;
+}
+
+.fix-me{
+    position:fixed;
+    top:400px;
+    right:0px;
+}
+.my-list li:first-child{
+    background: blue;
+}
+
+.my-list li:last-child{
+    background: red;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+.my-list li:nth-child(even){
+    background: grey;
+}

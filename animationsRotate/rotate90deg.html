@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <style>
+        /* content align in center */
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background: 0 0 #ebebeb;
+            color: #3e3e3e;
+        }
+        /* triangle element */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 80px solid lightblue;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+    <!-- ANIMATION CSS -->
+    <style>
+        /* class animation */
+        .rotate-center {
+            animation: amazing-name-animation 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        /* frames: 0% 0 degree -> 100% 90 degree */
+        @keyframes amazing-name-animation {
+            0% {
+                transform: rotate(0);
+                transform-origin: 100% 100%;
+            }
+            100% {
+                transform: rotate(90deg);
+                transform-origin: 100% 100%;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="triangle rotate-center">
+    <h1>T</h1>
+</div>
+</body>
+</html>

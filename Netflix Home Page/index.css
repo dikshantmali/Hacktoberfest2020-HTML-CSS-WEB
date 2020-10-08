@@ -8,6 +8,7 @@ body {
 
 .container {
   background-image: url("http://www.impawards.com/2012/posters/dark_knight_rises_ver13_xlg.jpg");
+  box-shadow: inset 0px 100px 150px rgba(0,0,0,1);
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;

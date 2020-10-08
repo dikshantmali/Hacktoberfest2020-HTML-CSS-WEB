@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      html {
+        padding: 0;
+        margin: 0;
+        padding: 0cm 2.75cm 0cm 0cm;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+          'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+      }
+
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .print-container {
+        width: 210mm;
+        height: 297mm;
+        color: black;
+        margin: 0 auto;
+        position: relative;
+        border: 1px solid #cccccc;
+      }
+
+      .print-panel {
+        width: 100%;
+        background-color: #eeeeee;
+        margin-top: 50px !important;
+        margin-bottom: 20px !important;
+        padding: 20px;
+      }
+    </style>
+
+    <script>
+      function printOut() {
+        var printContents = document.getElementById('printarea').innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="print-panel">
+      <button onclick="printOut()">Print this page</button>
+    </div>
+
+    <div id="printarea" class="print-container">
+      <h3>Any text in this div will be print</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique
+        nisi, laboriosam, atque ex consequuntur esse unde delectus expedita,
+        eligendi laborum ipsum consequatur aliquid repellat possimus pariatur
+        molestias quae exercitationem?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique
+        nisi, laboriosam, atque ex consequuntur esse unde delectus expedita,
+        eligendi laborum ipsum consequatur aliquid repellat possimus pariatur
+        molestias quae exercitationem?
+      </p>
+    </div>
+  </body>
+</html>
