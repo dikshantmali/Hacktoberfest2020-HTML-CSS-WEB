@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+}
+
+#navbar {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#navbar > header {
+    background-color: rgb(26, 6, 136);
+    color: #ffffff;
+    font-size: 2.8rem;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link {
+    background-color:rgb(2, 48, 48);
+    border: 1px solid #233240;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.5em 0 0.5em 1.5em;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.nav-link:hover {
+    background-color:  royalblue ;
+}
+
+.main-section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.main-section > header {
+    border-bottom: 3px solid  rgb(14, 4, 71);
+    font-size: 2.8rem;
+    margin: 0 auto;
+    padding: 0.6em 0;
+    width: 92%;
+}
+
+.main-section > p {
+    margin: 0 auto;
+    padding-top: 1em;
+    width: 92%;
+}
+
+ul {
+    margin: 0 auto;
+    padding-top: 0.5em;
+    width: 80%;
+}
+
+ul > li {
+    padding-top: 0.5em;
+}
+
+code {
+    background-color: #BDC3C7;
+    display: block;
+    font-size: 1.6rem;
+    margin: 1em auto;
+    min-width: 340px;
+    white-space: pre;
+    width: 92%;
+}
+code:hover{
+    background-color: royalblue;
+}
+
+@media (max-width: 350px) {
+    code {
+        font-size: 1.4rem;
+        min-width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #navbar {
+        position: fixed;
+        width: 20%;
+    }
+    
+    #main-doc {
+        margin-left: 20%;
+        width: 80%;
+    }
+}
