@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(http://res.cloudinary.com/fluffydog/image/upload/c_scale,w_2946/v1526739370/irina-kostenich-497161-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #262626;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header .logo {
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fff;
+  background: #219663;
+}
+
+#menu-toggle {
+  color: #fff;
+  float: right;
+  font-size: 24;
+  line-height: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 0 20px;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh-50px);
+    background-color: #333;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
