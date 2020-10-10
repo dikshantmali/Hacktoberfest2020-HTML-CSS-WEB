@@ -1,0 +1,15 @@
+body,html {
+  height: 100%;
+}
+
+#previous {
+    bottom: 10%;
+    left: 15%;
+    position: absolute;
+}
+
+#next {
+    bottom: 10%;
+    right: 15%;
+    position: absolute;
+}
