@@ -1,0 +1,30 @@
+.day   { background: #eee; color: black; }
+.night { background: #333; color: white }
+
+@media (prefers-color-scheme: dark) {
+.day.dark-scheme   { background:  #333; color: white; }
+.night.dark-scheme { background: black; color:  #ddd; }
+}
+
+@media (prefers-color-scheme: light) {
+.day.light-scheme   { background: white; color:  #555; }
+.night.light-scheme { background:  #eee; color: black; }
+}
+.mode { 
+    float:right; 
+} 
+.change{
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+.win{
+    color: #32CD32;
+}
+#winner{
+    color: chocolate;
+    margin: 0 auto;
+    padding: 50px;
+    font-size:535%;
+}
