@@ -1,0 +1,27 @@
+.p{
+    text-align: center;
+    font-size: 100px;
+}
+
+.p2{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+.button{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    background: black;
+    border: 1px solid #2ecc71;
+}
+
+
+.dark-mode {
+    background-color: black;
+}
