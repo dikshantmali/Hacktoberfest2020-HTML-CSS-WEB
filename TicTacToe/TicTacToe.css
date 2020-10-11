@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+ .bot{
+     border-bottom: 2px solid black;
+     border-top: 2px solid black;
+ }
+.bor{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+td{
+    width: 100px;
+    height: 100px;
+}
+ 
+h1{
+    font-weight: bolder;
+}
