@@ -178,6 +178,8 @@ a {
 
 a:hover {
   color: #b60e63;
+  font-size: 1.8rem;
+  transition: 0.5s;
 }
 
 /* ==== LAYOUT STYLES ==== */
@@ -268,6 +270,7 @@ img,
 
 .button:hover {
   border: 1px solid #b60e63;
+  transition: 0.5s;
 }
 
 .load {
