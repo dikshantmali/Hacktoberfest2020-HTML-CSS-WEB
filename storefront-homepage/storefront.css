@@ -1,161 +1,130 @@
-.mycontainer * {
-	color: #423F3F;
-	text-align: center;
+html {
+  background-color: rgba(15, 15, 15, 1);
 }
 
-.mycontainer {
-	padding-bottom: 10vh;
+#reveal1,
+#reveal2,
+#reveal3,
+#reveal4 {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.column {
-	background-position: 25% 15%;
-	min-height: 15.125em;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 400px;
+#reveal1.visible,
+#reveal2.visible,
+#reveal3.visible,
+#reveal4.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 }
 
-.image-1 {
-	background-image:
-		url('images/hp5-large.jpg');
+.gradient {
+  background: linear-gradient(
+    60deg,
+    rgba(54, 54, 65, 1) 0%,
+    rgba(15, 15, 15, 1) 50%
+  );
 }
 
-.image-2 {
-	background-image:
-    url('images/hp6-large.jpg');
+.spacer {
+  height: 250px;
 }
 
-.image-3 {
-	background-image:
-    url('images/hp1-large.jpg');
+.banner {
+  font-size: 70px;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 700;
+  text-align: center;
 }
 
-.image-4 {
-	background-image:
-    url('images/hp3-large.jpg');
+#pinContainer {
+  padding-top: 50px;
+  width: 100%;
+  height: 150vh !important;
+  overflow: hidden;
 }
 
-.banner-container {
-	height: 200vh;
-	padding-top: 5vh;
+.panel {
+  height: 50%;
+  width: 100%;
+  position: absolute;
 }
 
-.w-banner, .m-banner {
-	background-image:
-    url('images/hp4-large.jpg');
-	height: 25vw;
-	background-size: cover;
-	width: 100%;
-	border-radius: 0%;
-	background-position: 55% 18%;
-	background-repeat: no-repeat;
-	position: sticky;
-	top: 0;
+.dress {
+  width: 50%;
 }
 
-.grid {
-	margin-left: 50%;
-	pointer-events: all;
-	display: grid;
-	grid-template-columns: 0.6fr 1fr;
-	grid-column-gap: 5%;
-	padding-right: 10%;
+.fr {
+  float: right;
+  margin-right: 8%;
 }
 
-.left-label {
-	position: sticky;
-	top: 50%;
-	width: 25%;
-	margin-left: 15%;
-	font-size: 50px;
-	line-height: 1.0625;
-	font-weight: 500;
+.womens {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dwdf374cad/images/homepage/homepage-5/large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 100%;
+  position: absolute;
 }
 
-.cat-label {
-	position: sticky;
-	width: 25%;
-	font-size: 50px;
-	line-height: 1.0625;
-	font-weight: 500;
-	margin-top: 0vh;
+#pinContainer1 {
+  width: 100%;
+  height: 652px !important;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
 }
 
-.banner-right {
-	float: right;
+#slideContainer {
+  width: 400%; /* to contain 4 panels, each with 100% of window width */
+  height: 100%;
 }
 
-.left {
-	float:left;
-	padding-left: 10vh;
+.panel1 {
+  height: 100%;
+  width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+  float: left;
 }
 
-.right {
-	float: right;
-	padding-right: 10vh;
+.carasoul-text {
+  float: left;
+  margin-left: 20px;
 }
 
-.mt-25 {
-	margin-top: 25vh;
+.eyewear {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dw6886e297/images/homepage/homepage-2/large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.mt-15 {
-	margin-top: 15vh;
+.summer {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dw451de9f8/images/homepage/homepage-4/large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.mt-10 {
-	margin-top: -10vh;
+.accessories {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-SiteGenesisSharedLibrary/default/dw95cc0966/images/homepage/car-spring.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 90% 0px;
 }
-
-.mt-5 {
-	margin-top: -5vh;
-}
-
-.description {
-	font-size: 20px;
-	line-height: 35px;
-	font-weight: normal;
-	width: 80%;
-	margin-left: 20px;
-	margin-top: 15px;
-}
-
-.dim {
-	opacity: 0.4;
-	transition: opacity 0.25s ease-in-out;
-}
-
-.m {
-	width: 30vh;
-}
-
-.light {
-	opacity: 1;
-	transition: opacity 0.25s ease-in-out;
-}
-
-.bullets {
-	font-size: 70px;
-	line-height: 1.0625;
-	font-weight: 700;
-	letter-spacing: -.0045em;
-	text-align: center;
-}
-
-.copy-scroll-container {
-	margin-left: auto;
-	margin-right: auto;
-	height: 800vh;
-	background: linear-gradient(0deg, rgb(255, 222, 233) 0%,
-		rgb(181, 255, 252) 100%);
-}
-
-.sticky-copy-lockup {
-	height: 100vh;
-	position: sticky;
-	top: 0;
-}
-
-.pd-10 {
-	padding: 5vh;
+.suits {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-SiteGenesisSharedLibrary/default/dwc936697e/images/homepage/car-suit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 65% 0px;
 }
