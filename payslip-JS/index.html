@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <title>Gaji Pegawai</title>
+        <body>
+            <form name="forminput">
+                <h1>GAJI PEGAWAI</h1>
+
+                <table>
+                    <tr>
+                        <td>ID Pegawai</td>
+                        <td>:</td>
+                        <td>
+                            <select name="inputkodepegawai" onclick="combo()">
+                                <option value="caption">List ID</option>
+                                <option value="b01">ID001</option>
+                                <option value="b02">ID002</option>
+                                <option value="b03">ID003</option>
+
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Nama Pegawai</td>
+                        <td>:</td>
+                        <td><input type="text" name="inputnamapegawai"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Upah Per Jam</td>
+                        <td>:</td>
+                        <td><input type="number" name="inputupahperjam"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jam Kerja</td>
+                        <td>:</td>
+                        <td><input type="nunber" name="inputjamkerja"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input type="button" class="btn btn-outline-dark" value="Hitung Gaji" onclick="hitunggaji()"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Gaji</td>
+                        <td>:</td>
+                        <td><input type="number" name="inputgaji"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input type="button" class="btn btn-outline-dark" value="Hitung Pajak" onclick="hitungpajak()"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pajak 5%</td>
+                        <td>:</td>
+                        <td><input type="number" name="inputpajak"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input type="button" class="btn btn-outline-dark"  value="Hitung Total Gaji" onclick="totalgaji()"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Total Gaji</td>
+                        <td>:</td>
+                        <td><input type="number" name="inputtotalgaji"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Cetak" onclick="window.print()">
+                            <input type="reset" value="Ulang">
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        </body>
+    </head>
+</html>
+
+    <script language="javascript">
+            function combo()
+            {
+                var kodepegawai = document.forminput.inputkodepegawai.value;
+                var namapegawai = "";
+                var upahperjam = 0;
+
+                if(kodepegawai == "b01")
+                {
+                    namapegawai = "Hyung";
+                    upahperjam = 100000;
+
+                }else if(kodepegawai == "b02"){
+                    namapegawai = "Oppa";
+                    upahperjam = 50000;
+                }else if(kodepegawai == "b03"){
+                    namapegawai = "Iung";
+                    upahperjam = 30000;
+                }else{
+                    namapegawai = "";
+                    upahperjam = 0;
+                }
+                document.forminput.inputnamapegawai.value = namapegawai;
+                document.forminput.inputupahperjam.value = upahperjam;
+            }
+
+            function hitunggaji()
+            {
+                var upahperjam= document.forminput.inputupahperjam.value;
+                var jamkerja = document.forminput.inputjamkerja.value;
+                var gaji = 0;
+
+                gaji = upahperjam * jamkerja;
+
+                document.forminput.inputgaji.value = gaji;
+            }
+
+            function hitungpajak()
+            {
+                var gaji = document.forminput.inputgaji.value;
+                var pajak = 0;
+
+                pajak = gaji*0.05;
+
+                document.forminput.inputpajak.value = pajak;
+            }
+
+            function totalgaji()
+            {
+                var gaji = document.forminput.inputgaji.value;
+                var pajak = document.forminput.inputpajak.value;
+                var total = 0;
+
+                total = gaji-pajak;
+
+                document.forminput.inputtotalgaji.value = total;
+            }
+    
+
+
+    </script>   
