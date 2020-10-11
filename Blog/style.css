@@ -1,0 +1,279 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==== HELPER COLORS FOR LAYOUT ==== */
+/*
+.main-header {
+  background-color: rgba(255, 248, 53, .3);
+}
+.primary-content {
+  background-color: rgba(140, 96, 255, .3);
+}
+.post {
+  background-color: rgba(255, 0, 0, .3);
+}
+*/
+
+/* ==== BASE STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Merriweather, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #e5127d;
+}
+
+.main-header p {
+  font-size: 1.125rem;
+  letter-spacing: 0.125rem;
+  color: #8c8e9b;
+}
+
+a {
+  color: #e5127d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b60e63;
+}
+
+/* ==== LAYOUT STYLES ==== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+hr,
+img,
+.main-header,
+.primary-content {
+  margin-bottom: 1rem;
+}
+
+/* Main Header Styles */
+.main-header {
+  text-align: center;
+  padding: 1.25rem;
+  color: #fff;
+  background-color: #42444e;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+    width: 20.625%;
+  }
+}
+
+/* Primary Content Wrapper Styles */
+
+@media (min-width: 768px) {
+  .primary-content {
+    float: right;
+    width: 66.6%;
+    max-width: 812px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .primary-content {
+    float: none;
+    position: absolute;
+    left: 20.625%;
+  }
+}
+
+/* Article Styles */
+.post {
+  width: 95%;
+  margin: 0 auto 1rem;
+  padding: 0.3125rem;
+}
+
+/* ==== COMPONENT STYLES ==== */
+
+.button {
+  display: inline-block;
+  border: 1px solid #8c8e9b;
+  color: #8c8e9b;
+  border-radius: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 5px;
+  width: 100px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.button:hover {
+  border: 1px solid #b60e63;
+}
+
+.load {
+  display: block;
+  text-align: center;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+  color: #8c8e9b;
+}
