@@ -1,0 +1,130 @@
+html {
+  background-color: rgba(15, 15, 15, 1);
+}
+
+#reveal1,
+#reveal2,
+#reveal3,
+#reveal4 {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#reveal1.visible,
+#reveal2.visible,
+#reveal3.visible,
+#reveal4.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+.gradient {
+  background: linear-gradient(
+    60deg,
+    rgba(54, 54, 65, 1) 0%,
+    rgba(15, 15, 15, 1) 50%
+  );
+}
+
+.spacer {
+  height: 250px;
+}
+
+.banner {
+  font-size: 70px;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+#pinContainer {
+  padding-top: 50px;
+  width: 100%;
+  height: 150vh !important;
+  overflow: hidden;
+}
+
+.panel {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+}
+
+.dress {
+  width: 50%;
+}
+
+.fr {
+  float: right;
+  margin-right: 8%;
+}
+
+.womens {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dwdf374cad/images/homepage/homepage-5/large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+}
+
+#pinContainer1 {
+  width: 100%;
+  height: 652px !important;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+#slideContainer {
+  width: 400%; /* to contain 4 panels, each with 100% of window width */
+  height: 100%;
+}
+
+.panel1 {
+  height: 100%;
+  width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+  float: left;
+}
+
+.carasoul-text {
+  float: left;
+  margin-left: 20px;
+}
+
+.eyewear {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dw6886e297/images/homepage/homepage-2/large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.summer {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dw451de9f8/images/homepage/homepage-4/large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.accessories {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-SiteGenesisSharedLibrary/default/dw95cc0966/images/homepage/car-spring.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 90% 0px;
+}
+.suits {
+  background-image: url("https://production-sitegenesis-dw.demandware.net/on/demandware.static/-/Library-Sites-SiteGenesisSharedLibrary/default/dwc936697e/images/homepage/car-suit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 65% 0px;
+}
