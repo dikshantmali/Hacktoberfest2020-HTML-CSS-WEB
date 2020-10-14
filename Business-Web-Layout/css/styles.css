@@ -1,0 +1,529 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: rgb(238, 231, 231);
+        }
+        /* Header  */
+        
+        #header {
+            padding-top: 4.7%;
+            border-bottom: 8px solid rgb(32, 4, 68);
+        }
+        
+        .logo {
+            height: 40px;
+            padding: 30px;
+        }
+        
+        .navbar {
+            background-color: rgb(42, 5, 92) !important;
+        }
+        /* for Toggler-button */
+        /* #header li a {
+    float: right;
+    text-align: left;
+} */
+        
+        .navbar-toggler {
+            border: none;
+        }
+        
+        .highlight {
+            font-size: 27px;
+            letter-spacing: 3px;
+        }
+        
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+        
+        .nav-link:hover {
+            color: rgb(207, 170, 238) !important;
+            font-weight: 700;
+        }
+        /* Carousel  */
+        
+        .carousel-img {
+            width: 100%;
+            height: 80vh;
+        }
+        
+        #home {
+            border-radius: 5px;
+            font-style: italic;
+        }
+        
+        .carousel-caption {
+            color: black;
+        }
+        
+        .bg-dark {
+            background: whitesmoke !important;
+        }
+        /* .carousel-item {
+            height: 500px;
+        }
+        
+        .carousel-caption h2 {
+            font-weight: 700;
+            font-weight: 180%;
+        }
+        
+        .carousel-caption {
+            font-weight: 600;
+            font-size: 140%;
+        }
+        
+        .carousel-item img {
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 600px;
+        }
+        
+        .carousel-styling {
+            margin: 0px auto;
+            padding: 50px 0px 50px 0px;
+            border-bottom: 1px ridge;
+            height: 600px;
+        } */
+        /* Performance Section  */
+        
+        .main-heading {
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 30px 0 30px 0;
+            font-size: 45px;
+        }
+        
+        #performance {
+            background: #fff;
+        }
+        
+        .progress,
+        .progress-bar {
+            height: 24px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 15px rgb(115, 150, 214);
+        }
+        /* About Section  */
+        
+        #about {
+            height: auto;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/resize-images/img4.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #efefef;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        #about h1 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        
+        #about h1::after {
+            content: "";
+            background: #efefef;
+            display: block;
+            height: 4px;
+            width: 170px;
+            border-radius: 20px;
+            margin: 10px auto 5px;
+        }
+        
+        #about .col-md-3:hover {
+            background: #007BFF;
+            cursor: pointer;
+            transition: 0.6s;
+            border-radius: 10px;
+        }
+        
+        .icons {
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        #about .icons i {
+            text-align: center;
+            font-size: 100px;
+            border-radius: 50%;
+        }
+        /* Team Section  */
+        
+        #team {
+            background: #fff;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        #team h1 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        
+        #team h1::after {
+            content: "";
+            background: #007BFF;
+            display: block;
+            height: 5px;
+            width: 370px;
+            border-radius: 10px;
+            margin: 20px auto 5px;
+        }
+        
+        .profile-pic {
+            margin-top: 25px;
+        }
+        
+        .profile-pic .img-box {
+            opacity: 1;
+            display: block;
+            position: relative;
+        }
+        
+        .profile-pic .img-box img {
+            filter: grayscale(1);
+            height: 290px;
+            width: 99%;
+        }
+        
+        .profile-pic .img-box img:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+        }
+        
+        .profile-pic h2 {
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #007BFF;
+        }
+        
+        .profile-pic h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        
+        #team .fa {
+            height: 25px;
+            width: 25px;
+            color: #007BFF;
+            background: #fff;
+            padding: 4px;
+            border-radius: 50%;
+        }
+        
+        .img-box ul {
+            list-style: none;
+            padding: 15px 0;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+        }
+        
+        .img-box ul li {
+            padding: 5px;
+            display: inline-block;
+        }
+        
+        .img-box:hover ul {
+            opacity: 1;
+        }
+        
+        .img-box ul,
+        .img-box li {
+            transition: 0.5s;
+        }
+        /* promo  */
+        
+        #promo {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/resize-images/img2.jpg);
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+            padding: 100px;
+            font-family: sans-serif;
+            font-size: 38px;
+        }
+        /* Salaries Section  */
+        
+        #salaries {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        #salaries h1 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        
+        #salaries h1::after {
+            content: "";
+            background: #007BFF;
+            display: block;
+            height: 5px;
+            width: 370px;
+            border-radius: 10px;
+            margin: 20px auto 5px;
+        }
+        
+        .category-A {
+            margin: 10px auto;
+            display: inline-block;
+            width: 100%;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+        
+        .category-A:hover {
+            box-shadow: 0 2px 20px #333;
+        }
+        
+        .category-head {
+            background-color: #2196f3;
+            display: inline-block;
+            padding: 10px 5px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .category-head h2 {
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+        
+        .category-head p {
+            font-size: 25px;
+            color: #ccc;
+            font-weight: bold;
+            line-height: 30px;
+        }
+        
+        .category-head span {
+            font-size: 17px;
+        }
+        
+        .salaries-content {
+            display: inline-block;
+            width: 100%;
+            padding: 0 15px;
+        }
+        
+        .salaries-content ul li {
+            border-bottom: 1px solid #efefef;
+            padding: 15px 10px;
+            list-style: none;
+        }
+        
+        .salaries-content ul li:last-child {
+            border: none;
+        }
+        
+        .salaries-content .fa-check-circle {
+            color: rgb(6, 126, 6);
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .salaries-content .fa-times-circle {
+            color: rgb(209, 15, 15);
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .salaries-btn {
+            display: inline-block;
+            padding: 15px 15px 30px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .salaries-btn .btn-primary {
+            background-color: #2196f3;
+            border-radius: 10px;
+            color: #fff;
+            display: inline-block;
+            font-size: 18px;
+            padding: 15px 50px;
+            transition: 0.5s;
+        }
+        
+        .salaries-btn .btn-primary:hover {
+            border-color: 1px solid #fff;
+            background-color: #3f51b5;
+        }
+        /* Testimonials Section  */
+        
+        #testimonails {
+            background-color: #fff;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        #testimonails h1 {
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        
+        #testimonails h1::after {
+            content: "";
+            background: #007BFF;
+            display: block;
+            height: 5px;
+            width: 270px;
+            border-radius: 10px;
+            margin: 20px auto 5px;
+        }
+        
+        #testimonails .row {
+            margin-top: 30px;
+        }
+        
+        #testimonails .col-md-4 {
+            margin: 40px auto;
+        }
+        
+        .testi-profile {
+            padding: 70px 10px 10px;
+            background-color: #efefef;
+        }
+        
+        .testi-profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        
+        .testi-profile img {
+            top: -60px;
+            position: absolute;
+            left: calc(50% - 60px);
+            border: 10px solid #fff;
+        }
+        
+        .testi-profile h3 {
+            font-size: 20px;
+            margin-top: 15px;
+            color: #007bff;
+        }
+        
+        .testi-profile span {
+            font-size: 13px;
+            color: #333;
+        }
+        
+        .testi-profile blockquote {
+            font-size: 16px;
+            line-height: 30px;
+        }
+        /* .testi-profile blockquote::before {
+            content: '\93';
+            font-size: 50px;
+            color: #007bff;
+            position: relative;
+            line-height: 20px;
+            bottom: -15px;
+            right: 5px;
+        }
+        
+        .testi-profile blockquote::after {
+            content: '\94';
+            font-size: 50px;
+            color: #007bff;
+            position: relative;
+            line-height: 10px;
+            bottom: -15px;
+            left: 5px;
+        } */
+        
+        .testi-profile:hover {
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        /* Contact Section  */
+        
+        #contact {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        #contact h1 {
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        
+        #contact h1::after {
+            content: "";
+            background: #007BFF;
+            display: block;
+            height: 5px;
+            width: 270px;
+            border-radius: 10px;
+            margin: 20px auto 5px;
+        }
+        
+        .contact-form {
+            padding: 15px;
+        }
+        
+        .form-control {
+            border-radius: 0;
+            border: none;
+        }
+        
+        .form-control::placeholder {
+            color: #999;
+        }
+        /* follow  */
+        
+        .follow {
+            background-color: #fff;
+            padding: 10px;
+            margin: 15px;
+        }
+        /* footer section  */
+        
+        #footer {
+            background: rgb(32, 30, 30);
+            color: #fff;
+            padding: 10px;
+            padding-bottom: 4px;
+        }
+        /*    Media Queries 
+    
+    */
+        
+        @media (max-width: 768px) {
+            #performance h1 {
+                width: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .query {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
