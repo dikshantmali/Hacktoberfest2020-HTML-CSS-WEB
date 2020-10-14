@@ -1,3 +1,8 @@
+<p align="center">
+<img src="https://hacktoberfest.digitalocean.com/assets/HF-full-logo-b05d5eb32b3f3ecc9b2240526104cf4da3187b8b61963dd9042fdc2536e4a76c.svg">
+</p>
+
+
 # Hacktoberfest2020-HTML-CSS-WEB
 
 Anyone can add any type of html-css web page depends on you. It can be anything like simple form, adding parallax so that people can understand how to use parallax, adding flex box, adding navbar, adding footer for website like that so that the people who are beginner can learn let say how to add navbar, how to generate shadow for an image,how to get sticky navbar,how to style various divs, adding button anything like that.You can also add any basic template page created by you like home page, contact us page, about us page so that anyone can use it with little modification. 
@@ -55,3 +60,7 @@ git push origin <branch-name>
 ```
 
 We're happy to merge valid pull requests to this repository!
+
+### congratulation!
+You contributed to open source project & sit relax wait for review. Thank you.
+### If you like this repo, drop a ⭐
