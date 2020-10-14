@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px 0px;
+        }
+        .sky{
+            height: 100vh;
+            width:100%;
+            background-image: url(sky.jpg);
+            background-size: cover;
+            background-position: center ;
+            position: relative;
+            overflow-x: hidden;            
+        
+        }
+        .highway{
+            height: 200px;
+            width: 500%;
+            display: block;
+            background-image: url(road.jpg);
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            z-index: 1;
+            animation: highway 5s linear infinite; 
+            background-repeat: repeat-x;
+        }
+        @keyframes highway{
+            100%{
+                transform: translateX(-3400px);
+            }
+        }
+        .city{
+            height: 250px;
+            width: 500%;
+            display: block;
+            background-image: url(city.png);
+            position: absolute;
+            bottom: 200px;
+            right: 0px;
+            left: 0px;
+            z-index: 1;
+            animation: city 20s linear infinite;
+            background-repeat: repeat-x;
+        }
+        @keyframes city{
+            100%
+            {
+              transform: translateX(-1400px);
+            }
+        }
+        .car{
+            
+            position: absolute;
+            bottom: 98px;
+            left: 45%;
+            z-index: 2;
+            width: 400px;
+            transform: translateX(-50%);
+        }
+        .car img{
+            animation: car 0.5s linear infinite;
+            width: 150%;
+        }
+        @keyframes car{
+            100%{
+                   transform: translateY(-1px);
+            }
+            50%{
+                    transform: translateY(1px);
+            }
+            0%{
+                     transform: translateY(-1px);
+            }
+        }
+        .wheel{
+            left: 45%;
+            bottom: 218px;
+            z-index: 2;
+            position: absolute;
+            transform: translateX(-50%);
+        }
+        .wheel img{
+            width: 115px;
+            height: 115px;
+            animation: wheel 0.5s linear infinite;
+        }
+        .backwheel{
+            position: absolute;
+            left: -150px;
+        }
+        .frontwheel{
+            position: absolute;
+            left: 216px;
+        }
+        @keyframes wheel{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: 40%;
+            left: 35%;
+        }
+        h3{
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sky">
+        <div class="container">
+        <h3>
+            THIS IS CAR ANIMATION BY CSS
+        </h3>
+    </div>
+    </div>
+        <div class="highway"></div>
+        <div class="city"></div>
+        <div class="car">
+        <img src="car.png" alt="">
+        </div>
+        <div class="wheel">
+            <img src="wheel.png" alt="" class="backwheel">
+            <img src="wheel.png" alt="" class="frontwheel">
+        </div>
+        
+</body>
+</html>

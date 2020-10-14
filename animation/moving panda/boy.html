@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px 0px;
+        }
+        .background
+        {
+            background-image: url('http://getwallpapers.com/wallpaper/full/4/f/4/564402.jpg');
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100%;
+            z-index: 0;
+            
+        }
+        .road1{
+            border-bottom: 7px dashed #01101b;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 42%;
+            z-index: 0;
+        }
+        .road2{
+            border-bottom: 7px dashed white;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 43%;
+            z-index: 0;
+        }
+        .men{
+            background: url(men.png.png);
+            width: 160px;
+            height:318px ;
+            position: absolute;
+            bottom: 43%;
+            animation: walk 1s steps(8) infinite, 
+                       forward 5s linear infinite;
+                     
+                       
+        }
+        @keyframes walk{
+            0%{
+                background-position: 0px;
+            }
+            100%{
+                background-position: 1455px;
+            }
+        }
+        @keyframes forward{
+            0%{
+                transform: translateX(-100px);
+            }
+            100%{
+                transform: translateX(1750px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="men"></div>
+    <div class="road1"></div>
+    <div class="road2"></div>
+</body>
+</html>
