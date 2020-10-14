@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiping Gallery</title>
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Don't forget to add the cdn links in the head tag  -->
+    <center>
+    <h1>Swiping Gallery Using Swiper.js</h1>
+
+    <!-- Add the div containers from the website of swiper.js -->
+    <div class="swiper-container">
+
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide" style="background-image: url(one.jpg);
+          background-size: cover; background-position: center;  background-repeat: no-repeat;"></div>
+          <div class="swiper-slide" style="background-image: url(two.jpg);
+          background-size: cover; background-position: center;  background-repeat: no-repeat;"></div>
+          <div class="swiper-slide" style="background-image: url(three.jpg);
+          background-size: cover; background-position: center;  background-repeat: no-repeat;"></div>
+          <div class="swiper-slide" style="background-image: url(four.jpg);
+          background-size: cover; background-position: center;  background-repeat: no-repeat;"></div>
+          <div class="swiper-slide" style="background-image: url(five.jpg);
+          background-size: cover; background-position: center;  background-repeat: no-repeat;"></div>
+          
+        </div>
+        
+        
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->   
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+   
+    </div>
+    
+</center>
+<!-- Add the script tags from the website -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('.anim', {
+          strings:["an Avid Reader", "a Front-End Developer","a Droid Lover", "a Binge-Watcher"],
+          typeSpeed: 80,
+          backSpeed: 80,
+          loop: true
+        });
+      </script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        loop: true,
+        spaceBetween: 50,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+</body>
+</html>

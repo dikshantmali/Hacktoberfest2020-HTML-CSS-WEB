@@ -1,0 +1,38 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+/* Use the class names to customize the components */
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    width: 480px;
+    height: 400px;
+    background-color: whitesmoke;
+    border: 1px solid rgb(207, 207, 207);
+    padding-bottom: 0%;
+  }
+  .swiper-button-next{
+    color: black;
+    font-weight: 900;
+    padding: 1%;
+    box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.4);
+    background-color: rgb(255, 255, 255);
+
+}
+.swiper-button-prev{
+    color: black;
+    font-weight: 900;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.4);
+
+}
+.swiper-pagination{
+    cursor: pointer;
+    
+}
