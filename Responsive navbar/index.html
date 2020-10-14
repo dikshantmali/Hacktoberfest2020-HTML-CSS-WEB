@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">LOGO</div>
+      <nav class="active">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", event => {
+        let menuToggle = document.getElementById("menu-toggle");
+        let nav = document.querySelector("nav");
+        menuToggle.addEventListener("click", toggleMenu);
+
+        function toggleMenu(event) {
+          event.preventDefault();
+          nav.classList.toggle("active");
+        }
+      });
+    </script>
+  </body>
+</html>
