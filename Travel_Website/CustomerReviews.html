@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Customer Reviews</title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="customerreviews.css">
+    <script src="https://kit.fontawesome.com/1bd3e2a3cf.js" crossorigin="anonymous">
+	</script>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		function validate() {
+			var flag = 1;
+			var fname = document.getElementById("fname").value;
+			var lname = document.getElementById("lname").value;
+			var title = document.getElementById("title").value;
+			var review = document.getElementById("review").value;
+
+			if (fname.trim() == "") {
+				document.getElementById("wfname").style.visibility="visible";
+				flag = 0;
+			}
+			if (lname.trim() == "") {
+				document.getElementById("wlname").style.visibility="visible";
+				flag = 0;
+			}
+			if (title.trim() == "") {
+				document.getElementById("wtitle").style.visibility="visible";
+				flag = 0;
+			}
+			if (review.trim() == "") {
+				document.getElementById("wreview").style.visibility="visible";
+				flag = 0;
+			}
+
+			if (flag == 0)
+				return false;
+			else
+				return true;
+		}
+	</script>
+
+</head>
+<body>
+	<header id="header">
+		<div class="logo"><a href="#">TRIPPIN' <span>Travel Consultants</span></a></div>
+		</header>
+		<br>
+		<div class="topnav">
+			<a href="Home.html">Home</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="TravelBlogs.html">Travel Blogs</a>
+			<a href="TravelPackages.html">Travel Packages</a>
+			<a class="active" href="CustomerReviews.html">Customer Reviews</a>
+			<a href="CustomizedPackage.html">Customized Packages</a>
+		  </div>
+		<br>
+
+		<div class="top_img">
+            <img id="maindp" src="italyy.jpg" style="height: 650px; margin-left: 70px; width: 1300px;align-content: center;"  alt="">
+          </div>
+<br> <br>
+	<div class="info" align="center">
+    	<p style="font-size: 30px;color: whitesmoke"> Please give us your valueable feedback that will help us improve</p>
+    </div>
+	<br> <br>
+
+	<form name="forms" action="messager.html" onsubmit="return validate()">
+		<div class="form">
+		<table cellpadding="10" cellspacing="10" align="center" style="color: whitesmoke;width: 1000px; margin-left: 275px;">
+			<tr>
+				<td>Name</td>
+				<td><input type="text" id="fname" name="fname" placeholder="First Name">&nbsp&nbsp&nbsp
+				<input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="wfname">&nbsp&nbsp&nbsp*Enter first name
+
+				</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<label id="wlname">*Enter last name</label></td>
+				<td style="padding: 0px;"></td>
+			</tr>
+			<tr>
+				<td>Title</td>
+				<td><input type="text" id="title" name="title" placeholder="Enter a Title" maxlength="10"></td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="winput">&nbsp&nbsp&nbsp*Enter a Title</label></td>
+			</tr>
+
+			<tr>
+				<td>Review</td>
+				<td><textarea rows="4" cols="50" placeholder="Enter a Review"></textarea></td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="winput">&nbsp&nbsp&nbsp*Enter a Review</label></td>
+			</tr>
+			<tr>
+				<td><input type="reset" id="cancel" name="cancel" value="Cancel"></td>
+				<td><input type="submit" id="submit" name="submit" value="Submit"></td>
+			</tr>
+		</table>
+		</div>
+	</form>
+
+	<div class="reviews" style="width: 70%; margin-left: 200px;">
+		<p style="font-size: 40px; color:whitesmoke">Some of our customer reviews</p>
+		<div class="cusrev">
+			<div class="sidebar"><img src="italy.jpeg"></div>
+			<label class="review" style="font-size: 20px; color: whitesmoke;">The trip was amazing, a once in a lifetime opportunity and trip. My sister and I spent 16 days in Italy for her high school graduation trip, and we had an unparalleled experience. We went from Venice to Florence/Tuscany to Cinque Terre to Sorrento to Rome. Everything in each city and in between was incredible. The team scheduled activities / events for us where we wanted them to, and left a portion of the trip for us to plan ourselves. Absolutely breathtaking, and the team at Trippin' did a superb job. We loved our day in the vineyards in Tuscany, and the Food Tour (lemon fields, pizza making, cheese making, etc) in Sorrento was incredible. Our tour guides in each city were extremely knowledgeable, and brought each city to life. If ever I was to take another trip, I would definitely go with Trippin'</label>
+			<p class="byname">By traveller Avantika Mishra</p><br><br><br>
+		</div>
+		<br><br><br>
+		<div class="cusrev">
+			<div class="sidebar"><img src="newzealand.jpg"></div>
+			<label class="review" style="font-size: 20px; color: whitesmoke;">This was a trip of a lifetime.  We worked well together, came up with an awesome itinerary for 6 weeks to New Zealand and Australia.  You name it we were going to do it.  This truly was an itinerary with planes, trains & automobiles.  Let's not forget to include boats, helicopter, camel and kayak.  We had such a variety of things planned including wine tasting in both NZ and Australia.  I can't say enough good things about our travel company!!!  In the planning stages they even spoke to us about where and when to go as far as seasons and which way to go whether it be Australia first or NZ. As it turned out, the recommendation to go to New Zealand first was perfect. We were saved the experience of Australia for only a few weeks and maybe being stuck there!  No stone was left unturned, even when the fires occurred in Australia.  Our impact was going to be minimal.<br></label>
+			<p class="byname">By traveller Rohan Shah</p><br><br>
+		</div>
+		<br><br><br>
+		<div class="cusrev">
+			<div class="sidebar"><img src="belize.jpg"></div>
+			<label class="review" style="font-size: 20px; color: whitesmoke;">Our travel planner was so helpful in planning our family's trip to Belize for Spring Break 2020.  And perhaps even more helpful when we decided to cut our vacation short and return to India as a result of the COVID-19 crisis.  Hopefully we will be able to finish our trip in the jungle someday!  Ambergris Caye was a beautiful place with a lot to do.  Our travel planner worked with us to set up the perfect combination of organized trips and the travelers choice days.  We enjoyed getting to know the locals and loved the vibe.  We definitely will be back and use this travel company when we do! We loved snorkeling!  We saw so many wonderful animals and went with an uncle and nephew pair that we really enjoyed.  Our hotel was great as well - lots of room to spread out and enjoy the wonderful weather and sites.  We also went on a food tour one night - highly recommend it!</label><br>
+			<p class="byname">By traveller Lexi Alfred</p><br><br>
+		</div>
+		<br><br><br>
+		<div class="cusrev">
+			<div class="sidebar"><img src="portugal.jpeg" ></div>
+			<label class="review" style="font-size: 20px;color: whitesmoke;">Our trip planner did an absolutely exceptional job planning and managing our recent trip to Portugal. We planned the trip about 2 weeks before we left and she was able to pull it all together perfectly. Everything and every detail exceeded our already high expectations. We flew into Lisbon where she met us at the airport and drove us to the train to continue our travel to Porto. She had given great advice to get all the traveling done at once. We spent 3 days in Porto which included a day trip on a private wine tasting tour in the Duoro Valley.  She was available 100% of the time to help give advice, answer questions etc.  The hotels in both Porto and Lisbon were wonderful. She planned several events including an incredible food walking tour in Porto, a full day trip driving from Porto to Lisbon with several wonderful stops, a cooking class in Lisbon, and another wine tasting day trip to the Alentejo region and trip to Evora. Our trip was just perfect and I give our planner and this travel company top rating. On the last morning of our trip she and her partner picked us up at our hotel and drove us to the airport. I thought this was a really special touch and showed how much she cared to hear about our travels personally. I have planned a number of trips through Trippin' and can easily say that this trip planner is by far one of the best travel agencies I have worked with. They didn't miss a thing and planned a wonderful trip for us.</label><br>
+			<p class="byname">By traveller Mathew </p> <br><br>
+		</div>
+	</div>
+     <br> <br>
+		<!-- Footer -->
+
+	</div>
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+			<h3><span>Contact Us</span></h3>
+
+			<p class="footer-links">
+				<a href="#">Home</a>
+				·
+				<a href="#">Contact</a>
+			</p>
+
+			<p class="footer-company-name">Trippin' Travel Consultancy © 2015</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p><span>21 Dumas Street</span> Surat, Gujarat</p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>+91 78787 32323</p>
+			</div>
+
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:trippintravel@company.com">trippintravel@company.com</a></p>
+			</div>
+
+		</div>
+
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>Want to Go Somewhere? </span>
+				We would love to help you plan the vacation of your dreams, at your budget! Find us at these social media!
+			</p>
+
+			<div class="footer-icons">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+
+			</div>
+
+		</div>
+
+	</footer>
+</body>
+</html>

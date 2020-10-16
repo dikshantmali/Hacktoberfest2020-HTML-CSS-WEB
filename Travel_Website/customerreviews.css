@@ -1,0 +1,58 @@
+.name {
+    padding: 10px;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    color: whitesmoke;
+}
+#submit {
+    border-bottom-style: none;
+    color: white;
+    background-color: rgb(211, 211, 211);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 250px;
+}
+#submit:hover {
+    background-color: #155d66;
+}
+#cancel {
+    border-bottom-style: none;
+    background-color: rgb(211, 211, 211);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+#cancel:hover {
+    background-color: #155d66;
+}
+.winput {
+    color: rgb(243, 105, 105);
+    font-size: 16px;
+    visibility: hidden;
+}
+.cusrev {
+    border: solid 2px whitesmoke;;
+    padding: 20px;
+    font: normal 20px inherit;
+    margin: auto;
+    border-radius: 20px;
+}
+ .review {
+   font-family: 'Noto Serif', serif;
+}
+.sidebar {
+    float: left;
+    width: 28%;
+    color: whitesmoke;
+}
+.byname {
+    float: right;
+    font-style: italic;
+    color: whitesmoke;
+}
+#title {
+    width: 723px;
+    padding: 8px;
+    color: whitesmoke;
+}
