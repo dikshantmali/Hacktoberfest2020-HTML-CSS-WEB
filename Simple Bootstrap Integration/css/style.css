@@ -1,0 +1,24 @@
+
+.card > img {
+
+    max-width: 350px;
+}
+
+.card-group {
+    padding: 90px;
+}
+
+#header {
+    padding-top: 50px;
+    padding-left: 50px;
+    height: 200px;
+    background-image: url("../public/header.jpg"); /*  this is the image from your header/banner */
+}
+
+footer {
+
+    height: 25px;
+    background-color: #f3f3f3;
+    color:gray;
+
+}
