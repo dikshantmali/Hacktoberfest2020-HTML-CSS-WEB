@@ -1,0 +1,20 @@
+<body>
+<p> Learning to code with Hacktoberfest 2020 </p>
+
+<style>
+footer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: #FFC0CB;
+	color: #000000;
+	text-align: center;
+}
+</style>
+
+<footer>
+<p> Footer by SimulatedPanda [https://github.com/SimulatedPanda] </p>
+
+</footer>
+</body>
