@@ -1,0 +1,465 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+    color: #212529;
+}
+
+/* ********** HEADER ********** */
+header{
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0.25rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+header .container nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    display: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color:#999;
+}
+header .container nav a:first-of-type{
+    display: block;
+    background-color: transparent;
+}
+header .container nav a:first-of-type > img {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: #6c757d;
+    border-radius: 50%;
+    transition: background-color .15s ease-in-out;
+}
+header .container nav a:first-of-type > img:hover{
+    background-color:#fff;
+}
+
+/* ********** HEADLINE ********** */
+.headline{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.headline .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 3rem 0;
+}
+.headline .container h1{
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin: 0 0 .5rem 0;
+}
+.headline .container p{
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+}
+.headline .container .secondary_light{
+    color: #6c757d;
+    cursor: pointer;
+    border-color: #6c757d;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #6c757d;
+    border-radius: .25rem;
+    background-color: #fff;
+    padding: .375rem .75rem;
+    transition: color .15s ease-in-out, 
+    border-color .15s ease-in-out, 
+    box-shadow .15s ease-in-out
+    background-color .5s ease-in-out;
+}
+.headline .container .secondary_light:hover{
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.headline .product_design{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 540px;
+    border-radius: 21px;
+    transform: rotate(30deg);
+}
+.headline .product_design_dark{
+    right: 10%;
+    bottom: -30%;
+    background-color: #333;
+}
+.headline .product_design_light{
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+}
+.headline .product_design::before{
+    content: "";
+    top: 10%;
+    left: 10px;
+    right: 10px;
+    bottom: 10%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+
+/* ************ Show Products ************ */
+.show_products{
+    display: flex;
+    flex-flow: column wrap;
+}
+.show_products .row{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.subheadline{
+    display: inline-flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    padding: 1rem 1rem 0 1rem;
+}
+.subheadline_dark{
+    color: #fff;
+    background-color: #343a40;
+}
+.subheadline_dark .product{
+    background-color: #f8f9fa;
+}
+.subheadline_light{
+    color: #000;
+    background-color: #f8f9fa;
+}
+.subheadline_light .product{
+    background-color: #343a40;
+}
+.subheadline_primary{
+    color: #fff;
+    background-color: #007bff;
+}
+.subheadline_primary .product{
+    background-color: #f8f9fa;
+}
+.subheadline_vlight{
+    color: #000;
+    background-color: #f8f9fa;
+}
+.subheadline_vlight .product{
+    background-color: #fff;
+}
+.subheadline .container{
+    display: inline-flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+.subheadline .container h2{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 .5rem 0;
+}
+.subheadline .container p{
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+}
+.subheadline .product{
+    width: 80%;
+    height: 300px;
+    border-radius: 21px 21px 0 0;
+    margin: 0 auto;
+}
+.box_shadow{
+    box-shadow: 0 .125rem .125rem rgba(0, 0, 0, 0.075);
+}
+
+
+/* *********** FOOTER ************* */
+
+footer{
+    width: 100%;
+}
+footer .container{
+    display: block;
+    width: 100%;
+    padding: 3rem 1rem;
+}
+footer .container .row{
+    display: flex;
+    flex-flow: row wrap;
+    color: #6c757d;
+}
+.row div > *{
+    display: block;
+    margin: 0 0 1rem 0;
+}
+footer .container .row h5{ 
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin:0 0 .5rem 0;
+    color: #212529;
+}
+footer .container .row ul{
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+footer .container .row ul li{
+    display: block;
+    list-style: none;
+}
+footer .container .row ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #6c757d;
+    transition: text-decoration .15s ease-in-out;
+}
+footer .container .row ul li a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 767px){
+    /* footer .container .row .col-xs-6{
+        width: 50%;
+    }
+    .col-xs-12{
+        width: 100%;
+    } */
+
+    .col-xs-1{ width: 8.3333%;}
+    .col-xs-2{ width: 16.6667%;}
+    .col-xs-3{ width: 25%;}
+    .col-xs-4{ width: 33.3333%;}
+    .col-xs-5{ width: 41.6667%;}
+    .col-xs-6{ width: 50%;}
+    .col-xs-7{ width: 58.3333%;}
+    .col-xs-8{ width: 66.66667%;}
+    .col-xs-9{ width: 75%;}
+    .col-xs-10{ width: 83.3333%;}
+    .col-xs-11{ width: 91.66667%;}
+    .col-xs-12{ width: 100%;}
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+    header .container nav{
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    header .container nav a{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color:#999;
+        transition: color .15s ease-in-out;
+    }
+
+    header .container nav a:hover{
+        color:#fff;
+    }
+
+    .headline{
+        margin: 1rem;
+        padding: 3rem;
+        background-color: #f8f9fa;
+    }
+    .headline .container{
+        width: 720px;
+        margin: 3rem auto;
+    }
+    .headline_content{
+        margin: 0 auto;
+        max-width: 41.6666vw;
+    }
+    .headline .product_design{
+        display: block;
+    }
+
+    .show_products .row{
+        /* width: 100%; */
+        flex-flow: row nowrap;
+        /* padding-left: 1rem; */
+        margin-left: 1rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+    .show_products .row .subheadline{
+        padding: 3rem 3rem 0 3rem;
+        margin: 0 1rem 0 0;
+    }    
+    .show_products .row .subheadline .container{
+        margin: 1rem 0;
+        flex: 1;
+    }
+
+    footer .container{
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    footer .container .row{
+        flex-flow:  row wrap;
+        justify-content: space-between;
+        width: inherit;
+    }
+    .col-md-1{ width: 8.3333%;}
+    .col-md-2{ width: 16.6667%;}
+    .col-md-3{ width: 25%;}
+    .col-md-4{ width: 33.3333%;}
+    .col-md-5{ width: 41.6667%;}
+    .col-md-6{ width: 50%;}
+    .col-md-7{ width: 58.3333%;}
+    .col-md-8{ width: 66.66667%;}
+    .col-md-9{ width: 75%;}
+    .col-md-10{ width: 83.3333%;}
+    .col-md-11{ width: 91.66667%;}
+    .col-md-12{ width: 100%;}
+}
+@media (min-width: 992px){
+    header .container nav{
+        width: 960px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    header .container nav a{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color:#999;
+        transition: color .15s ease-in-out;
+    }
+
+    header .container nav a:hover{
+        color:#fff;
+    }
+
+    .headline{
+        margin: 1rem;
+        padding: 3rem;
+        background-color: #f8f9fa;
+    }
+    .headline .container{
+        flex-flow: row wrap;
+        width: 960px;
+        margin: 3rem auto;
+    }
+    .headline_content{
+        max-width: 41.6666vw;
+        padding: 3rem;
+    }
+    .headline .product_design{
+        display: block;
+    }    
+
+    .show_products .row{
+        flex-flow: row nowrap;
+        padding-left: 1rem;
+        margin: 0 0 1rem 0;
+    }
+    .show_products .row .subheadline{
+        padding: 3rem 3rem 0 3rem;
+        margin-right: 1rem;
+    }
+    .show_products .row .subheadline .container{
+        margin: 0 auto;
+    }
+
+    footer .container{
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    footer .container .row{
+        flex-flow:  row wrap;
+        justify-content: space-between;
+        width: inherit;
+    }
+    
+    .col-lg-1{ width: 8.3333%;}
+    .col-lg-2{ width: 16.6667%;}
+    .col-lg-3{ width: 25%;}
+    .col-lg-4{ width: 33.3333%;}
+    .col-lg-5{ width: 41.6667%;}
+    .col-lg-6{ width: 50%;}
+    .col-lg-7{ width: 58.3333%;}
+    .col-lg-8{ width: 66.6667%;}
+    .col-lg-9{ width: 75%;}
+    .col-lg-10{ width: 83.333%;}
+    .col-lg-11{ width: 91.6667%;}
+    .col-lg-12{ width: 100%;}
+}
+
+@media (min-width:1200px){
+    .headline{
+        margin: 1rem;
+        padding: 3rem;
+        background-color: #f8f9fa;
+    }
+    .headline .container{
+        flex-flow: row nowrap;
+        width: 1140px;
+        margin: 3rem auto;
+    }
+    .headline_content{
+        padding: 3rem;
+        max-width: 41.6666vw;
+    }
+    .headline .product_design{
+        display: block;
+    } 
+    
+    .col-xl-1{ width: 8.3333%;}
+    .col-xl-2{ width: 16.6667%;}
+    .col-xl-3{ width: 25%;}
+    .col-xl-4{ width: 33.3333%;}
+    .col-xl-5{ width: 41.6667%;}
+    .col-xl-6{ width: 50%;}
+    .col-xl-7{ width: 58.3333%;}
+    .col-xl-8{ width: 66.6667%;}
+    .col-xl-9{ width: 75%;}
+    .col-xl-10{ width: 83.333%;}
+    .col-xl-11{ width: 91.6667%;}
+    .col-xl-12{ width: 100%;}
+}
