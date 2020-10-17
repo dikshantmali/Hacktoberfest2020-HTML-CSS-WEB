@@ -1,0 +1,15 @@
+<main class="container mt-3">
+        <h2>ADD LISTS</h2>
+        <div class="list-section d-flex mt-4">
+            <input type="text" class="form-control w-25">
+            <button type="button"
+            class="btn btn-primary ml-3 mb-2"
+            {{on "click" addItem}}
+             > Submit </button>
+        </div>
+        <ul class="list-group">
+            {{#each this.todoservice.itemList as |item| }}
+                <GeneralComponent::Item @val={{item}} />
+            {{/each}}
+        </ul>
+</main>
