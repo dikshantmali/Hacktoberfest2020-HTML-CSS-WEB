@@ -4,7 +4,7 @@
 
 
 # Hacktoberfest2020-HTML-CSS-WEB
-
+Welcome to the Hacktoberfest 2020!
 Anyone can add any type of html-css web page depends on you. It can be anything like simple form, adding parallax so that people can understand how to use parallax, adding flex box, adding navbar, adding footer for website like that so that the people who are beginner can learn let say how to add navbar, how to generate shadow for an image,how to get sticky navbar,how to style various divs, adding button anything like that.You can also add any basic template page created by you like home page, contact us page, about us page so that anyone can use it with little modification. 
 
 
