@@ -1,0 +1,123 @@
+ #title {
+  background-color: #A4EA96;
+  color: #fff;
+}
+.container-fluid{
+  padding: 3% 15% 15%;
+
+}
+body{
+  font-family: sans-serif;
+}
+/* navigation bar */
+.navbar-brand{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+h3{
+  font-family: bold;
+  font-size: 2rem;
+}
+h2{
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.navbar{
+  padding: 0 0 4.5rem;
+
+
+}
+.nav-item{
+  padding: 0 18px;
+}
+.nav-link{
+  font-size: 1;
+}
+.btn{
+  margin: 3% 4%;
+}
+.img{
+  width: 60%;
+  transform: rotate(25deg);
+  right: 30%;
+  position: absolute;
+}
+
+/* features section */
+#features{
+  position: absolute;
+  background-color: #fff;
+  padding: 7% 15%;
+  position: relative;
+
+}
+.feature-box{
+  text-align: center;
+  padding: 5%;
+}
+.icon{
+  color: #A4EA96;
+  margin-bottom: 1rem;
+}
+.icon:hover{
+  color: #C8F2C0;
+}
+
+p{
+  color:black;
+}
+/* testimonial section */
+#testimonials{
+
+  text-align: center;
+  background-color:#A4EA96;
+  color: #fff;
+}
+.testimonial-image{
+  width: 20%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.carousel-item{
+  padding: 7% 15%;
+}
+#press{
+  background-color:#A4EA96;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+/*About us*/
+#About-us{
+  padding: 10%;
+}
+.About-col{
+  padding: 3% 2%;
+  text-align: center;
+}
+/* media query brakpoints */
+@media (max-width: 1028px) {
+#title{
+  text-align: center;
+}
+  .img{
+    align-items: center;
+    position: static;
+    transform: rotate(0);
+  }
+
+}
+
+/* footer section */
+#footer{
+  background-color: #A4EA96;
+  text-align: center;
+  padding: 7% 15%;
+}
+.ss{
+  margin: 20px 10px;
+}
