@@ -1,0 +1,27 @@
+#left {
+    background-color: blue;
+    float: left;
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 35%;
+}
+
+#right {
+    background-color: red;
+    float: right;
+    margin-right: 15%;
+    margin-top: 10%;
+    width: 35%;
+}
+
+#next {
+    bottom: 10%;
+    right: 15%;
+    position: absolute;
+}
+
+#previous {
+    bottom: 10%;
+    left: 15%;
+    position: absolute;
+}

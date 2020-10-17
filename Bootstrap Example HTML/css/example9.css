@@ -1,0 +1,23 @@
+.container {
+    margin-top: 15%;
+}
+
+#left {
+    background-color: green;
+}
+
+#right {
+    background-color: red;
+}
+
+#previous {
+    bottom: 10%;
+    left: 15%;
+    position: absolute;
+}
+
+#next {
+    bottom: 10%;
+    right: 15%;
+    position: absolute;
+}
