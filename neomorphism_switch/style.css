@@ -1,0 +1,101 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+\:root {
+  font-size: calc(48px + 24 * (100vw - 320px) / (1280 - 320));
+}
+
+body,
+form {
+  display: flex;
+}
+
+body,
+input {
+  font: 1em/1.5 sans-serif;
+}
+
+body {
+  --l1: white;
+  --l2: #e3e4e8;
+  --l3: #979baa;
+  --p: #0bda0b;
+  --pT: rgba(11, 218, 11, 0);
+  background-color: var(--l2);
+  height: 100vh;
+}
+
+form,
+input[type='range'] {
+  margin: auto;
+}
+
+form {
+  height: 6em;
+}
+
+input[type='range'],
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input[type='range'] {
+  background-color: transparent;
+  border-radius: 0.75em;
+  box-shadow: -0.1em -0.1em 0.1em var(--l3) inset, 0.1em 0.1em 0.1em var(--l1) inset;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  height: 1.5em;
+  width: 6em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type='range']:focus {
+  outline: transparent;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  border: 0;
+  background: linear-gradient(var(--p), var(--p)) 70% 50%/20% 5% no-repeat,
+    linear-gradient(var(--l2), var(--l2)) 70% 50%/20% 15% no-repeat,
+    radial-gradient(100% 100% at 50% 50%, var(--pT) 14%, var(--p) 15% 19%, var(--pT) 20%), var(--l2);
+  border-radius: 50%;
+  box-shadow: -0.25em 0 0.5em var(--l3), 0.25em 0 0.5em var(--l1);
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type='range']::-moz-range-thumb {
+  border: 0;
+  background: linear-gradient(var(--p), var(--p)) 70% 50%/20% 5% no-repeat,
+    linear-gradient(var(--l2), var(--l2)) 70% 50%/20% 15% no-repeat,
+    radial-gradient(100% 100% at 50% 50%, var(--pT) 14%, var(--p) 15% 19%, var(--pT) 20%), var(--l2);
+  border-radius: 50%;
+  box-shadow: -0.25em 0 0.5em var(--l3), 0.25em 0 0.5em var(--l1);
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type='range']::-moz-focus-outer {
+  border: 0;
+}
+
+label {
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
