@@ -6,7 +6,8 @@
 
 
 <form>
-<fieldset><legend>Personal</legend>
+<fieldset><legend>Questions</legend>
+<form action="thank-you.php" method="post">
 <h2> Name</h2>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="Jane"><br>
@@ -29,7 +30,7 @@
   <label for="choice2"> Baby Pandas</label><br>
   <input type="checkbox" id="choice3" name="choice3" value="Giant Pandas">
   <label for="choice3"> Giant Pandas</label> <br>
-  
+  <input type="submit">
 </fieldset>
   
 </form>
