@@ -3,7 +3,7 @@
 <body>
 
 Thank you <?php echo $_GET["fname"]; ?><br>
-You like pandas: <?php echo $_GET["perference"]; ?>
+We appreciate you completing this panda survey
 
 </body>
 </html>
