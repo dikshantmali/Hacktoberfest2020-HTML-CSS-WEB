@@ -1,0 +1,9 @@
+<!DOCTYPE HTML>
+<html>  
+<body>
+
+Thank you <?php echo $_GET["fname"]; ?><br>
+You like pandas: <?php echo $_GET["perference"]; ?>
+
+</body>
+</html>
