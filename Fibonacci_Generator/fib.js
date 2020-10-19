@@ -27,4 +27,3 @@ function fib(n) {
 num = prompt("Enter a positve integer:" , "")
 
 fib(num);
-
