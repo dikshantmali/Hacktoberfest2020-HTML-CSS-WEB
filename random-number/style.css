@@ -1,0 +1,54 @@
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    border-width: 2px;
+}
+p {
+    margin: 10px;
+}
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(223, 218, 181);
+    font-style: normal;
+    font-family: 'Open Sans', 'Segoe UI Light', 'Roboto';
+  
+}
+.botao {
+    font-size: larger;
+    color: rgb(65, 71, 10);
+    background-color:  rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(40, 47, 7);
+    border-radius: 2pt 30pt 30pt 2pt;
+    cursor: pointer;
+    margin-left: 5%;
+}
+.barra {
+    border-style: solid;
+    border-color: rgba(10, 23, 71, 1);
+    border-radius: 2pt 30pt 30pt 2pt;
+    font-variant-numeric: normal;
+    margin-left:5%;
+    width: 90pt;
+}
+
+#result {
+    color: whitesmoke;
+    font-size: 60pt;
+    size: 5pt;
+    max-width: max-content;
+    background-color: rgba(90, 98, 12, 0.63);
+    border-radius: 100%;
+    padding-right: 10pt;
+    padding-left: 10pt;
+    border-right-style: solid;
+    border-color: rgb(52, 58, 1);
+    border-bottom: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 10px rgba(21, 17, 56, 0.274);
+}
+#erro {
+    color: red;
+}
