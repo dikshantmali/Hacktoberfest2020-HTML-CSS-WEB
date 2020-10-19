@@ -1,0 +1,21 @@
+table {
+    border: 1px solid #ff9900;
+    width: 25%;
+}
+
+caption {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+th {
+    border: 1px solid #009900;
+    color: #009900;
+}
+
+td {
+    border: 1px solid blue;
+    text-align: center;
+    color: black;
+}
