@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title> Example of Bootstrap 4 Integration</title>
+        <!-- Importing Bootstrap 4 CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!-- personalized css -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        
+
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <!-- Content here -->
+
+            <div class="row"> <!-- necessary row -->
+
+            
+                <!-- This is the header or banner of the webpage -->
+                <div class="col-12" id="header">
+                    <h1 class="text-uppercase font-weight-bold text-light" > This is my title </h1>
+                </div>
+
+                <!-- This is the responsive navigation bar -->
+
+                    <nav class="col-12 navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Home</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Link1 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link3</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </nav>
+
+                <!-- These are 3 responsive content panels/cards  -->
+
+                <div class="card-group">
+                    <div class="card pt-4">
+                      <img class="card-img-top rounded-circle mx-auto" src="public/cat1.jpg" alt="A little cat">
+                      <div class="card-body">
+                        <h5 class="card-title">Title 1</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a nunc sapien. Morbi rhoncus turpis in turpis posuere, a maximus ex efficitur. Praesent non arcu id erat iaculis congue id vel erat. Pellentesque rutrum, felis vitae tempus consequat, dolor dolor rutrum libero, et feugiat purus dui nec sapien.</p>
+                      </div>
+                    </div>
+                    <div class="card pt-4">
+                      <img class="card-img-top rounded-circle mx-auto" src="public/tiger.jpg" alt="A bigger cat">
+                      <div class="card-body">
+                        <h5 class="card-title">Title 2</h5>
+                        <p class="card-text text-justify">Proin sed dui imperdiet, dapibus enim vitae, dignissim erat. Morbi at neque eget risus condimentum tempus quis et ligula. Mauris at tellus at risus consequat dignissim. Nunc bibendum lorem lacus. Aliquam erat volutpat. Phasellus id mollis tellus, et molestie ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                      </div>
+                    </div>
+                    <div class="card pt-4">
+                      <img class="card-img-top rounded-circle mx-auto" src="public/cat2.jpg" alt="Another cat">
+                      <div class="card-body">
+                        <h5 class="card-title">Title 3</h5>
+                        <p class="card-text text-justify">Donec elementum ornare risus non imperdiet. Nam varius nisi nunc, vitae laoreet turpis fringilla in. Aliquam pellentesque sit amet libero non ornare. Vestibulum vitae urna augue. Morbi ornare rutrum nulla quis hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- This is a footer -->
+
+                <footer class=" col-12 text-center float-bottom">
+                    <label> Example developed with &hearts; by @jeangarcia (github)</label>
+                </footer>
+
+            </div>
+        </div>
+        
+    </body>
+</html>
