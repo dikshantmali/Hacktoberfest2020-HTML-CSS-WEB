@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam program 1</title>
+	<script type="text/javascript">
+		var q2=" ";
+		var q1=" ";
+		var q3=" ";
+		var an="";
+		var a1;
+		var final;
+		var final2;
+		var d;
+		function change(arr) {
+			a1=document.getElementById('country1').value;
+			var el = document.getElementById('sel');
+				el.options.length = 0;
+				for(var i = 0; i< arr.length; i++ ) {
+					el.options[el.options.length] = new Option(arr[i]);
+				}
+			}
+			function change1(arr) {
+			a1=document.getElementById('country2').value;
+			var el = document.getElementById('sel');
+				el.options.length = 0;
+				for(var i = 0; i< arr.length; i++ ) {
+					el.options[el.options.length] = new Option(arr[i]);
+				}
+			}
+		function calculate()
+		{
+			an=document.getElementById('sel').value;
+			if(q1==" " && q3==" ")
+			{
+				final="A:Wrong";
+			}
+			else if (q2!=" ")
+			{
+				final="A:Wrong";
+			}
+			else if(q1!=" " && q3==" ")
+			{
+				final="A:Wrong";
+			}
+			else if(q1==" " && q3!=" ")
+			{
+				final="A:Wrong";
+			}
+			else
+			{
+				final="A:Right";
+			}
+			if (a1=="USA" && an=="Washington") {
+				final2="B:Right"
+			}
+			else if (a1=="India" && an=="Delhi")
+			{
+				final2="B:Right";
+			}
+			else
+			{
+				final2="B:Wrong";
+			}
+			d=final+"\n"+final2;
+			document.getElementById('text1').value=d;
+		}
+		function manipal(){
+			q2=document.getElementById('ans2').value;
+		}
+		function ben(){
+			q1=document.getElementById('ans').value;
+		}
+		function mum(){
+			q3=document.getElementById('ans1').value;
+		}
+	</script>
+</head>
+<body>
+<form>
+	<table border="2">
+		<tr>
+			<th colspan="2">Quiz</th>
+		</tr>
+		<tr>
+			<td>A.Select the state capital of India</td>
+			<td><input type="checkbox" id="ans" value="Bengaluru" onclick='ben()'>Bengaluru
+				<input type="checkbox" id="ans1" value="Mumbai" onclick='mum()'>Mumbai
+				<input type="checkbox" id="ans2" value="Manipal" onclick='manipal()'>Manipal</td>
+		</tr>
+		<tr>
+			<td>B.Select the state capital:
+				<input type="radio" id="country1" value="India" onclick='change(["Delhi", "Mumbai"]) '>India
+				<input type="radio" id="country2" value="USA" onclick='change1(["Washington", "California"]) '>USA</td>
+			<td><select id="sel"></select></td>
+		</tr>
+		<tr>
+			<th colspan="2"><input type="button" name="Take Quiz" value="Take Quiz" onclick='calculate()'></th>
+		</tr>
+		<tr>
+			<th colspan="2"><textarea name="Comments" rows="3" cols="30" id="text1"></textarea>></th>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
