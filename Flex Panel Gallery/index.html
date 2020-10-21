@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>CSS Panel Gallery</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="panels">
+            <div class="panel panel1">
+                <p>Move Fast </p>
+                <p> </p>
+                <p>Break Things</p>
+            </div>
+            <div class="panel panel2">
+                <p>Work Hard</p>
+                <p>Have Fun</p>
+                <p>Make History</p>
+            </div>
+            <div class="panel panel3">
+                <p>Think</p>
+                <p></p>
+                <p>Different</p>
+            </div>
+            <div class="panel panel4">
+                <p>One</p>
+                <p>Story</p>
+                <p>Away</p>
+            </div>
+            <div class="panel panel5">
+                <p>Don't Be</p>
+                <p></p>
+                <p>Evil</p>
+            </div>
+        </div>
+
+        <script>
+            const panels=document.querySelectorAll('.panel');
+     
+            function toggleOpen(){
+                this.classList.toggle('open');
+            } 
+     
+            function toggleActive(e) 
+            {
+             console.log(e.propertyName);
+                 if (e.propertyName.includes('flex')) 
+                {
+                    this.classList.toggle('open-active');
+                 }
+            }
+            
+            panels.forEach(panel=>panel.addEventListener('click',toggleOpen));
+            panels.forEach(panel=>panel.addEventListener('transitionend',toggleActive));
+            
+        </script>
+    </body>
+</html>
