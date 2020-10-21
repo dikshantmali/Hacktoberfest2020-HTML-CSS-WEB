@@ -1,0 +1,159 @@
+/**************** review_part css start ****************/
+.review_part {
+  @include background("../img/review_bg.png");
+  position: relative;
+  z-index: 1;
+  padding: 140px 0 280px;
+  @media #{$tab}{
+    padding: 70px 0;
+  }
+  @media #{$medium_device}{
+    padding: 80px 0 160px
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 25, 171);
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  .client_review_single {
+    .Quote {
+      width: 59px;
+      height: auto;
+      margin: 0 auto;
+      padding-bottom: 42px;
+    }
+  }
+
+
+  .client_review_part {
+    position: relative;
+    z-index: 1;
+  }
+
+  .client_review_single {
+    text-align: center;
+
+    .client_review_text {
+      padding-left: 50px;
+
+      @media #{$small_mobile} {
+        padding-left: 0px;
+      }
+
+      @media #{$large_mobile} {
+        padding-left: 0px;
+      }
+
+      @media #{$tab_device} {
+        padding-left: 0px
+      }
+
+      @media #{$medium_device} {}
+      p {
+        font-size: 18px;
+        font-family: $font_stack_2;
+        color: $white_color;
+        line-height: 1.9;
+
+        @media #{$small_mobile} {
+          font-size: 16px;
+        }
+
+        @media #{$large_mobile} {
+          font-size: 16px;
+        }
+
+        @media #{$tab_device} {
+          font-size: 16px;
+        }
+
+        @media #{$medium_device} {}
+      }
+
+    }
+  }
+
+  h4 {
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $white_color;
+    margin-bottom: 50px;
+    @media #{$small_mobile} {
+      margin-top: 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media #{$large_mobile} {
+      margin-top: 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media #{$tab_device} {
+      margin-top: 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media #{$medium_device} {}
+
+    span {
+      font-family: $font_stack_2;
+      font-size: 14px;
+      color: $white_color;
+      font-weight: 400;
+    }
+  }
+
+  .owl-dots {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 60px;
+
+    @media #{$small_mobile} {
+      padding-left: 0px;
+    }
+
+    @media #{$large_mobile} {
+      padding-left: 0px;
+    }
+
+    @media #{$tab_device} {
+      padding-left: 0px;
+    }
+
+    @media #{$medium_device} {}
+
+    button.owl-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 7px;
+      position: relative;
+      z-index: 1;
+      background-color: #9c9bd9;
+
+      &.active {
+        border-radius: 50%;
+        background-color: $white_color;
+      }
+
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

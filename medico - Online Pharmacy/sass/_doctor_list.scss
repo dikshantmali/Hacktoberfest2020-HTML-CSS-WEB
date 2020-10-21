@@ -1,0 +1,121 @@
+/**************** chefs_part css start ****************/
+.doctor_part {
+    overflow: hidden;
+    @media #{$tab}{
+        padding: 70px 0 55px;
+    }
+    @media #{$medium_device}{
+    
+    }
+    .single_blog_item {
+        position: relative;
+        @include transform_time(0.5s);
+
+        .single_blog_img {
+            position: relative;
+
+            .social_icon {
+                position: absolute;
+                background-color: rgba(255, 255, 255, .9);
+                opacity: 1;
+                visibility: visible;
+                @include transform_time(0.5s);
+                right: -30px;
+                text-align: center;
+                padding: 10px 0;
+                bottom: 30px;
+                opacity: 0;
+                visibility: hidden;
+                a {
+                    text-align: center;
+                    color: #242429;
+                    padding: 10px 20px;
+                    display: inline-block;
+                    &:hover {
+                        color: $btn_bg !important;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .social_icon {
+                opacity: 1;
+                visibility: visible;
+                right: 0;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            h3 {
+                color: $btn_bg !important;
+            }
+        }
+
+        @media #{$tab} {
+            margin-bottom: 40px;
+
+            .single_blog_img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media #{$medium_device} {}
+
+        h3 {
+            margin-bottom: 19px !important;
+            font-size: 22px;
+            font-weight: 700;
+            @media #{$tab} {
+                margin-bottom: 10px !important;
+            }
+    
+            @media #{$medium_device} {
+                margin-bottom: 10px !important;
+            }
+        }
+        p{
+            line-height: 14px;
+        }
+
+    }
+
+    .single_blog_text {
+        @include transform_time(0.5s);
+        padding: 37px 0 0;
+        border: 0px solid transparent !important;
+        background-color: $white_color;
+
+        @media #{$tab} {
+            padding: 22px 0 0;
+        }
+
+        @media #{$medium_device} {
+            padding: 27px 0 0;
+        }
+
+    }
+    .nice-select .option {
+        color: #000 !important;
+    }
+}
+.single_page_doctor_part{
+    padding: 140px 0 110px;
+    @media #{$tab}{
+        padding: 70px 0 50px;
+    }
+    @media #{$medium_device}{
+        padding: 80px 0 60px;
+    }
+    .single_blog_item{
+        margin-bottom: 30px;
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+        @media #{$medium_device}{
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,208 @@
+/**************** service_part css start ****************/
+.feature_part {
+   padding: 140px 0 515px;
+
+   @media #{$tab} {
+      padding: 70px 0;
+   }
+
+   @media #{$medium_device} {
+      padding: 80px 0 150px;
+   }
+
+   .section_tittle {
+      margin-bottom: 0px;
+   }
+
+   .single_feature_text {
+      h2 {
+         font-size: 42px;
+         line-height: 1.222;
+         margin-bottom: 30px;
+         @include transform_time(1s);
+
+         @media #{$small_mobile} {
+            margin-top: 0px;
+            font-size: 25px;
+            margin-bottom: 15px;
+         }
+
+         @media #{$large_mobile} {
+            margin-top: 0px;
+            font-size: 30px;
+            margin-bottom: 15px;
+         }
+
+         @media #{$tab_device} {
+            font-size: 30px;
+         }
+
+         @media #{$medium_device} {
+            margin-top: 0px;
+            font-size: 35px;
+         }
+      }
+
+      p {
+         line-height: 1.9;
+         color: rgb(127, 127, 127);
+         @include transform_time(1s);
+      }
+
+      .btn_2 {
+         margin-top: 45px;
+         padding: 13.5px 38px;
+
+         @media #{$small_mobile} {
+            margin-top: 25px;
+         }
+
+         @media #{$large_mobile} {
+            margin-top: 25px;
+         }
+
+         @media #{$tab_device} {
+            margin-top: 25px;
+         }
+
+         @media #{$medium_device} {
+            margin-top: 25px;
+         }
+      }
+   }
+
+   .single_feature_part {
+      @include transform_time(1s);
+      position: relative;
+
+      @media #{$tab} {
+         margin-top: 0;
+      }
+
+      @media #{$medium_device} {
+         margin-top: 25px;
+      }
+
+
+      span {
+         margin-bottom: 17px;
+         display: inline-block;
+         position: relative;
+         z-index: 1;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         text-align: center;
+         background-color: $icon_bg;
+         display: inline-block;
+         line-height: 50px;
+         @include transform_time(1s);
+
+         @media #{$small_mobile} {
+            margin-bottom: 10px;
+         }
+
+         @media #{$large_mobile} {
+            margin-bottom: 7px;
+         }
+
+         @media #{$tab_device} {
+            margin-bottom: 15px;
+         }
+
+         @media #{$medium_device} {}
+
+         i {
+            color: $icon_color;
+            font-size: 24px;
+            @include transform_time(1s);
+         }
+
+         img {
+            width: 25px;
+         }
+      }
+
+      h4 {
+         font-weight: 600;
+         font-size: 20px;
+         margin-bottom: 20px;
+         position: absolute;
+         top: 13px;
+         left: 75px;
+
+         @media #{$small_mobile} {
+            margin-bottom: 15px;
+            top: 12px;
+            left: 74px;
+         }
+
+         @media #{$large_mobile} {
+            top: 15px;
+            left: 74px;
+            
+         }
+
+         @media #{$tab_device} {
+            margin-bottom: 15px;
+            top: 17px;
+            left: 82px;
+         }
+
+         @media #{$medium_device} {}
+      }
+
+      p {
+         color: $font_3;
+         line-height: 1.8;
+         font-size: 15px;
+      }
+   }
+
+   .single_feature {
+      margin-top: 90px;
+
+      @media #{$tab} {
+         margin-top: 30px;
+      }
+
+      @media #{$large_mobile} {
+         width: 50%;
+         float: left;
+         padding: 0 15px;
+      }
+
+      @media #{$tab_device} {
+         width: 50%;
+         float: left;
+         padding: 0 15px;
+      }
+
+      @media #{$medium_device} {
+
+      }
+
+      @media #{$medium_device} {
+         margin-top: 30px;
+      }
+   }
+}
+
+@media #{$tab} {
+   .single_feature_img {
+      text-align: center;
+      margin: 30px 0 0;
+  }
+}
+@media #{$medium_device} {
+   
+}
+.single_feature_page{
+   padding: 140px 0 0;
+   @media #{$tab} {
+      padding: 70px 0 0;
+   }
+   @media #{$medium_device} {
+      padding: 80px 0 0;
+   }
+}

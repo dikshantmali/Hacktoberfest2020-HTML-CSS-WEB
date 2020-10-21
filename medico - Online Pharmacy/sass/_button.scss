@@ -1,0 +1,159 @@
+/* Main Button Area css
+============================================================================================ */
+.submit_btn {
+	width: auto;
+	display: inline-block;
+	background: $white_color;
+	padding: 0px 50px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 50px;
+	border-radius: 5px;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	border: 1px solid $border_color;
+	cursor: pointer;
+	@include transform_time(0.5s);
+
+	&:hover {
+		background: transparent;
+
+	}
+}
+
+.btn_1 {
+	display: inline-block;
+	padding: 10.5px 36px;
+	font-size: 14px;
+	color: $black_color;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	text-transform: capitalize;
+	border: 1px solid $border;
+	border-radius: 2px;
+	font-family: $font_stack_2;
+	@extend %custom_btn_bg_1;
+	background-size: 200% auto;
+	&:hover {
+		background-color: $btn_bg !important;
+		color: $white_color;
+		background-size: 200% auto;
+	}
+
+	@media #{$small_mobile} {
+		padding: 10px 30px;
+		margin-top: 25px;
+	}
+
+	@media #{$large_mobile} {
+		padding: 10px 30px;
+		margin-top: 30px;
+	}
+
+	@media #{$tab_device} {
+		padding: 10px 30px;
+		margin-top: 30px;
+	}
+
+	@media #{$medium_device} {}
+
+}
+
+.btn_2 {
+	display: inline-block;
+	padding: 16px 45px;
+	text-align: center;
+	font-size: 14px;
+	color: $white_color;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	text-transform: uppercase;
+	border-radius: 2px;
+	font-family: $font_stack_1;
+	background-size: 200% auto;
+	@extend %custom_btn_bg_1;
+	border-radius: 5px;
+	display: inline-block;
+	&:hover {
+		color: $white_color;
+		background-position: center right;
+	}
+
+	@media #{$tab_device} {
+
+	}
+
+	@media #{$medium_device} {
+		
+	}
+
+}
+
+/*=================== custom button rule start ====================*/
+
+.button {
+	display: inline-block;
+	border: 1px solid transparent;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 12px 54px;
+	border-radius: 4px;
+	color: $white_color;
+	border: 1px solid $border_color;
+	text-transform: uppercase;
+	background-color: $btn_bg;
+	cursor: pointer;
+	@include transform_time(0.5s);
+
+	@media(max-width: 767px) {
+		font-size: 13px;
+		padding: 9px 24px;
+	}
+
+	&:hover {
+		color: $white_color;
+	}
+
+
+	&-link {
+		letter-spacing: 0;
+		color: #3b1d82;
+		border: 0;
+		padding: 0;
+
+		&:hover {
+			background: transparent;
+			color: #3b1d82;
+		}
+	}
+
+	&-header {
+		color: $white_color;
+		border-color: $border_color;
+
+		&:hover {
+			background: #b8024c;
+			color: $white_color;
+		}
+	}
+
+	&-contactForm {
+		color: $white_color;
+		border-color: $border_color;
+		padding: 12px 25px;
+
+		&:hover {
+			// border-color: $title-color;
+			// background: $title-color;
+			// color: $white_color;
+		}
+	}
+}
+
+
+/* End Main Button Area css
+============================================================================================ */
