@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"> 
+	<title>FORM</title>
+
+  <style>
+      body{
+    margin:0;
+    padding:0;
+    background-color: ;
+  }
+
+        .registration-form
+        {
+           width: 85%;
+            max-width: 500px;
+              background: skyblue;
+             position: absolute;
+             top: 50%;
+               left: 50%;
+            transform: translate(-50%,-50%);
+             padding:30px 40px;
+
+            text-align: center;
+            
+           font-family: "Montserrat", sans-serif;
+
+        }
+          .registration-form h1
+          {
+            padding-top: 50px;
+    font-weight: 200;
+    font-style: sans-serif;
+  }
+  .registration-form label
+  {
+    display:block;
+    text-align: left;
+    color: #333;
+    text-transform:uppercase;
+    font-family: sans-serif;
+    font-size:16px;
+  }
+input[type='text']{
+  width:80%;
+  height:30px;
+  font-size:12px;
+  margin-top:6px;
+}
+    </style>
+</head>
+<body>
+  <div class="registration-form">
+    <h1>Register Here</h1>
+    <form method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <label for="quantity">phone number:</label>
+  <input type="number" id="quantity" name="quantity"><br><br>
+  <button type="submit" value="Submit">Submit</button>
+
+</form>
+</body>
+</html>
