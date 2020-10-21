@@ -1,0 +1,123 @@
+.our_depertment {
+    @include background("../img/review_bg.png");
+    position: relative;
+    z-index: 1;
+    @media #{$tab} {
+        padding: 70px 0 30px;
+    }
+
+    @media #{$medium_device} {
+
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(28, 25, 171);
+        opacity: 0.8;
+        z-index: -1;
+    }
+
+    .depertment_content {
+        background-color: $white_color;
+        padding: 100px 0;
+        margin-top: -652px;
+        @media #{$tab} {
+            margin-top: 0;
+            background-color: transparent;
+            padding: 0;
+        }
+
+        @media #{$medium_device} {
+            margin-top: -170px;
+            padding: 80px 15px 20px;
+        }
+
+        h2 {
+            font-size: 44px;
+            line-height: 30px;
+            font-weight: 700;
+            margin-bottom: 80px;
+            @media #{$tab} {
+                margin-bottom: 60px;
+                color: $white_color;
+                line-height: 50px;
+            }
+    
+            @media #{$medium_device} {
+                font-size: 35px;
+            }
+        }
+    }
+
+
+    .single_our_depertment {
+        position: relative;
+        border: 1px solid #f2f6f8;
+        padding: 60px 15px 32px;
+        margin-bottom: 60px;
+        @include transition(1s);
+        @media #{$tab} {
+            margin-top: 0;
+            background-color: $white_color;
+            margin-bottom: 40px;
+        }
+
+        @media #{$medium_device} {
+            
+        }   
+        .our_depertment_icon {
+            height: 50px;
+            width: 50px;
+            background-color: #f2f6f8;
+            display: inline-block;
+            line-height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: -25px;
+
+            img {
+                max-width: 25px;
+            }
+        }
+
+        h4 {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 17px;
+            margin-bottom: 27px;
+            @include transition(1s);
+        }
+
+        p {
+            @include transition(1s);
+        }
+
+        &:hover {
+            background-color: $btn_bg;
+            border: 1px solid $btn_bg;
+
+            h4,
+            p {
+                color: $white_color;
+            }
+
+        }
+    }
+
+}
+.single_pepertment_page{
+    margin-top: 520px;
+    @media #{$tab} {
+        margin-top: 70px;
+     }
+     @media #{$medium_device} {
+        margin-top: 150px;
+     }
+}

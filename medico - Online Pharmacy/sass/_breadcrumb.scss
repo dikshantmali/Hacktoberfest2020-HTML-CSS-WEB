@@ -1,0 +1,57 @@
+.breadcrumb_bg {
+	@include background("../img/breadcrumb.png");
+	background-size: inherit;
+}
+
+.breadcrumb_part {
+	position: relative;
+	z-index: 1;
+	height: 400px;
+	.breadcrumb_iner {
+		height: 400px;
+		width: 100%;
+		display: table;
+		.breadcrumb_iner_item {
+			display: table-cell;
+			vertical-align: middle;
+
+			h2 {
+				color: $white_color;
+				font-size: 100px;
+				font-weight: 700;
+				text-transform: capitalize;
+				text-align: center;
+				@media #{$small_mobile} {
+					font-size: 35px;
+				}
+
+				@media #{$large_mobile} {
+					font-size: 35px;
+				}
+
+				@media #{$tab_device} {
+					font-size: 40px;
+				}
+
+				@media #{$medium_device} {}
+			}
+
+			p {
+				font-size: 15px;
+				color: $white_color;
+				text-transform: capitalize;
+			}
+
+			span {
+				margin: 0px 5px;
+				font-size: 12px;
+			}
+
+		}
+	}
+
+}
+
+.breadcrumb {
+	margin-bottom: 0px !important;
+}
