@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Alpine Student Bank</title>
+        <script src="interest.js"></script>
+    </head>
+    <body style="background-color: gray">
+
+            <h1>Interest Calculator</h1><br>
+            <label for="Principal">Principal</label>
+            <input type="text" id="principal" name="principal" style="float: right"><br><br>
+
+            <label for="ROI%">ROI%</label>
+            <input type="text" id="ROI" name="ROI" style="float: right"><br><br>
+
+            <label for="Tenure Type">Tenure Type</label>
+            <input type="radio" id="year" name="tenure" value= "YEARLY" checked >Yearly
+            <input type="radio"  id="month" name="tenure" value = "MONTHLY">Monthly <br><br>
+           
+
+            <label for="Tenure">Tenure</label>
+            <input type="text" id="tenure_text" name="tenure_text" style="float: right" ><br><br>
+
+            <input type="button" value="Get Interest" id="get_interest" name="get_interest"  onclick="get_data()"><br><br>
+
+            <h1>Result</h1><br>
+
+            <label for="Simple Interest">Simple Interest</label><br>
+
+            <input readonly type="text" id="si" value = "" name="si" style="border: 2px solid black;
+            background-color: white; width: 30%; height: 20px; float: left"><br><br>
+
+            <label for="Compound Interest">Compound Interest</label><br>
+
+            <input readonly type="text" id="ci"  value = "" name="ci" style="border: 2px solid black;
+            background-color: white; width: 30%; height: 20px; float: left"><br><br>
+    </body>
+</html>
+
+<script>
+    function get_data(){
+    var p;
+    var r;
+    var t;
+
+    var yearly_tenure;
+    var monthly_tenure;
+
+    var tenure_value;
+
+
+    var si;
+    var ci;
+    try{
+        p = document.getElementById("principal").value;
+        r = document.getElementById("ROI").value;  
+        t = document.getElementById("tenure_text").value;
+
+        yearly_tenure = document.getElementById("year").checked;
+        if(yearly_tenure){
+            //converting yearly trnure to montly tenure
+            t = 12 * t;
+        }else if(monthly_tenure){
+             //do nothing, tenure is already in months
+        }
+
+        //
+        /*
+        tenure_value = document.getElementsByName("tenure");
+        for(var i = 0 ; i < tenure_value.length; i++){
+            if(tenure_value[i].checked && tenure_value[i].value == "YEARLY"){
+                t = t * 12;
+            }else{
+                //do nothing, tenure is already in months
+            }
+        }
+        */
+
+        si = simple_interest(p, t, r);
+        ci = compound_interest(p, t, r);
+       
+        document.getElementById("si").value = si;
+        document.getElementById("ci").value = ci;
+
+        }
+    catch(e){
+        alert('get_data' + e);
+    }
+}
+</script>
