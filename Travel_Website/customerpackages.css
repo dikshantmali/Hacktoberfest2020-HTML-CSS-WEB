@@ -1,0 +1,93 @@
+.form {
+    width: 800px;
+    margin: auto;
+}
+input {
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    padding: 10px;
+}
+body {
+    font-size: 18px;
+}
+span {
+    color: rgb(226, 101, 93);
+}
+select {
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    padding: 7px;
+}
+label {
+    color:  rgb(226, 101, 93);
+    font-size: 16px;
+    visibility: hidden;
+}
+#value {
+    color: black;
+    font-size: 20px;
+}
+#submit {
+    border-bottom-style: none;
+    color: white;
+    background-color: rgb(211, 211, 211);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 250px;
+}
+#submit:hover {
+    background-color: #155d66;
+}
+#cancel {
+    border-bottom-style: none;
+    background-color: rgb(211, 211, 211);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+#cancel:hover {
+    background-color: #155d66;
+}
+
+.slidecontainer {
+     width: 100%;
+}
+.slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 0px;
+      border-radius: 5px;
+      border-bottom-style: none;
+      background: #d3d3d3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+}
+.slider:hover {
+      opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: rgb(0, 0, 255);
+      cursor: pointer;
+}
+.slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+    border-radius: 50%;
+      background: #4CAF50;
+      cursor: pointer;
+}
+.trip{
+   color: black;
+}
+.select{
+    color: whitesmoke;
+}

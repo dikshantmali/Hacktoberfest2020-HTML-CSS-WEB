@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Customise your package</title>
+
+	<link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="headerfooter.css">
+	<link rel="stylesheet" href="customerpackages.css">
+    <script src="https://kit.fontawesome.com/1bd3e2a3cf.js" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript">
+		function validate() {
+			var flag = 1;
+			var check = 0;
+
+			var fname = document.getElementById("fname").value;
+			var lname = document.getElementById("lname").value;
+
+			var mobile = document.getElementById("mobile").value;
+			var regxm = /^[7-9]\d{9}$/;
+
+			var email = document.getElementById("email").value;
+			var regxe = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,5})(.[a-z]{2,5})?$/;
+
+			var month = document.getElementById("month").value;
+			var trip = document.getElementById("trip").value;
+			var country = document.getElementById("country").value;
+
+			var food = document.forms.food;
+
+			if (fname.trim() == "") {
+				document.getElementById("wfname").style.visibility="visible";
+				flag = 0;
+			}
+			if (lname.trim() == "") {
+				document.getElementById("wlname").style.visibility="visible";
+				flag = 0;
+			}
+			if (!(regxm.test(mobile))) {
+				document.getElementById("wmobile").style.visibility="visible";
+				flag = 0;
+			}
+			if (!(regxe.test(email))) {
+				document.getElementById("wemail").style.visibility="visible";
+				flag = 0;
+			}
+			if (month == "select") {
+				document.getElementById("wmonth").style.visibility="visible";
+				flag = 0;
+			}
+			if (trip == "select") {
+				document.getElementById("wtrip").style.visibility="visible";
+				flag = 0;
+			}
+			if (country == "select") {
+				document.getElementById("wcountry").style.visibility="visible";
+				flag = 0;
+			}
+			for (i=0 ; i<food.length ; i++) {
+				if (food[i].checked)
+					check = 1;
+			}
+			if (check == 0) {
+				document.getElementById("wfood").style.visibility="visible";
+				flag = 0;
+			}
+
+			if (flag == 0)
+				return false;
+			else
+				return true;
+		}
+	</script>
+
+</head>
+<body>
+
+	<header id="header">
+		<div class="logo"><a href="#">TRIPPIN' <span>Travel Consultants</span></a></div>
+		</header>
+		<br>
+		<div class="topnav">
+			<a href="Home.html">Home</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="TravelBlogs.html">Travel Blogs</a>
+			<a href="TravelPackages.html">Travel Packages</a>
+			<a href="CustomerReviews.html">Customer Reviews</a>
+			<a class="active" href="CustomizedPackage.html">Customized Packages</a>
+		  </div>
+		<br>
+
+		<div class="top_img">
+            <img id="maindp" src="street.png" style="height: 650px; margin-left: 70px; width: 1300px;align-content: center;"  alt="">
+          </div>
+    <br>
+    <div class="info" align="center">
+    	<p style="font-size: 30px; color:whitesmoke">Please fill out the form below to create your own, personal custom travel package</p>
+	</div>
+	<br> <br>
+	<form name="forms" action="message.html" onsubmit="return validate()">
+		<div class="form">
+		<table cellpadding="10" cellspacing="10" align="center" style="color: whitesmoke;">
+			<tr>
+				<td>Name<span>*</span></td>
+				<td><input type="text" id="fname" name="fname" placeholder="First Name">&nbsp&nbsp&nbsp
+				<input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="wfname">&nbsp&nbsp&nbsp*Enter first name</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label id="wlname">*Enter last name</label></td>
+				<td style="padding: 0px;"></td>
+			</tr>
+			<tr>
+				<td>Mobile No.<span>*</span></td>
+				<td><input type="text" id="mobile" name="mobile" placeholder="Mobile Number" maxlength="10"></td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="wmobile">&nbsp&nbsp&nbsp*Enter valid mobile number</label></td>
+			</tr>
+			<tr>
+				<td>Email<span>*</span></td>
+				<td><input type="text" id="email" name="email" placeholder="example@gmail.com"></td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="wemail">&nbsp&nbsp&nbsp*Enter valid email id</label></td>
+			</tr>
+			<tr>
+				<td>Month of Travel<span>*</span></td>
+				<td><select name="month" id="month" class="trip">
+					<option>January</option>
+					<option>February</option>
+					<option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+					<option selected="selected" value="select" >Select</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="wmonth">&nbsp&nbsp&nbsp&nbsp*Select a month</label></td>
+			</tr>
+			<tr>
+				<td>Country<span>*</span></td>
+				<td><select name="country" id="country" class="trip">
+					<option>Greece</option>
+					<option>India</option>
+					<option>Indonesia</option>
+					<option>Israel</option>
+					<option>Italy</option>
+					<option>Japan</option>
+					<option>Mexico</option>
+					<option>Peru</option>
+					<option>Phillipines</option>
+					<option>Portugal</option>
+					<option>South Africa</option>
+					<option>Sri Lanka</option>
+					<option>Tanzania</option>
+					<option>Thailand</option>
+					<option>Turkey</option>
+					<option>Vietnam</option>
+					<option>Other</option>
+					<option selected="selected" value="select">Select</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="wcountry">&nbsp&nbsp&nbsp&nbsp*Select a country</label></td>
+			</tr>
+			<tr>
+				<td>What type of trip are you planning?<span>*</span></td>
+				<td><select name="trip" id="trip" class="trip">
+					<option>Adventure</option>
+					<option>Bussiness</option>
+					<option>Cruise Trip</option>
+					<option>Cultural Trip</option>
+					<option>Family Trip</option>
+					<option>Friends Trip</option>
+					<option>Leisure</option>
+					<option>Road Trip</option>
+					<option>Romantic</option>
+					<option>Solo</option>
+					<option selected="selected" value="select">Select</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="wtrip">&nbsp&nbsp&nbsp&nbsp*Select a type of trip</label></td>
+			</tr>
+			<tr>
+				<td>Per person cost<span>*</span></td>
+				<td colspan="2"><div class="slidecontainer">
+  					<input type="range" min="10000" max="100000" value="30000" class="slider" id="myRange">
+  					<p>Maximum Cost per person: ₹<span id="demo" style="color: whitesmoke;"></span></p>
+				</div></td>
+			</tr>
+			<tr>
+
+			</tr>
+			<tr>
+				<td>Food Preference<span>*</span></td>
+				<td colspan="2">
+				<input type="radio" name="food" value="vegetarian" style="border-color:whitesmoke ;">Vegetarian &nbsp&nbsp
+				<input type="radio" name="food" value="nonvegetarian">Non-Vegetarian &nbsp&nbsp
+				<input type="radio" name="food" value="no">No Preference
+			    </td>
+			</tr>
+			<tr>
+				<td style="padding: 0px;"></td>
+				<td style="padding: 0px;"><label id="wfood">&nbsp&nbsp&nbsp&nbsp&nbsp*Select an option</label></td>
+			</tr>
+			<tr>
+				<td>Additional Comments <span style="color: grey;">(optional)</span></td>
+				<td><textarea rows="4" cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="reset" id="cancel" name="cancel" value="Cancel"></td>
+				<td><input type="submit" id="submit" name="submit" value="Submit"></td>
+			</tr>
+		</table>
+		</div>
+	</form>
+	<script type="text/javascript">
+		document.getElementById("myRange").step = 100;
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value;
+		slider.oninput = function() {
+  			output.innerHTML = this.value;
+		}
+	</script>
+
+		<!-- Footer -->
+
+	</div>
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+			<h3><span>Contact Us</span></h3>
+
+			<p class="footer-links">
+				<a href="#">Home</a>
+				·
+				<a href="#">Contact</a>
+			</p>
+
+			<p class="footer-company-name">Trippin' Travel Consultancy © 2015</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p>21 Dumas Street <br>Surat, Gujarat</p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>+91 78787 32323</p>
+			</div>
+
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:trippintravel@company.com">trippintravel@company.com</a></p>
+			</div>
+
+		</div>
+
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>Want to Go Somewhere? </span>
+				We would love to help you plan the vacation of your dreams, at your budget! Find us at these social media!
+			</p>
+
+			<div class="footer-icons">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+
+			</div>
+
+		</div>
+
+	</footer>
+</body>
+</html>
