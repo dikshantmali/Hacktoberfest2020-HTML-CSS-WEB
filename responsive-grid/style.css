@@ -1,0 +1,27 @@
+.title {
+    margin-left: 80px;
+}
+.container {
+    margin: 80px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid;
+    resize: both;
+    overflow: auto;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.item {
+    background-color: white;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 5px;
+    text-align: center;
+}
+.item p {
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+}
