@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/f0601b0fb2.js" crossorigin="anonymous"></script>
+    <script type='module' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js'></script>
+    <script nomodule='' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js'></script>
+    
+<link rel="stylesheet" href="css/CSS_White.css">
+
+<style>
+
+.colorRang {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    z-index: 1000;
+}
+.colorPicker {
+   /** z-index: 11111;***/
+    margin-left: 0px;
+    position: fixed;
+    left: 0;
+    top: 210px;
+   border-left: 0;
+    font-size: 18px;
+    display: block;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-topright: 4px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 4px;
+    padding: 10px 16px 10px 14px;
+    cursor: pointer;
+    top: 100px;
+
+}
+.colorPicker i {
+    font-size: 30px;
+}
+.colors {
+    width: auto;
+    height: auto;
+    padding: 15px 10px;
+    margin-top: 7px;
+    display: none;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 4px;
+    background: #e4ebf5;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    
+}
+.colors span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.blueCB {background: #6d5dfc}
+.lightRedCB {background:#ff0047}
+.orangCB {background: #00fff1}  
+
+</style>
+
+</head>
+<body>
+
+<section class="colorRang">
+  <div class="colorPicker  text-center">
+        <i class="fa fa-cog fa-spin color"></i>
+    </div> <!-- colorPicker -->
+    <div class="colors text-center">
+        
+        <span class="blueCB"></span>
+        <span class="lightRedCB"></span>
+        <span class="orangCB"></span>
+  </div> 
+</section> 
+
+
+<div class="container">
+  <div class="components">
+    
+    <div class="switch">
+      <div class="switch__1">
+        <input id="switch-1" type="checkbox">
+        <label for="switch-1"></label>
+      </div>
+      
+      <div class="switch__2">
+        <input id="switch-2" type="checkbox" checked>
+        <label for="switch-2"></label>
+      </div>
+    </div>
+    
+    <div class="checkbox">
+      <div class="checkbox__1">
+        <input id="checkbox-1" type="checkbox">
+        <label for="checkbox-1">
+          <i class="material-icons">done</i></label>
+      </div>
+      <div class="checkbox__2">
+        <input id="checkbox-2" type="checkbox" checked>
+        <label for="checkbox-2">
+          <i class="material-icons">done</i></label>
+      </div>
+    </div>
+    
+    <div class="radio">
+      <div class="radio__1">
+        <input id="radio-1" type="radio"  name="radio" value="1">
+        <label for="radio-1"></label>
+      </div>
+      
+      <div class="radio__2">
+        <input id="radio-2" type="radio" name="radio" value="2" checked>
+        <label for="radio-2"></label>
+      </div>
+    </div>
+    
+    <div class="btn btn__primary"><p>Button</p></div>
+    <div class="btn btn__secondary"><p>Button</p></div>
+    
+    <div class="clock">
+      <div class="hand hours"></div>
+      <div class="hand minutes"></div>
+      <div class="hand seconds"></div>
+      <div class="point"></div>
+      <div class="marker">
+        <span class="marker__1"></span>
+        <span class="marker__2"></span>
+        <span class="marker__3"></span>
+        <span class="marker__4"></span>
+      </div>
+    </div>
+    
+    <div class="chip">
+      <div class="chip__icon">
+        <ion-icon name="color-palette"></ion-icon></div>
+      <p>Neumorphism Element</p>
+      <div class="chip__close">
+        <ion-icon name="close"></ion-icon>
+      </div>
+    </div>
+    
+    <div class="circle">
+      <span class="circle__btn">
+        <ion-icon class="pause" name="pause"></ion-icon>
+        <ion-icon class="play" name="play"></ion-icon>
+      </span>
+      <span class="circle__back-1"></span>
+      <span class="circle__back-2"></span>
+    </div>
+    
+    <div class="form">
+      <input type="text" class="form__input" placeholder="Type anything...">
+    </div>
+    
+    <div class="search">
+      <input type="text" class="search__input" placeholder="Search...">
+      <div class="search__icon">
+        <ion-icon name="search"></ion-icon>
+      </div>
+    </div>
+    
+    <div class="segmented-control">
+      
+      <input type="radio" name="radio2" value="3" id="tab-1" checked/>
+      <label for="tab-1" class= "segmented-control__1">
+        <p>Tab 1</p></label>
+      
+      <input type="radio" name="radio2" value="4" id="tab-2" />
+      <label for="tab-2" class= "segmented-control__2">
+        <p>Tab 2</p></label>
+      
+      <input type="radio" name="radio2" value="5" id="tab-3" />
+      <label for="tab-3" class= "segmented-control__3">
+        <p>Tab 3</p></label>
+      
+      <div class="segmented-control__color"></div>
+    </div>
+    
+    <div class="icon">
+      <div class="icon__home">
+        <ion-icon name="home"></ion-icon></div>
+      <div class="icon__account">
+        <ion-icon name="person"></ion-icon></div>
+      <div class="icon__settings">
+        <ion-icon name="settings"></ion-icon></div>
+    </div>
+    
+    <div class="slider">
+      <div class="slider__box">
+        <span class="slider__btn" id="find"></span>
+        <span class="slider__color"></span>
+        <span class="slider__tooltip">50%</span>
+      </div>
+    </div>
+  </div>
+
+</div>  
+
+
+
+
+
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/js.js"></script>
+<script type="text/javascript">
+            
+  $('.colorPicker').click(function(){
+      $('.colors').slideToggle(300);
+  });
+  
+  
+  $(".blueCB").click(function(){
+      var element = document.createElement("link");
+      element.setAttribute("rel", "stylesheet");
+      element.setAttribute("type", "text/css");
+      element.setAttribute("href", "css/CSS_White.css");
+      document.getElementsByTagName("head")[0].appendChild(element);
+  });
+  $(".lightRedCB").click(function(){
+      var element = document.createElement("link");
+      element.setAttribute("rel", "stylesheet");
+      element.setAttribute("type", "text/css");
+      element.setAttribute("href", "css/CSS_DARK.css");
+      document.getElementsByTagName("head")[0].appendChild(element);
+  });
+  $(".orangCB").click(function(){
+      var element = document.createElement("link");
+      element.setAttribute("rel", "stylesheet");
+      element.setAttribute("type", "text/css");
+      element.setAttribute("href", "css/CSS_DS.css");
+      document.getElementsByTagName("head")[0].appendChild(element);
+  });
+
+</script>
+
+</body>
+</html>
