@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 360px;
+    height: 740px;
+    margin: 1% auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px black;
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    width: inherit;
+    height: inherit;
+    transition: all 0.5s;
+}
+.container .content h1{
+    text-align: center;
+}
+.container .content p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container:hover img{
+    transform: translateY(-40%);
+}
+.container .content{
+    height: 40%;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: justify;
+    color: whitesmoke;
+    background-image: linear-gradient(0deg, gray, black);
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.5s;
+}
+.container:hover .content{
+    transform: translateY(-100%);
+}
