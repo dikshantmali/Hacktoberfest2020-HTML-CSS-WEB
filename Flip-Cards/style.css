@@ -1,0 +1,141 @@
+.content-grid-block {
+    font-family: 'Helvetica', sans-serif;
+    max-height: 80vh;
+    text-align: center;
+}
+
+.content-grid-block .block-title {
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 40px;
+    margin-bottom: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-grid-block .content-grid {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.content-grid-block .flip-card {
+    color: #000000;
+    justify-content: center;
+    max-width: 100%;
+    margin: 1rem;
+    min-height: 200px;
+    min-width: calc(33% - 2rem);
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: ease-in-out 0.5s;
+    width: calc(33% - 2rem);
+}
+
+.content-grid-block .flip-card.flipped {
+    transform: rotatey(-180deg);
+}
+
+.content-grid-block .flip-card.flipped .icon-plus {
+    display: none;
+    opacity: 0;
+}
+
+.content-grid-block .flip-card:hover .front {
+    background-color: #FCA89D;
+}
+
+.content-grid-block .flip-card:hover .icon-plus,
+.content-grid-block .flip-card:hover .icon-minus {
+    transform: scale(1.1);
+}
+
+.content-grid-block .flip-card .card-content {
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.content-grid-block .flip-card .card-content.front {
+    background-color: #AFC7B9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    height: 100%;
+    padding: 0 20px;
+    text-align: center;
+    transition: max-height ease-in-out 600ms;
+}
+
+.content-grid-block .flip-card .card-content.front .card-title {
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 29px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.content-grid-block .flip-card .card-content.back {
+    background-color: #FCA89D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    height: auto;
+    min-height: 200px;
+    padding: 40px 30px;
+    transform: rotatey(-180deg);
+    z-index: 99;
+}
+
+.content-grid-block .flip-card .card-content.back .card-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.content-grid-block .flip-card .icon-minus {
+    background-color: transparent;
+    background-image: url("https://image.flaticon.com/icons/svg/1828/1828906.svg");
+    background-size: contain;
+    bottom: 10px;
+    cursor: pointer;
+    height: 18px;
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 18px;
+    z-index: 999;
+}
+
+.content-grid-block .flip-card .icon-plus {
+    background-color: transparent;
+    background-image: url("https://image.flaticon.com/icons/svg/149/149145.svg");
+    background-size: contain;
+    bottom: 10px;
+    cursor: pointer;
+    height: 18px;
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 18px;
+    z-index: 999;
+}
