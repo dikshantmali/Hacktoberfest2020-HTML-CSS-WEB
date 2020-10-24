@@ -1,0 +1,131 @@
+.bg{
+    background-image: url('../images/bg.png');
+    background-repeat: repeat;
+
+}
+.msgbox{
+    background-image: url('../images/popup.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 820px;
+    width: 700px;
+    z-index: 5;
+}
+.vboy{
+    background-image: url('../images/vboy.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 332px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 11;
+
+}
+.vgirl{
+    background-image: url('../images/vgirl.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 332px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+
+}
+.form{
+    margin-top: 350px;
+    text-align: center;
+    margin-left: 30%;
+
+}
+@media (max-width: 770px) {
+    .vgirl{
+        background-image: url('../images/vgirl.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 156px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        z-index: 10;
+    
+    }
+    .vboy{
+        background-image: url('../images/vboy.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 156px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        z-index: 11;
+    
+    }
+    .msgbox{
+        background-image: url('../images/popup.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 600px;
+
+        z-index: 5;
+    }
+    .form{
+        margin-top: 200px;
+        margin-right: 20px;
+        margin-left: 70px;
+        
+ 
+    }
+  }
+
+
+.baby-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+            border: none !important;
+
+    
+}
+.girl{background-image:url(../images/girl.png);}
+.boy{background-image:url(../images/boy.png);}
+
+.baby-selector input:active +.drink-baby{opacity: .3;}
+.baby-selector input:checked +.drink-baby{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drink-baby{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter:  grayscale(1) ;
+       -moz-filter:  grayscale(1) ;
+            filter:  grayscale(1) ;
+}
+.drink-baby:hover{
+    -webkit-filter: brightness(1)  opacity(.9);
+       -moz-filter: brightness(1)  opacity(.9);
+            filter: brightness(1)  opacity(.9);
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
+.voter{
+    font-size: 30pt;
+    font-weight: bold;
+}
