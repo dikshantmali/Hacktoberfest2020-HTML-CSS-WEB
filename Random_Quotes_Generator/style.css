@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+  
+ :root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+    --card-color:#9A97F3;
+    --next-color:#FAD1DF;
+    --text-color:#292922;
+    --text2-color: #292922;
+    --hover-color:#292922;
+    --status-color:#292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+    --card-color:#fff;
+    --next-color:#FAD1DF;
+    --text-color:#FAD1DF;
+    --text2-color:#00ff9e;
+    --hover-color:#00acee;
+    --status-color:#818cab;
+}
+
+
+body {
+
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    height: 100vh;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.quote-wrapper {
+    width: 450px;
+    height: 600px;
+    margin: 0 10px;
+    display:auto;
+}
+.quote-wrapper .quote-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.quote-wrapper .quote-heading h2 {
+    font-family: 'Lobster Two', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--heading-color);
+}
+.quote-wrapper .quote-body {
+    width: 100%;
+    height: 250px;
+    padding: 50px 35px;
+    background-color:var(--card-color);
+    border-radius: 5px;
+}
+.quote-wrapper .quote-body .icon-quote {
+    text-align: center;
+    font-size: 18px;
+    color:var(--bg-color);
+    height: 60px;
+    overflow: auto;
+}
+.quote-wrapper .quote-body .icon-quote .icon {
+    margin-right: 5px;
+}
+.quote-wrapper .quote-body .author {
+    text-align: right;
+    margin-top: 15px;
+    color:var(--bg-color);
+}
+.quote-wrapper .quote-body .quote-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    border-top: 1px solid var(--bg-color);
+    padding: 7px 0;
+}
+.quote-wrapper .quote-body .quote-buttons .social a {
+    font-size: 40px;
+    color:var(--bg-color);
+
+    transition: .3s ease;
+}
+.quote-wrapper .quote-body .quote-buttons .social a:hover {
+    color: var(--hover-color);
+}
+
+.copystatus{
+  color: var(--status-color);
+}
+
+.quote-wrapper .quote-body .quote-buttons .social .save {
+    font-size: 40px;
+    color:var(--bg-color);
+
+    transition: .3s ease;
+}
+.quote-wrapper .quote-body .quote-buttons .btn button {
+    border: none;
+    outline: none;
+    padding: 10px 12px 10px 12px;
+    background-color:var(--bg-color);
+    color:var(--primary-color);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+
+section {
+  max-width: 68%;
+  margin: 0 auto;
+}
+
+.quote-wrapper .quote-body .quote-buttons button:active {
+    background-color: var(--next-color);
+}
+.quote-wrapper .footer {
+    text-align: center;
+    margin-top: 10px;
+}
+.quote-wrapper .footer p {
+    color: var(--text-color);
+}
+.quote-wrapper .footer p a {
+    text-decoration: none;
+    color: var(--text2-color);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fcfcfc;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
