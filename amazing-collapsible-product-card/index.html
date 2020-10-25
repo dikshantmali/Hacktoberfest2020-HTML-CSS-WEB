@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Product Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="product-img">
+          <img src="img/red-running-shoes.png" alt="shoe" />
+        </div>
+        <div class="product-name">Nike Hyperchase</div>
+        <div class="expand-btn"><i class="fas fa-angle-down"></i></div>
+        <div class="product-info">
+          <h3 class="category">Men's Basketball Shoes</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+            saepe, omnis similique totam mollitia amet dolorum quo error?
+            Deleniti, nesciunt?
+          </p>
+          <div class="colors">
+            <div class="color"></div>
+            <div class="color"></div>
+          </div>
+          <div class="product-price">100$</div>
+        </div>
+        <button class="cart-btn">Add to cart</button>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector(".expand-btn").addEventListener("click", () => {
+        document.querySelector(".card").classList.toggle("expand");
+      });
+    </script>
+  </body>
+</html>
