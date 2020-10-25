@@ -1,0 +1,39 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    color:aliceblue;
+}
+body{
+    display:flex;
+    width:100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.time{
+    font-size: 50px;
+}
+.buttons{
+    display: flex;
+    width:600px;
+    justify-content: space-around;
+    margin: 50px;
+}
+.buttons button{
+    width:100px;
+    height:50px;
+    color:black;
+    border-radius: 30px;
+}
+@media(max-width:650px){
+    .buttons{
+        flex-direction: column;
+        width: auto;
+    }
+    .buttons button{
+        margin-bottom: 30px;
+    }
+}
