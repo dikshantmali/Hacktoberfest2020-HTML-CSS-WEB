@@ -1,0 +1,208 @@
+
+html {
+  background-color: black;
+  background-size: cover;
+  font-family: 'helvetica neue';
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100vw;
+  align-text: center;
+}
+
+p {
+  color: white;
+  font-family: 'Squada One', cursive;
+  font-size: 35px;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  background-color:  white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow:
+    0 0 0 4px rgba(252, 249, 249, 0.973),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+    background-color: #ffffff
+}
+
+.clock-face {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  /* account for the height of the clock hands */
+  transform: translateY(15px) translateX(15px); 
+  background-color: black;
+  border-radius: 50%;
+}
+
+.hand {
+  width: 50%;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  /* where to rotate along x-axis */
+  transform-origin: 100%;
+  /* get hands to start at 12 o clock */
+  transform: rotate(90deg);
+  /* to gove realistic ticking feature */
+  transition: all 0.05;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+
+ 
+}
+.hand.hour-hand {
+  width: 30%;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 1px 2px 1px 1px rgba(252,227,26,0.4);
+ 
+}
+
+.hand.min-hand {
+  width: 43%;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 1px 2px 1px 1px rgba(252,227,26,0.4);
+}
+
+.hand.second-hand {
+  height: 3px;
+  width: 48%;
+  background-color: #FCE31A;
+  
+}
+
+.marking  {
+  position: absolute;
+  width: 10%;
+  height: 10px;
+  left: 45%;
+  
+  border-right: 1px solid #e8e9eb;
+    border-bottom: 1px solid #e8e9eb;
+    border-left: 1px solid #e8e9eb;
+    border-top: 1px solid #e8e9eb;
+    box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.8);
+}
+
+.mark-twelve {
+  background: black;
+  transform: rotate(90deg);
+  background: #FCE31A;
+}
+
+.mark-one {
+  background: black;
+  transform: rotate(120deg) translateY(-3.7em) translateX(-1em);
+  /* background: #f06543; */
+}
+
+.mark-two {
+  background: black;
+  transform: rotate(150deg) translateY(-6.4em) translateX(-3.7em);
+  /* background: #f06543; */
+}
+
+.mark-three {
+  background: black;
+  transform: rotate(180deg) translateY(-7.3em) translateX(-7.3em);
+  background: #FCE31A;
+}
+
+.mark-four {
+  background: black;
+  transform: rotate(210deg) translateY(-6.4em) translateX(-10.9em);
+  /* background: #f06543; */
+}
+
+.mark-five {
+  background: black;
+  transform: rotate(240deg) translateY(-3.6em) translateX(-13.6em);
+  /* background: #f06543; */
+}
+
+.mark-six {
+  background: black;
+  transform: rotate(270deg) translateY(0em) translateX(-14.6em);
+  background: #FCE31A;
+}
+
+.mark-seven {
+  background: black;
+  transform: rotate(300deg) translateY(3.6em) translateX(-13.6em);
+  /* background: #f06543; */
+}
+
+.mark-eight {
+  background: black;
+  transform: rotate(330deg) translateY(6.4em) translateX(-10.9em);
+  /* background: #f06543; */
+}
+
+.mark-nine {
+  background: black;
+  transform: rotate(360deg) translateY(7.3em) translateX(-7.3em);
+  background: #FCE31A;
+}
+
+.mark-ten {
+  background: black;
+  transform: rotate(390deg) translateY(6.4em) translateX(-3.7em);
+  /* background: #f06543; */
+}
+
+.mark-eleven {
+  background: black;
+  transform: rotate(420deg) translateY(3.6em) translateX(-1em);
+  /* background: #f06543; */
+}
+
+#date {
+  position: absolute;
+  border: solid 2px grey;
+  height: 30px;
+  width: 30px;
+  right: 25px;
+  top: 120px;
+  border-radius: 50%;
+  background-color: white;
+  color: red;
+  z-index: 5;
+  text-align: center;
+  justify-content: center;
+  line-height: 28px;
+  box-shadow: inset 0px 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+.logo {
+  position: absolute;
+  height: 30px;
+  width: 60px;
+  right: 100px;
+  top: 20px;
+  color: white;
+  font-family: 'Squada One', cursive;
+  font-size: 30px;
+  letter-spacing: 2px;
+  
+}
