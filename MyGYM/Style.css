@@ -1,0 +1,95 @@
+*{
+    padding: 5px 12px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color:white;
+}
+body{
+    background-image: url('BgGym.jpg');
+    background-repeat: no-repeat;
+}
+#logo{
+    width: 200px;
+}
+.div{
+    position: sticky;
+    top: 3px;
+}
+#div1{
+    font-size: 30px;
+    margin: 40px 0px;
+    float: left;
+    display: inline-block;
+    width: 200px;
+}
+#div2{
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    display: inline-block;
+}
+#div3{
+    margin: 40px 0px;
+    display: inline-block;
+    width: 150px;
+    float: right;
+}
+.btn{
+    background-color: black;
+    border: 2px solid rgb(90, 82, 82);
+    border-radius: 3px;
+}
+.btn:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.nav{
+    text-decoration: none;
+    margin: 0px 25px;
+}
+.nav:hover,
+#nav1 {
+    text-decoration: underline;
+    color: grey;
+}
+.container {
+    border: 2px solid white;
+    /* margin: 160px auto; */
+    margin-top: 150px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 75px;
+    width: 40%;
+    border-radius: 28px;
+}
+.form-group input {
+    color: black;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+.radioo{
+    color: blueviolet;   
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
+
+#sign_in_form {
+    color: black;
+}
