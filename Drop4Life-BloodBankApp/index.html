@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Drop4Life</title>
+
+    <link rel='stylesheet' type='text/css' href='styles/style.css'>
+    <link rel="shortcut icon" href="images/logo.png">
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Ramabhadra&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+    <!--Let browser know website is optimized for mobile-->
+
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+
+
+
+</head>
+
+<body class="grey lighten-4">
+    <!-- Navigation bar starts here -->
+    <div class="navbar-fixed">
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#pageSlide" class="brand-logo heading">Drop4Life</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#pageSlide" class="texts">Home</a></li>
+                    <li><a href="#donors" class="texts">Donors</a></li>
+                    <li><a href="#aboutUs" class="texts">About</a></li>
+                    <li><a href="#contact" class="texts">Contact</a></li>
+                    <li><a href="registerArea.html#logIn" class="texts">Log In</a></li>
+                    <li><a href="registerArea.html#register" class="texts blue darken-4">Become A Member</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="slider" id="pageSlide">
+
+            <ul class="slides">
+
+                <li>
+                    <img src="images/image1.jpeg"> <!-- random image -->
+                    <div class="caption left-align heading">
+                        <h3>If we have no peace, it is because we have forgotten that we belong to each other
+                        </h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/image2.jpg"> <!-- random image -->
+                    <div class="caption center-align heading">
+                        <h3>You cannot hope to build a better world without improving the individuals
+                        </h3>
+
+                    </div>
+                </li>
+                <li>
+                    <img src="images/image3.jpg"> <!-- random image -->
+                    <div class="caption right-align heading">
+                        <h3>
+                            <h3>What sunshine is to flowers, smiles are to humanity.</h3>
+
+                    </div>
+                </li>
+                <li>
+                    <img src="images/image4.jpg"> <!-- random image -->
+                    <div class="caption center-align heading">
+                        <h3>When a person doesn't have gratitude, something is missing in his or her humanity.
+                        </h3>
+
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <!--Navigation bar Ends here -->
+
+    <!-- Side navbar starts here -->
+    <div id="slide-out" class="sidenav">
+        <span><i class="material-icons closing right">close</i></span>
+        <div class="clearfix"></div>
+        <ul>
+            <li><a href="#pageSlide" class="texts">Home</a></li>
+            <li><a href="#donors" class="texts">Donors</a></li>
+            <li><a href="#aboutUs" class="texts">About</a></li>
+            <li><a href="#contact" class="texts">Contact</a></li>
+            <li><a href="registerArea.html#logIn" class="texts">Log In</a></li>
+            <li><a href="registerArea.html#register" class="texts blue darken-4 white-text">Become A Member</a></li>
+        </ul>
+    </div>
+    <!--Side navbar Ends here -->
+
+    <div class="section"></div>
+    <div id="mainContent">
+        <div class="container " id="donors">
+
+            <h1 class="center heading red-text">List Of Donors</h1>
+
+            <table class="striped z-depth-3 centered highlight">
+
+                <thead>
+                    <th class="texts">S No</th>
+                    <th class="texts red-text text-darken-4">Blood Group</th>
+                    <th class="texts red-text text-darken-4">Donor's Name</th>
+                    <th></th>
+                </thead>
+                <tbody id="donorsList">
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="section"></div>
+
+        <div class="parallax-container" id="donate_Parallax">
+            <div class="parallax"><img src="images/donate.jpg">
+
+            </div>
+            <div class="section center container white-text">
+                <h3><q> The significance which is in unity is an eternal wonder. </q></h3>
+                <p>Rabindranath Tagore</p>
+            </div>
+        </div>
+
+        <div id="aboutUs" class="section">
+            <h1 class="heading red-text center">About Us</h1>
+            <div class="container row">
+                <div class="col s12 m6">
+                    <h3 class="red-text text-darken-4">Who Are We?</h3>
+
+                    <ul class="texts">
+                        <li>
+                            <i class="material-icons">keyboard_arrow_right
+                            </i>The Reason behind hundreds of smiles
+                        </li>
+                        <li>
+                            <i class="material-icons">keyboard_arrow_right
+                            </i>The Humans with many blessed prayers
+                        </li>
+                        <li>
+                            <i class="material-icons">keyboard_arrow_right
+                            </i>The Creatures hoping for some goodness in the society
+                        </li>
+                    </ul>
+                    <p class="red-text text-darken-4 heading">Founder :- Saim Akhtar</p>
+                </div>
+                <div class="col s12 m6">
+                    <h3 class="red-text text-darken-4">Our Aim</h3>
+                    <p class="texts">
+                        We are the one with the motive to create a better society. A society where everyone , each one
+                        of us
+                        , would care abot the humanity and the world where we live to make it a better place... Not only
+                        for
+                        us but also for the upcoming Generations. <br>
+                        This is the chain we have started hoping to bring a change even if its about a small change
+                        <br>
+                        How can we run away from all the diseases around us and the problems we face everyday.
+                        We Can not live with our own failures... Where would that bring them??? Back to Us
+                        <br>
+                        <span class="red-text text-darken-4">
+                            Mr Tony Stark Used To Say <q>Its not about how much we've lost, Its about how much we are
+                                left
+                                with</q></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section red lighten-2 center">
+            <h4 class="white-text container section">If your aspire to become the part of our Community, <a
+                    href="registerArea.html#Register" class="blue-text text-darken-4 heading"> Join Us </a> Right
+                Now</h4>
+            <h5 class="white-text section">And help people's lives by donating a small amount of your blood</h5>
+        </div>
+
+        <div id="contact" class="container row">
+            <h1 class="heading red-text center">Contact Us</h1>
+            <div class="col s12 m6 center">
+                <p class="texts"> Contact Us And Follow Our Social Sites To Be Aware about What We Serve:</p>
+                <a href="JavaScript:void(0)"><i class="fab fa-facebook-square blue-text text-darken-4"></i></a>
+                <a href="JavaScript:void(0)"> <i class="fab fa-instagram purple-text text-darken-4"></i>
+                </a>
+                <a href="JavaScript:void(0)"> <i class="fab fa-twitter blue-text"></i>
+                </a>
+                <a href="JavaScript:void(0)"> <i class="fab fa-youtube red-text"></i>
+                </a>
+
+            </div>
+            <div class="col s12 m6">
+                <form action="JavaScript:void(0)" >
+                    <fieldset class="center contactForm">
+                        <legend><h4 class="heading red-text text-darken-4 center"> Email Us</h4></legend>
+                    <input type="email" placeholder="Your Email" class="texts black-text">
+                    <div class="section"></div>
+                    <textarea placeholder="Enter Your Request/message here" class="texts"></textarea>
+                    <div class="section"></div>
+                    <button type="submit" class="btn red white-text right">Send</button>
+                </fieldset>
+                
+                </form>
+            </div>
+
+            
+
+        </div>
+
+       <div class="black darken-4 white-text section center">
+
+        <p class="texts">
+            <i class="material-icons">copyright</i>
+            Website Created And Designed By Saim Akhtar
+        </p>
+
+       </div>
+</div>
+
+
+
+        <!-- Modal Structure for Displaying The Donor's Profile To Public Access -->
+        <div id="donorDetails" class="modal">
+            <div class="modal-content">
+                <h1 class="heading red-text center">Donor's Profile</h1>
+                <div class="card">
+
+                    <div class="card-content">
+                        <table>
+                            <tbody>
+                                <tr class="texts">
+
+                                    <td>Name: </td>
+                                    <td class="profileSpecs"></td>
+                                </tr>
+                                <tr class="texts">
+
+                                    <td>Blood Group: </td>
+                                    <td class="profileSpecs"></td>
+                                </tr>
+                                <tr class="texts">
+
+                                    <td>Address: </td>
+                                    <td class="profileSpecs"></td>
+                                </tr>
+
+                                <tr class="texts">
+
+                                    <td>Contact No: </td>
+                                    <td class="profileSpecs"></td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close btn red">Close</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+</body>
+<script>
+
+    $(document).ready(function () {
+
+        $('.modal').modal({
+            opacity: 0.9,
+            inDuration: 200,
+
+        });
+
+        $('.sidenav')
+            .sidenav()
+            .on('click tap', '.closing', () => {
+                $('.sidenav').sidenav('close');
+            });
+
+        $('.slider').slider({
+            indicators: false,
+            transition: 900,
+            interval: 3000,
+            height: 600
+        });
+        $('.parallax').parallax();
+
+
+
+    });
+
+
+    window.onscroll = () => {
+        const navibar = document.querySelector("nav")
+        if (this.scrollY <= 100) {
+            navibar.className = ''
+        }
+        else {
+            navibar.className = "red"
+        }
+    }
+
+</script>
+
+
+<script src="scripts/firebase.js"></script>
+<script src='scripts/main.js'></script>
+<script src="scripts/authentication.js"></script>
+
+
+</html>

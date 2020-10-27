@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>User-Drop4Life</title>
+
+    <link rel='stylesheet' type='text/css' href='styles/style.css'>
+    <link rel="shortcut icon" href="images/logo.png">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Ramabhadra&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+
+
+
+
+</head>
+
+<body class="grey lighten-4">
+    <!-- Navigation bar starts here -->
+
+    <div class="navbar-fixed grey darken-4">
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#userTop" id="usernameHeading" class="brand-logo heading"></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#userProfile" class="texts">User</a></li>
+                    <li><a href="#donors" class="texts">Donors</a></li>
+                    <li><a href="#aboutUs" class="texts">About</a></li>
+                    <li><a href="#contact" class="texts">Contact</a></li>
+                    <li><a href="JavaScript:void(0)" onclick="logOut()" class="texts">Log Out</a></li>
+                </ul>
+            </div>
+
+
+
+        </nav>
+
+        <div class="parallax-container" id="userTop">
+            <div class="parallax"><img src="images/com.jpeg"></div>
+            <div class="section container center white-text text-darken-4">
+                <h1 class="heading section">Dear User</h1>
+                <h4 class="heading section text-lighten-4">Thanks For Being The Part Of Our Active Community</h4>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--Navigation bar Ends here -->
+
+    <!-- Side navbar starts here -->
+    <div id="slide-out" class="sidenav">
+        <span><i class="material-icons closing right">close</i></span>
+        <div class="clearfix"></div>
+        <ul>
+            <li><a href="#userProfile" class="texts">User</a></li>
+            <li><a href="#donors" class="texts">Donors</a></li>
+            <li><a href="#aboutUs" class="texts">About</a></li>
+            <li><a href="#contact" class="texts">Contact</a></li>
+            <li><a href="JavaScript:void(0)" onclick="logOut()" class="texts">Log Out</a></li>
+        </ul>
+    </div>
+    <!--Side navbar Ends here -->
+
+
+
+    <!-- The Main User InterFace Content Starts Here -->
+
+
+    <div class="section"></div>
+    <div id="mainContent">
+
+        <div class="section center z-depth-1 container" id="userProfile">
+            <h1 class="heading red-text">User Profile</h1>
+            <div id="loader">
+                <p class="texts">Wait a second ... till we verify your User Profile</p>
+                <div class="progress">
+
+                    <div class="indeterminate"></div>
+                </div>
+            </div>
+
+            <div id="NotADonor" class="hide">
+                <p class="texts blue-text">***Since You Are Not A Donor Yet.... No Profile Displayed</p>
+                <p class="texts">Contribute to this community by saving lives
+                    <br> Your one littile sacrifice can help someone live a wonderful life
+                </p>
+                <button class="btn btn-large red white-text modal-trigger" data-target="addDonor">Become A
+                    Donor</button>
+            </div>
+
+            <div id="IsADonor" class="card hide">
+
+                <div class="card-content">
+                    <table>
+                        <tbody>
+                            <tr class="texts">
+                                <td></td>
+                                <td>Name: </td>
+                                <td class="donorSpecs"></td>
+                            </tr>
+                            <tr class="texts">
+                                <td></td>
+                                <td>Address: </td>
+                                <td class="donorSpecs"></td>
+                            </tr>
+                            <tr class="texts">
+                                <td></td>
+                                <td>Email Address: </td>
+                                <td class="donorSpecs"></td>
+                            </tr>
+                            <tr class="texts">
+                                <td></td>
+                                <td>Contact No: </td>
+                                <td class="donorSpecs"></td>
+                            </tr>
+                            <tr class="texts">
+                                <td></td>
+                                <td>Id: </td>
+                                <td class="donorSpecs"></td>
+                            </tr>
+                            <tr class="texts">
+                                <td></td>
+                                <td>Blood Group: </td>
+                                <td class="donorSpecs"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-action">
+                    <button class="btn red white-text texts modal-trigger" data-target="donorProfile">Update
+                        Profile</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="container" id="donors">
+
+            <h1 class="center heading red-text">List Of Donors</h1>
+
+            <table class="striped z-depth-1 centered highlight">
+
+                <thead>
+                    <th class="texts">S No</th>
+                    <th class="texts red-text text-darken-4">Blood Group</th>
+                    <th class="texts red-text text-darken-4">Donor's Name</th>
+                </thead>
+                <tbody id="donorsList">
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="section"></div>
+
+        <div class="parallax-container" id="donate_Parallax">
+            <div class="parallax"><img src="images/donate.jpg">
+
+            </div>
+            <div class="section center container white-text">
+                <h3><q> The significance which is in unity is an eternal wonder. </q></h3>
+                <p>Rabindranath Tagore</p>
+            </div>
+        </div>
+
+        <div id="aboutUs" class="section">
+            <h1 class="heading red-text center">About Us</h1>
+            <div class="container row">
+                <div class="col s12 m6">
+                    <h3 class="red-text text-darken-4">Who Are We?</h3>
+
+                    <ul class="texts">
+                        <li>
+                            <i class="material-icons">keyboard_arrow_right
+                            </i>The Reason behind hundreds of smiles
+                        </li>
+                        <li>
+                            <i class="material-icons">keyboard_arrow_right
+                            </i>The Humans with many blessed prayers
+                        </li>
+                        <li>
+                            <i class="material-icons">keyboard_arrow_right
+                            </i>The Creatures hoping for some goodness in the society
+                        </li>
+                    </ul>
+                    <p class="red-text text-darken-4 heading">Founder :- Saim Akhtar</p>
+                </div>
+                <div class="col s12 m6">
+                    <h3 class="red-text text-darken-4">Our Aim</h3>
+                    <p class="texts">
+                        We are the one with the motive to create a better society. A society where everyone , each one
+                        of us
+                        , would care abot the humanity and the world where we live to make it a better place... Not only
+                        for
+                        us but also for the upcoming Generations. <br>
+                        This is the chain we have started hoping to bring a change even if its about a small change
+                        <br>
+                        How can we run away from all the diseases around us and the problems we face everyday.
+                        We Can not live with our own failures... Where would that bring them??? Back to Us
+                        <br>
+                        <span class="red-text text-darken-4">
+                            Mr Tony Stark Used To Say <q>Its not about how much we've lost, Its about how much we are
+                                left
+                                with</q></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section red lighten-2 center">
+            
+        </div>
+
+        <div id="contact" class="container row">
+            <h1 class="heading red-text center">Contact Us</h1>
+            <div class="col s12 m6 center">
+                <p class="texts"> Contact Us And Follow Our Social Sites To Be Aware about What We Serve:</p>
+                <a href="JavaScript:void(0)"><i class="fab fa-facebook-square blue-text text-darken-4"></i></a>
+                <a href="JavaScript:void(0)"> <i class="fab fa-instagram purple-text text-darken-4"></i>
+                </a>
+                <a href="JavaScript:void(0)"> <i class="fab fa-twitter blue-text"></i>
+                </a>
+                <a href="JavaScript:void(0)"> <i class="fab fa-youtube red-text"></i>
+                </a>
+
+            </div>
+            <div class="col s12 m6">
+                <form action="JavaScript:void(0)">
+                    <fieldset class="center contactForm">
+                        <legend>
+                            <h4 class="heading red-text text-darken-4 center"> Email Us</h4>
+                        </legend>
+                        <input type="email" placeholder="Your Email" class="texts black-text">
+                        <div class="section"></div>
+                        <textarea placeholder="Enter Your Request/message here" class="texts"></textarea>
+                        <div class="section"></div>
+                        <button type="submit" class="btn red white-text right">Send</button>
+                    </fieldset>
+
+                </form>
+            </div>
+
+
+
+        </div>
+
+        <div class="black darken-4 white-text section center">
+
+            <p class="texts">
+                <i class="material-icons">copyright</i>
+                Website Created And Designed By Saim Akhtar
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Here we have modal for different uses -->
+
+    <!-- Modal Structure for Profile Check Of A Donor -->
+    <div id="donorProfile" class="modal">
+        <form action="JavaScript:void(0)" onsubmit="updateProfile()">
+            <div class="modal-content">
+                <h4 class="red-text">Profile Settings</h4>
+
+                <table>
+                    <tbody>
+                        <tr class="texts">
+
+                            <td>Name: </td>
+                            <td><input class="updateProfile" type="text" value="myName" required> </td>
+                        </tr>
+                        <tr class="texts">
+
+                            <td>Address: </td>
+                            <td><input class="updateProfile" type="text" value="myAddress" required> </td>
+                        </tr>
+
+                        <tr class="texts">
+
+                            <td>Contact No: </td>
+                            <td><input type="text" class="updateProfile" value="myContact" required> </td>
+                        </tr>
+
+                        <tr class="texts">
+
+                            <td>Blood Group: </td>
+                            <td><input type="text" class="updateProfile" value="Group" required> </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="modal-footer">
+                <!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
+                <button class="btn btn-small red white-text right modal-close donors__BTN">Close</button>
+                <button type="submit" class="btn btn-small red white-text right donors__BTN">Save</button>
+
+                <div class="clearfix"></div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Modal Structure  For Becoming A Donor-->
+    <div id="addDonor" class="modal">
+        <form action="JavaScript:void(0)" class="container" onsubmit="addDonor()">
+            <div class="modal-content">
+                <h4 class="red-text">Add Profile Details</h4>
+
+
+                <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <label for="donorName">Enter Your Name</label>
+                    <input type="text" class="validate" required id="donorName">
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">map</i>
+                    <label for="donorAddress">Enter Your Address</label>
+                    <input type="text" class="validate" required id="donorAddress">
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">contact_phone</i>
+                    <label for="donorContact">Enter Your Contact No</label>
+                    <input type="text" class="validate" required id="donorContact">
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">invert_colors</i>
+                    <label for="donorBlood">Add Your Blood Group</label>
+                    <input type="text" class="validate" required id="donorBlood">
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
+                <button class="btn btn-small red white-text right modal-close donors__BTN">Close</button>
+                <button type="submit" class="btn btn-small red white-text right donors__BTN">Add</button>
+
+                <div class="clearfix"></div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal Structure for Displaying The Donor's Profile To Public Access -->
+    <div id="donorDetails" class="modal">
+        <div class="modal-content">
+            <h1 class="heading red-text center">Donor's Profile</h1>
+            <div class="card">
+
+                <div class="card-content">
+                    <table>
+                        <tbody>
+                            <tr class="texts">
+
+                                <td>Name: </td>
+                                <td class="profileSpecs"></td>
+                            </tr>
+                            <tr class="texts">
+
+                                <td>Blood Group: </td>
+                                <td class="profileSpecs"></td>
+                            </tr>
+                            <tr class="texts">
+
+                                <td>Address: </td>
+                                <td class="profileSpecs"></td>
+                            </tr>
+
+                            <tr class="texts">
+
+                                <td>Contact No: </td>
+                                <td class="profileSpecs"></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn red">Close</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script>
+
+
+    $(document).ready(function () {
+
+        $('.modal').modal({
+            opacity: 0.9,
+            inDuration: 200,
+
+        });
+
+        $('.sidenav')
+            .sidenav()
+            .on('click tap', '.closing', () => {
+                $('.sidenav').sidenav('close');
+            });
+        $('.parallax').parallax();
+
+    });
+
+
+    window.onscroll = () => {
+        const navibar = document.querySelector("nav")
+        if (this.scrollY <= 100) {
+            navibar.className = ''
+        }
+        else {
+            navibar.className = "red"
+        }
+    }
+
+</script>
+
+<script src="scripts/firebase.js"></script>
+
+
+<script src="scripts/main.js"></script>
+<script src="scripts/userWeb.js"></script>
+
+</html>
