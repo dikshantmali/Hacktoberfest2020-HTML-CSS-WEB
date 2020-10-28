@@ -4,6 +4,7 @@ h1{
 	font-weight: bold;
 	font-family: serif;
 }
+
 body {
   background-color: #4158d0;
   background-image: linear-gradient(
@@ -16,15 +17,18 @@ body {
   min-height: 100vh;
   font-family: "Varela Round", Nunito, Montserrat, sans-serif;
 }
+
 p{
 	color: darkred;
 	font-weight: bold;
 	font-family: serif;
 	font-size: 30px;
 }
+
 h3{
 	margin-top: 30px; 
 }
+
 #timer{
 	margin-top: 50px;
 	text-align: center;
@@ -39,33 +43,43 @@ h3{
 	color: white;
 
 }
+
 #td1{
 	font-weight: bold;
 }
+
 #td1{
 	font-weight: bold;
 }
+
 #td2{
 	font-weight: bold;
 }
+
 #td3{
 	font-weight: bold;
 }
+
 #td4{
 	font-weight: bold;
 }
+
 #td5{
 	font-weight: bold;
 }
+
 #td6{
 	font-weight: bold;
 }
+
 #td7{
 	font-weight: bold;
 }
+
 #td8{
 	font-weight: bold;
 }
+
 #td9{
 	font-weight: bold;
 }
