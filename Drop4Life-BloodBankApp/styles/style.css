@@ -1,0 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: transparent !important;
+    transition: background-color 0.2s ;
+    z-index: 1000;
+}
+.heading{
+    font-family: 'Ramabhadra', sans-serif;
+    letter-spacing: 1px;
+}
+.texts{
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 1.3em !important;
+}
+
+#mainContent{
+    position: relative;
+    top: 35em;
+}
+
+
+#donors h1{
+    letter-spacing: 2px
+}
+.modal-trigger{
+    cursor: pointer
+}
+
+.tabs{
+    overflow: hidden !important;
+}
+#signInBtn{
+    outline: 2px solid red !important;
+}
+
+
+#userTop{
+    height: 40em !important
+}
+.parallax-container > .section{
+    
+    margin-top: 5em !important;
+}
+.modal-footer{
+    padding: 0em 2em !important;
+}
+.donors__BTN{
+    margin: 0 0.6em !important
+}
+
+/* resiterArea css */
+.registerMain img{
+    width: 5em;
+}
+
+.Background{
+    background: linear-gradient(to right,rgb(246, 243, 243),rgb(231, 228, 228))
+}
+/* index css */
+#donate_Parallax{
+    height: 25em !important;
+}
+#aboutUs ul{
+    list-style-type: square !important;
+}
+.fab{
+    font-size: 3em;
+    margin-left: 5%
+}
+.contactForm{
+    border: 5px solid red;
+    border-radius: 20px
+}
+.contactForm input,.contactForm textarea,.contactForm button{
+    border: 2px solid rgb(14, 0, 0) !important;
+    border-radius: 5px !important
+}
+.contactForm textarea{
+    resize: vertical;
+}
+.closing{
+    cursor: pointer;
+}
+@media  (min-width: 993px){
+    nav{
+        padding: 0 10em;
+    }
+    
+}
+@media  (max-width: 349px){
+    #donate_Parallax h3{
+        font-size: 2em !important;
+        
+    }
+    
+}

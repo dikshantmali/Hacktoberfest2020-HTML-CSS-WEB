@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration Area</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='styles/style.css'>
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Ramabhadra&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+    <!--Let browser know website is optimized for mobile-->
+
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script> -->
+
+</head>
+
+<body class="Background">
+
+
+
+
+    <div class="section container ">
+        <div class=" center registerMain">
+            <a class="red-text heading" href="index.html">
+                <h1>Drop4Life</h1>
+                <img src="images/logoImage.png" alt="logo of App">
+            </a>
+            <p class="texts red-text text-lighten-1">Contribute To Save The Humanity</p>
+            <div class="container z-depth-2">
+
+                <ul class="tabs row z-depth-1">
+                    <li class="tab col s6 texts"><a class="red-text text-darken-3" href="#register">Register</a></li>
+                    <li class="tab col s6 texts"><a class="red-text text-darken-3" href="#logIn">Log In</a></li>
+                </ul>
+                <div id="register" class="container">
+                    <form action="JavaScript:void(0)" onsubmit="register()">
+                        <h2 class="red-text text-darken-3 center">Create Account</h2>
+                        <div class="input-field">
+                            <label for="Email" class="grey-text text-darken-2">Enter Your Email Address</label>
+                            <input type="email" name="newEmail" class="validate texts sign" required id="Email">
+                        </div>
+                        <div class="input-field">
+                            <label for="PWD" class="grey-text text-darken-2">Enter Password</label>
+                            <input type="password" name="newPwd" class="validate texts sign" required id="PWD">
+                        </div>
+                        <div class="section">
+                            <span id="errorRegister" class="blue-text"></span>
+                        </div>
+                        <button type="submit" class="btn red white-text right ">Register</button>
+                        <div class="clearfix"></div>
+                        <div class="section"></div>
+
+                    </form>
+
+                </div>
+                <div id="logIn" class="container">
+
+                    <form action="JavaScript:void(0)" onsubmit="logIn()">
+                        <h2 class="red-text text-darken-3 center">User Login</h2>
+                        <div class="input-field">
+                            <label for="userEmail" class="grey-text text-darken-2">Enter Your Email Address</label>
+                            <input type="email" name="userEmail" class="validate texts sign" required id="userEmail">
+                        </div>
+                        <div class="input-field">
+                            <label for="userPWD"  class="grey-text text-darken-2">Enter Password</label>
+                            <input type="password" name="userPwd" class="validate texts sign" required id="userPWD">
+                        </div>
+                        <div class="section">
+                            <span id="errorLogIn" class="blue-text"></span>
+                        </div>
+                        <button type="submit" class="btn red-text right white" id="signInBtn">Sign In</button>
+                        <div class="clearfix"></div>
+                        <div class="section"></div>
+
+                    </form>
+
+
+                </div>
+            </div>
+            <p class="texts red-text text-lighten-1">The Future Depends Upon What We Today, <br> So Why Don't We Let Our
+                Today's Good Deeds Become The Reason For Someone's Future </p>
+        </div>
+
+
+
+
+</body>
+<script src="scripts/app.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.tabs').tabs();
+    });
+
+</script>
+
+<script src="scripts/firebase.js"></script>
+<script src="scripts/authentication.js"></script>
+
+
+</html>
