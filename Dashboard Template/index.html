@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <div class="navbar-brand col-md-3 col-lg-2 mr-0 px-3">
+    <h3 style="margin-bottom: 0px;display:inline">Dark Dashboard</h3>
+    <button class="navbar-toggler d-md-none collapsed" style="float: right;" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Logout</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky sidebar-body">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              Orders
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shopping-cart"></span>
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"></span>
+              Customers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2"></span>
+              Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              Integrations
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      
+      <div class="row cards">
+        <div class="col">
+          <div class="card graph-bg" id="card-1">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card graph-bg" id="card-2">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card graph-bg" id="card-3">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card graph-bg" id="card-4">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-columns cards">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title card-normal">TODO List
+              </h5>
+              <ul id="todo-list">
+                <li id="tarefa-1">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-1')" />
+                  Task 1
+                </li>
+                <li id="tarefa-2">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-2')" />
+                  Task 2
+                </li>
+                <li id="tarefa-3">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-3')" />
+                  Task 3
+                </li>
+                <li id="tarefa-4">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-4')" />
+                  Task 4
+                </li>
+                <li id="tarefa-5">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-5')" />
+                  Task 5
+                </li>
+                <li id="tarefa-6">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-6')" />
+                  Task 6
+                </li>
+                <li id="tarefa-7">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-7')" />
+                  Task 7
+                </li>
+                <li id="tarefa-8">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-8')" />
+                  Task 8
+                </li>
+                <li id="tarefa-4">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-4')" />
+                  Task 9
+                </li>
+                <li id="tarefa-10">
+                  <input type="checkbox" onclick="getMyState(this, 'tarefa-10')" />
+                  Task 10
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title card-normal">News</h5>
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="card-body">
+                    <h5 class="card-title">News One</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-sm btn-dark right">See more</a>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="card-body">
+                    <h5 class="card-title">News Two</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-sm btn-dark right">See more</a>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title card-normal">New Post</h5>
+              <form>
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-2 col-form-label">Title</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" value="Lorem ipsum dolor sit amet" placeholder="Post title here">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword" class="col-sm-2 col-form-label">Post text</label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" rows="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum congue sem, nec rutrum odio faucibus eu. Cras a neque a tortor ultricies commodo. Morbi a tincidunt enim. Phasellus feugiat bibendum ligula, at pellentesque magna maximus vel.</textarea>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary right" style="margin:0 0 30px 0;">Publish</a>
+              </form>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title card-normal">Admin</h5>
+              <div class="card-body">
+                <div><strong>Email: </strong><i>admin@mysite.com.br</i></div>
+                <div><strong>Username: </strong><i>admin</i></div>
+                <div><strong>Published posts: </strong><i>26</i></div>
+                <a href="/" class="right">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  </div>
+  <script>
+    function getMyState(checkbox, id) {
+      let myCheckbox = document.getElementById(id);
+      if (checkbox.checked) {
+        myCheckbox.style = 'text-decoration:line-through;background:#ddd;color:#999;'
+      } else {
+        myCheckbox.style = 'text-decoration:none;'
+      }
+    }
+  </script>
+  </body>
+</html>
