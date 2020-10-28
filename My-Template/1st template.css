@@ -1,0 +1,268 @@
+
+.nav-item:hover{
+    background-color: #4CAF50 !important;
+    color: black !important;
+}
+.navbar-brand:hover{
+    background-color: #4CAF50;
+    color: black;
+}
+.navbar-brand{
+    padding: 15px
+}
+.nav-item{
+    padding: 10px 0px;
+    margin-left: 20px
+}
+.navbar{
+    padding: 0;
+    color: black;
+}
+.bgimg1{
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.w3schools.com/w3images/mac.jpg);
+    min-height: 100%;
+}
+.contain h1
+{
+    padding-top: 155px;
+    color: white;
+    font-size: 60px;
+}.contain h6
+{
+    color: white;
+    }
+.mar{
+    margin-bottom: 30px;
+}
+.mar1{
+    margin-bottom: 247px
+}
+.btn1,.btn-info{
+    border: 0;
+    border-radius: 0;
+    opacity: 0.5;
+    padding: 20px 30px;
+}
+.btn1:hover,.btn-info:hover{
+    border-radius: 0;
+    background-color: #ccc;
+    opacity:1;
+}
+.sm{
+    opacity: .5;
+    color: #ccc;
+}
+.contain{
+    margin-left: 15px
+}
+.com_icon{
+    font-size: 64px;
+}
+.btttnl_h4{
+    margin-top: 50px;
+}
+.bttnl_p{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 40px
+}
+.RPDS{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.row2{
+    margin-bottom: 180px
+}
+.third_con{
+    background-color: #f1f1f1;
+}
+.btn2{
+    border-radius: 0;
+    border: 0;
+    background-color: black
+    background-color: black;
+    padding: 10px 20px;
+}
+.btn2:hover{
+    background-color: #ccc;
+    color: black;
+}
+body{
+    position: relative;
+}
+.third_h4{
+    margin-top: 120px;
+    margin-bottom: 30px;
+}   
+.img_3{
+    margin-top: 130px;
+    margin-bottom:130px;
+    border-radius: 30px
+}
+.third_pg_col1{
+    right: 100px;
+    padding-right: 0px;
+    padding-left: 0;
+}
+.thrd_con_con{
+    margin-right: 50px
+}
+.btn3{
+    padding-left: 90px;
+    padding-right: 110px
+}
+.pg4_h4{
+    margin-top: 130px;
+}
+.pg4_h6{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.profile_row{
+    margin-bottom: 150px;
+}
+.profile{
+    box-shadow: 5px 5px 5px grey;
+    padding-top: 10px;
+}
+.img4{
+    margin-left: 20px   
+}
+.first_jumbo{
+    color: white;
+    background-color: #616161;
+}
+.img5:hover{
+    opacity: 0.5;
+}
+.pg5_h4{
+
+}
+.pg5_h6{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.contain5{
+    padding-top: 100px; 
+    margin-bottom: 100px
+}
+.contain5_1{
+    margin-left: 15px;
+    
+}
+.progrs{
+    margin-top: 10px;
+}
+.table_wala tr th{
+    padding: 30px 12px;
+    background-color: black;
+    color: white;
+    border: 0;
+}
+.table_center tr th{
+    padding: 50px 12px;
+    background-color: red;
+    color: white;
+    border: 0;
+}
+.table_wala{
+    margin-top: 30px;
+}
+.table_wala,.table_center{
+    text-align: center;
+    background-color: white;
+}
+
+.pricing_back{
+    background-color: #616161;
+    color: white;
+    padding-bottom: 50px;
+    padding-top: 50px
+}
+.btn4{  
+    padding: 12px 24px;
+    color: white;
+    background-color: black;
+}
+.btn4:hover{
+    color: black;
+    border-radius: 0;
+    background-color: #e9ecef
+}
+.pg6_h4{
+    padding-top: 120px
+}
+.pg6_h6{
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+#MMPE1{
+    font-size: 35px;
+}#MMPE2{
+    font-size: 35px;
+}#MMPE3{
+    font-size: 35px;
+}
+.form1{
+    margin-bottom: 20px;
+}
+.pg6_h4{
+    margin-top: 50px;
+    margin-bottom: 30px
+}
+.pg6_h6{
+    margin-bottom: 30px;
+}
+.contact{
+    background-color: #f1f1f1;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.last_div{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+.last_btn{
+    
+    border-radius: 0px;
+    border: 0;
+    padding: 8px 16px;
+   /* margin-left: 43%;*/
+    margin-bottom: 20px;   
+}
+.last_btn:hover{
+    background-color: #4CAF50;
+    border: 0;
+}
+.align_sc{
+    /*margin-left: 40%;*/
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px
+}
+.alig_sc:hover{
+    color: #4CAF50;
+}
+.txt_l_cen{
+    color: white;
+    /*margin-left: 40%;*/
+}
+.txt_l_cen span a:hover{
+    color: #4caf50;
+}
+@media screen and (max-width : 654px){
+    .navbar-nav
+    {
+        display: none;
+    }
+    
+}
+@media screen and (min-width:654px)
+{
+    .dropdown{
+        display: none;
+    }
+}
