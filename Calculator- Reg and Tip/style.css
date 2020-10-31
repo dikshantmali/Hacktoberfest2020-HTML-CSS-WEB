@@ -1,0 +1,225 @@
+body {
+  background-image: url(bg.jpg);
+  background-position: center;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 3em;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+#object {
+  display: inline-block;
+
+  margin-right: auto;
+}
+
+
+/*Calculator*/
+
+.calculatorLG {
+  border: solid black;
+  background-color: black;
+  height: 25vw;
+  width: 15vw;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(8, 12.5%);
+  text-align: center;
+  border-radius: 5%;
+  font-size: 2vw;
+  color: white;
+  cursor: pointer;
+}
+
+#calScreen {
+  background-color: #474747;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4; 
+  border: solid black;
+  border-radius: 5%;
+  color: white;
+  font-size: 3vw;
+  word-break: break-all;
+}
+
+.pButtons {
+  background-color: #7300c1;
+  border-radius: 100%;
+  color: white;
+  border: solid 1px black;
+}
+
+.pkButtons {
+  background-color: #bb009f;
+  border-radius: 100%;
+  color: white;
+  border: solid 1px black;
+} 
+
+.bButtons {
+  background-color: #0098c1;
+  border-radius: 100%;
+  color: white;
+  border: solid 1px black;
+}
+
+#long {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 45%;
+}
+
+.pkButtons:active, .pButtons:active, .bButtons:active, .enter:active, #tipExit:active, #exit:active, #originalCalculator:active {
+  border: solid black;
+  box-shadow: inset -1px 0 3px black, inset 0 1px 3px black, inset 1px 0 3px black, inset 0 -1px 3px black;
+}
+
+
+
+
+/*Tip Calculator*/
+#tip {
+  display: none;
+}
+
+.tipCalculator {
+  border: solid 5px black;
+  background-color: black;
+  height: 25vw;
+  width: 15vw;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(9, 11.11%);
+  border-radius: 5%;
+  color: white;
+  cursor: pointer;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.tipScreen {
+  background-color: #474747;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: solid 1px black;
+  border-right: none;
+  font-size: 1vw;
+  white-space: nowrap;
+}
+
+.tipScreen2 {
+  background-color: #474747;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  border: solid 1px black;
+  font-size: 1vw;
+  white-space: nowrap;
+}
+
+.tipScreenWords {
+  margin: auto;
+  background-color: transparent;
+  color: #ffc107;
+  border: none;
+}
+
+.amount {
+  background-color: #bb009f;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  border: solid 1px black;
+  border-top: none;
+  white-space: nowrap;
+}
+
+#tipAmount, #tipPercent, #tipSplit {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: inherit;
+  width: 6vw;
+  text-align: center;
+}
+
+.tipPercent {
+  background-color: #0098c1;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  border: solid 1px black;
+  border-top: none;
+  white-space: nowrap;
+}
+
+.split {
+  background-color: #7300c1;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  border: solid 1px black;
+  border-top: none;
+  white-space: nowrap;
+} 
+
+.enter {
+  background-color: #00ff5a;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  border: solid 1px black;
+  outline: none;
+  font-size: inherit;
+  border-top: none;
+  padding: 0;
+}
+
+#tipExit {
+  background-color: #FFEB3B;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  border: solid 1px black;
+  outline: none;
+  font-size: inherit;
+  border-top: none;
+  padding: 0;
+  border-bottom-left-radius: 5%;
+}
+
+
+@media only screen and (max-width: 550px) {
+  .calculatorLG {
+      border: solid black;
+      background-color: black;
+      height: 25vh;
+      width: 15vh;
+  }
+}

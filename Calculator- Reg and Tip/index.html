@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <h2>Regular and Tip</h2>
+    <!--Calculator-->
+    <div id="object">
+        <div id="calculator">
+            <div class="calculatorLG">
+                <div id="calScreen"></div>
+                <div class="bButtons" id="sevenButton" onclick="calculate(7)">7</div>
+                <div class="bButtons" id="eightButton" onclick="calculate(8)">8</div>
+                <div class="bButtons" id="nineButton" onclick="calculate(9)">9</div>
+                <div class="pkButtons" id="divideButton" onclick="calculate('/')">/</div>
+                <div class="bButtons" id="fourButton" onclick="calculate(4)">4</div>
+                <div class="bButtons" id="fiveButton" onclick="calculate(5)">5</div>
+                <div class="bButtons" id="sixButton" onclick="calculate(6)">6</div>
+                <div class="pkButtons" id="multiplyButton" onclick="calculate('*')">*</div>
+                <div class="bButtons" id="oneButton" onclick="calculate(1)">1</div>
+                <div class="bButtons" id="twoButton" onclick="calculate(2)">2</div>
+                <div class="bButtons" id="threeButton" onclick="calculate(3)">3</div>
+                <div class="pkButtons" id="subtractButton" onclick="calculate('-')">-</div>
+                <div id="long" class="bButtons" id="zeroButton" onclick="calculate(0)">0</div>
+                <div class="bButtons" id="decimalButton" onclick="calculate('.')">.</div>
+                <div class="pkButtons" id="additionButton" onclick="calculate('+')">+</div>
+                <div class="pButtons" id="long" onclick="tip()">tip</div>
+                <div class="pButtons" id="clearButton" onclick="clearCalculator()">ac</div>
+                <div class="pkButtons" id="equalButton" onclick="equalButton()">=</div>
+            </div>
+        </div>
+        <div id="tip">
+            <div class="tipCalculator">
+                <div class="tipScreen">
+                    <div>Bill Total</div>
+                    <br>
+                    <div>
+                    <p class="tipScreenWords" id="tipTotal"></p>
+                    </div>
+                    <div>
+                    <p class="tipScreenWords" id="totalTotal"></p>
+                    </div>
+                </div>
+                <div class="tipScreen2">
+                    <div>Per Person</div>
+                    <br>
+                    <div>
+                    <p class="tipScreenWords" id="tipPP"></p>
+                    </div>
+                    <div>
+                    <p class="tipScreenWords" id="totalPP"></p>
+                    </div>
+                </div>
+                <div class="amount"> Amount $
+                    <input type="number" aria-label="Amount" id="tipAmount" value="0.00">
+                </div>
+
+                <div class="tipPercent">Tip:
+                    <input type="number" id="tipPercent" value="20">%
+                </div>
+
+                <div class="split">People:
+                    <input type="number" id="tipSplit" value="1">
+                </div>
+                <button class="enter" onclick="tipCalculator()">Enter</button>
+                <button id="tipExit" onclick="originalCalculator()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
