@@ -34,7 +34,7 @@ class ColorGenerator:
     def updateTheme(self, red, green, blue):
         self._theme = Color(red, green, blue)
 
-    def generate(self, n=1):
+    def generate(self, n=1, variance=None):
         colors = []
         for _ in range(n):
             red = random.randint(0, 255)
@@ -42,9 +42,16 @@ class ColorGenerator:
             blue = random.randint(0, 255)
 
             if self._theme:
-                red = (red + self._theme.getRed()) / 2
-                green = (green + self._theme.getGreen()) / 2
-                blue = (blue + self._theme.getBlue()) / 2
+                if variance != None:
+                    var = np.floor(variance * 255 * np.random.randn(3))
+                    
+                    red = np.clip(var[0] + self._theme.getRed(), 0, 255)
+                    green = np.clip(var[1] + self._theme.getGreen(), 0, 255)
+                    blue = np.clip(var[2] + self._theme.getBlue(), 0, 255)
+                else:
+                    red = (red + self._theme.getRed()) / 2
+                    green = (green + self._theme.getGreen()) / 2
+                    blue = (blue + self._theme.getBlue()) / 2
             
             colors.append(Color(red, green, blue))
         return colors
@@ -56,13 +63,13 @@ class ColorGenerator:
 
 def generateSampleColors():
     # pick theme given rgb values
-    theme = Color(255, 255, 255)
+    theme = Color(100, 100, 255)
 
     # create Color Generator
     cg = ColorGenerator(theme)
 
     # generate 100 random colors
-    colors = cg.generate(100)
+    colors = cg.generate(1000, 0.1)
 
     # convert to np array
     colors = cg.convertToNPArray(colors)
