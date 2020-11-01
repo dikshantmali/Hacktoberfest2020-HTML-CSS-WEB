@@ -43,5 +43,17 @@ The `variance` can be picked for colors with a given theme. The `variance` is a 
 
 ## Multiple Themes
 
-You can also add multiple themes. The following example had both the themes from above as input and generated colors based on them.
+You can also add multiple themes. 
+
+1. An set of random colors that had both the themes from above as input and generated colors based on them.
 ![multiple_themes.png](images/multiple_themes.png)
+
+## Monochrome Colors
+
+You can have monochrome colors with a field set constant.
+
+1. To have only orange colors generated, you can pass `vary='green'` as a parameter to generate. This is with variance 0.1
+![orange_mono1.png](images/orange_mono1.png)
+
+2. To have only orange colors generated, you can pass `vary='green'` as a parameter to generate. This is with variance 0.6
+![orange_mono2.png](images/orange_mono2.png)
