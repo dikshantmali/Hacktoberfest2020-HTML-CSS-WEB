@@ -29,10 +29,18 @@ class Color:
 
 class ColorGenerator:
     def __init__(self, theme=None):
-        self._theme = theme
+        if type(theme) is list:
+            self._theme = theme
+        elif type(theme) is Color:
+            self._theme = [theme]
+        else:
+            self._theme = None
 
-    def updateTheme(self, red, green, blue):
-        self._theme = Color(red, green, blue)
+    def addTheme(self, red, green, blue):
+        if self._theme is not None:
+            self._theme.append(Color(red, green, blue))
+        else:
+            self._theme = [Color(red, green, blue)]
 
     def generate(self, n=1, variance=None):
         colors = []
@@ -42,16 +50,17 @@ class ColorGenerator:
             blue = random.randint(0, 255)
 
             if self._theme:
+                theme = np.random.choice(self._theme, 1)[0]
                 if variance != None:
                     var = np.floor(variance * 255 * np.random.randn(3))
                     
-                    red = np.clip(var[0] + self._theme.getRed(), 0, 255)
-                    green = np.clip(var[1] + self._theme.getGreen(), 0, 255)
-                    blue = np.clip(var[2] + self._theme.getBlue(), 0, 255)
+                    red = np.clip(var[0] + theme.getRed(), 0, 255)
+                    green = np.clip(var[1] + theme.getGreen(), 0, 255)
+                    blue = np.clip(var[2] + theme.getBlue(), 0, 255)
                 else:
-                    red = (red + self._theme.getRed()) / 2
-                    green = (green + self._theme.getGreen()) / 2
-                    blue = (blue + self._theme.getBlue()) / 2
+                    red = (red + theme.getRed()) / 2
+                    green = (green + theme.getGreen()) / 2
+                    blue = (blue + theme.getBlue()) / 2
             
             colors.append(Color(red, green, blue))
         return colors
@@ -63,10 +72,11 @@ class ColorGenerator:
 
 def generateSampleColors():
     # pick theme given rgb values
-    theme = Color(100, 100, 255)
+    theme1 = Color(100, 100, 255)
+    theme2 = Color(255, 255, 255)
 
     # create Color Generator
-    cg = ColorGenerator(theme)
+    cg = ColorGenerator([theme1, theme2])
 
     # generate 100 random colors
     colors = cg.generate(1000, 0.1)

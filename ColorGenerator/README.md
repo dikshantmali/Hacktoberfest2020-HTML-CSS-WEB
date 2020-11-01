@@ -40,3 +40,8 @@ The `variance` can be picked for colors with a given theme. The `variance` is a 
 
 2. A set of random colors with a given `light blue rgb(100, 100, 255)` theme and `variance=0.1`
 ![variance_blue.png](images/variance_blue.png)
+
+## Multiple Themes
+
+You can also add multiple themes. The following example had both the themes from above as input and generated colors based on them.
+![multiple_themes.png](images/multiple_themes.png)
