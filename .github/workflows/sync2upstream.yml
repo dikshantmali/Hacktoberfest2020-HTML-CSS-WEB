@@ -23,7 +23,7 @@ jobs:
       id: sync
       uses: bdougie/Fork-Sync-With-Upstream-action@fork
       with:
-        upstream_repository: MallikarjunHt/Hacktoberfest2020-HTML-CSS-WEB #your repo
+        upstream_repository: dikshantmali/Hacktoberfest2020-HTML-CSS-WEB #your repo
         upstream_branch: master #your main branch
         target_branch: master                       # optional
         github_token: ${{ secrets.GITHUB_TOKEN }}   # optional, for accessing repos that requir authentication
