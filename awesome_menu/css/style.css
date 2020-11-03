@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Lato, sans-serif serif;
+    line-height: 1.6;
+    background-color: teal;
+    overflow-x: hidden;
+}
+li{
+    list-style-type: none;
+}
+label .menu{
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out; 
+}
+
+label .hamburger{
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    transform-origin: center;
+    transition: 0.5s ease-in-out; 
+}
+
+label .hamburger::after, label .hamburger::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+label .hamburger::before{
+    top: -10px;
+}
+
+label .hamburger::after{
+    bottom: -10px;
+}
+label input{
+    display: none;
+}
+label input:checked + .menu{
+    box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+    border-radius: 0;
+}
+
+label input:checked + .menu .hamburger{
+    transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger::after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+label input:checked + .menu .hamburger::before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+label input:checked + .menu + ul{
+    opacity: 1;
+}
+
+label ul {
+  z-index: 200;  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.25s 0s ease-in-out;
+}
+
+label a {
+    margin-bottom: 1em;
+    font-size: 18px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 12px 36px; 
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+label a:hover{
+    background-color: teal;
+    color: #fff;
+    letter-spacing: 3px;
+}
