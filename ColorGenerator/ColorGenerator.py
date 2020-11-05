@@ -29,12 +29,20 @@ class Color:
 
 class ColorGenerator:
     def __init__(self, theme=None):
-        self._theme = theme
+        if type(theme) is list:
+            self._theme = theme
+        elif type(theme) is Color:
+            self._theme = [theme]
+        else:
+            self._theme = None
 
-    def updateTheme(self, red, green, blue):
-        self._theme = Color(red, green, blue)
+    def addTheme(self, red, green, blue):
+        if self._theme is not None:
+            self._theme.append(Color(red, green, blue))
+        else:
+            self._theme = [Color(red, green, blue)]
 
-    def generate(self, n=1):
+    def generate(self, n=1, variance=None, vary=None):
         colors = []
         for _ in range(n):
             red = random.randint(0, 255)
@@ -42,9 +50,33 @@ class ColorGenerator:
             blue = random.randint(0, 255)
 
             if self._theme:
-                red = (red + self._theme.getRed()) / 2
-                green = (green + self._theme.getGreen()) / 2
-                blue = (blue + self._theme.getBlue()) / 2
+                theme = np.random.choice(self._theme, 1)[0]
+                if variance != None:
+                    var = np.floor(variance * 255 * np.random.randn(3))
+
+                    # for monochrome capabilities
+                    if vary == 'red':
+                        red = var[0] + theme.getRed() % 255
+                        green = theme.getGreen()
+                        blue = theme.getBlue()
+                    elif vary == 'green':
+                        green = var[1] + theme.getGreen() % 255
+                        red = theme.getRed()
+                        blue = theme.getBlue()
+                    elif vary == 'blue':
+                        blue = var[2] + theme.getBlue() % 255
+                        red = theme.getRed()
+                        green = theme.getGreen()
+                    # vary everything
+                    else:
+                        red = np.clip(var[0] + theme.getRed(), 0, 255)
+                        green = np.clip(var[1] + theme.getGreen(), 0, 255)
+                        blue = np.clip(var[2] + theme.getBlue(), 0, 255)
+
+                else:
+                    red = (red + theme.getRed()) / 2
+                    green = (green + theme.getGreen()) / 2
+                    blue = (blue + theme.getBlue()) / 2
             
             colors.append(Color(red, green, blue))
         return colors
@@ -52,17 +84,18 @@ class ColorGenerator:
     def convertToNPArray(self, arr):
         a = [c.getArray() for c in arr]
         return np.asarray(a, dtype=np.uint8)
-    
 
 def generateSampleColors():
     # pick theme given rgb values
-    theme = Color(255, 255, 255)
+    theme1 = Color(100, 100, 255)
+    theme2 = Color(255, 255, 255)
+    orange = Color(255, 150, 0)
 
     # create Color Generator
-    cg = ColorGenerator(theme)
+    cg = ColorGenerator([orange])
 
     # generate 100 random colors
-    colors = cg.generate(100)
+    colors = cg.generate(n=1000, variance=0.3, vary='green')
 
     # convert to np array
     colors = cg.convertToNPArray(colors)
