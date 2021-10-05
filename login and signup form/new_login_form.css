@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: linear-gradient(to bottom right, #e84393 0%, #000000 74%); */
+
+  background-image: linear-gradient(to bottom right, #e84393 0%, #000000 74%);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  text-align: center;
+  align-items: left;
+  padding-top: 10px;
+  width: 300px;
+  height: 470px;
+  border-radius: 5px;
+  background-color: white;
+
+  /* background-image: linear-gradient(315deg, #e84393 0%, #000000 74%); */
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+p input {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* button */ /* button */ /* button */ /* button */ /* button */ /* button */ /* button */ /* button *button /* button *
+/* button */ /* button */ /* button */ /* button */ /* button */ /* button */ /* button */ /* button *button /* button *
+/* button */ /* button */ /* button */ /* button */ /* button */ /* button */ /* button */ /* button */ /* button  */
+.signupbutton {
+  border: none;
+  border-radius: 5px;
+  width: 70px;
+  height: 20px;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.signupbutton:hover {
+  color: turquoise;
+}
+.signupbutton:active {
+  border: 2px solid white;
+  transform: scale(0.98);
+}
+
+.checkbox {
+  opacity: 0;
+}
+
+#checkbox:checked ~ .login {
+  opacity: 100%;
+  transform: translateY(-243px);
+}
+
+/* .beyform {
+
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, #e84393 0%, #000000 74%); */
+/* } */
+.signup {
+  position: absolute;
+
+  overflow: hidden;
+}
+
+.login {
+  opacity: 0;
+  position: absolute;
+  height: 300px !important ;
+  left: 616px;
+  margin-right: 100px;
+  transform: translateY(210px);
+  transition: 1s ease-in-out;
+}
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  text-align: center;
+  align-items: left;
+  padding-top: 10px;
+  width: 300px;
+  height: 472px;
+  border-radius: 5px;
+  background-color: white;
+
+  /* background-image: linear-gradient(315deg, #e84393 0%, #000000 74%); */
+}
+/* .aakhu{
+    border: 2px solid white;
+    height: 50vh;
+} */
+.logininstead {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+label {
+  cursor: pointer;
+}
+
+label:hover {
+  color: turquoise;
+}
