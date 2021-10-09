@@ -1,0 +1,102 @@
+<!D0CTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Navbar</title> 
+  <link rel="shortcut icon" href="Logo.jpg">
+  <!-- font awesome link  --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> 
+ </head> 
+ <style>
+   .heading {
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+
+.heading span {
+    color:#0d19a3;
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:#1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid #0d19a3;
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+header .user .post{
+    font-size: 2rem;
+    color:#eee;
+}
+
+header .navbar{
+    width:100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+
+header .navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background:#0d19a3;
+}
+ </style>
+ <body> 
+  <!-- header section starts  --> 
+  <header> 
+   <div class="user"> 
+    <img src="Logo.jpg"alt="">
+     
+    <h3 class="name">Responsive<br> Navbar </h3> 
+   </div> 
+   <nav class="navbar"> 
+    <ul> 
+     <li><a href="#home">Home</a></li> 
+     <li><a href="#about">About</a></li> 
+     <li><a href="#menu">Menu</a></li> 
+     <li><a href="#products">Products</a></li> 
+     <li><a href="#review">Review</a></li> 
+     <li><a href="#contact">Contact</a></li> 
+    </ul> 
+   </nav> 
+  
+ </body>
+</html>
