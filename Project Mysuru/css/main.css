@@ -1,0 +1,233 @@
+/*Author URL: https://github.com/PrinceMayur007/Mysuru
+License: MIT License
+License URL: https://github.com/PrinceMayur007/Mysuru
+--*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background: url("../images/mysore-palace-city-1.jpg");
+    height: 657px;
+    background-size: cover;
+    /*
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    */
+    background-position: center bottom;
+}
+.logo{
+    width: 124px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px; 
+}
+.nav-menu{
+    list-style: none;
+}
+.nav-menu li{
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-menu li a:hover{
+    color: #edc951;
+    transition: all 0.3s ease-in-out;
+}
+.header-title{
+    text-align: center;
+}
+.title-1{
+    color: #edc951;
+    font-family: 'Raleway', sans-serif;
+    /*
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    */
+    padding-top: 290px;
+    font-size: 57px;
+}
+.title-2{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    /*
+    color: #f08730;
+    font-family: 'Rochester', cursive;
+    */
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+
+.search{
+    margin-left: 25px
+}
+/**********************************Discover Section*******************************************/
+
+.discover-section{
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+}
+
+.card{
+    height: 360px;
+    width: 240px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+.card-1-h1{
+    /*color: #edc951;*/
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-top: 90px;
+
+
+    background: -webkit-linear-gradient(top, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C );
+    background: -webkit-linear-gradient(#eee,#edc951);
+    */   
+}
+
+.card-1-border{
+    border: 3px solid #f08730;
+    position: relative;
+}
+
+.border-overlay{
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 100%;
+    width: 100%;
+    -webkit-box-shadow: -3px 3px 30px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 30px 2px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 30px 2px rgba(0,0,0,0.75);
+}
+
+.card-2{
+    background-image: url("../images/namdroling.jpg");
+    background-size: cover;
+    margin-top: -35px;
+    -webkit-box-shadow: -3px 3px 30px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 30px 2px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 30px 2px rgba(0,0,0,0.75); 
+}
+
+.card-3{
+    background-image: url("../images/brindavan_garden.jpg");
+    background-size: cover;
+    -webkit-box-shadow: -3px 3px 30px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 30px 2px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 30px 2px rgba(0,0,0,0.75);
+
+}
+
+/*-- back to top --*/
+.cd-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	box-shadow: 0 0 10px rgb(68, 63, 58)!important;
+	/* image replacement properties */
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background:rgba(62, 58, 57, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+	background-size: 75%;
+	visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .8;
+}
+.cd-top:hover {
+  background-color:rgb(16, 16, 16);
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+	height: 40px;
+    width: 40px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+/*-- /back to top --*/
+/* Page Loader */
+#pageloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e6d9dc;
+    /*#ffdde2*/
+    z-index: 99999;
+}
+
+#status {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    /*https://media.giphy.com/media/y5MNdXGpGmSixqxkUa/source.gif**/
+    background-image: url("../images/mysuru_breadth_gif.gif");
+    border-radius: 50%;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -10px 0 0 -36px;
+    background-position: unset;
+    background-size: contain;
+}
