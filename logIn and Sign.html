@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>registration page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style class="teext/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .hero{
+            height: 100%;
+            width: 100%;
+            background-color: blanchedalmond;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            
+        }
+        .form-box{
+            width: 350px;
+            height: 550px;
+            position: relative;
+            margin: 6% auto;
+            background: #fff;
+            padding: 5px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .button-box{
+            width: 230px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 30px 15px #ff61241f;
+            border-radius: 30px;
+        }
+        .toggle-btn{
+            padding: 10px 30px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+        }
+        #btn{
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 120px;
+            height: 100%;
+            background: linear-gradient(to right, #ff107f, #ffad06);
+            border-radius: 30px;
+            transition: .5s;
+        }
+
+        .social-icons{
+            width: 30px auto;
+            text-align: center;
+        }
+        /*
+        .social-icons img{
+            width: 30px;
+            margin: 0 12px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+
+            cursor: pointer;
+        }*/
+
+
+        /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px ;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  size: 50px;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/*google*/
+.fa-google{
+    background: #ffad06;
+    color: #fff;
+}
+
+.input-group{
+    top: 180px;
+    margin-top: 10px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    
+
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent; 
+    position: relative;
+       
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    
+    border: 0;
+    background: linear-gradient(to right, #ff107f, #ffad06);
+    border-radius: 20px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 15px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+    margin-top: 30px;
+}
+#register{
+    left: 400px;
+    
+}
+       
+    </style>
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="Email/Phone number" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required> 
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+        
+         </form>
+         <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="Email" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="password" class="input-field" placeholder="Confirm Password" required>
+            <input type="text" class="input-field" placeholder="Enter Your Phone Number" required>
+            <input type="date" class="input-field" placeholder="Enter Your Date Of Birth" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        
+         </form>
+        </div>
+    </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+    </div>
+    </form>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+
+</body>
+
+
+
+
+
+
+</html>
