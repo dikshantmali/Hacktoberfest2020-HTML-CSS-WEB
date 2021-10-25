@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing:border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+   
+}
+
+/*Styling of first page*/
+
+header{
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('image.jpeg');
+    background-size: cover;
+}
+
+nav{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    z-index:599;
+}
+
+.logo{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+}
+
+.menu a:first-child{
+    color: #e74c3c
+}
+
+.h-text{
+    color:white;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+}
+
+.h-text p{
+    font-size:20px;
+    margin-top: 10px;
+}
+
+.btn1{
+    background:yellow;
+    color:black;
+    width:30%;
+    padding:10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.btn2{
+    background:#e74c3c;
+    color:white;
+    width:30%;
+    padding:10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+/*End of first page*/
+
+/*AboutUs Styling*/
+
+#aboutUs > h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:40px;
+}
+
+.welcome1 > div {
+    width: 360px;
+    margin-top: 50px;
+    padding: 10px 45px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 50px;
+  }
+
+.welcome1,.welcome2 {
+    display: flex;
+    justify-content: center;
+}
+
+  .welcome2 > div {
+    width: 260px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    
+  }
+  .welcome1 p{
+    font-weight: bold;
+  }
+
+  .icons {
+    border-radius: 50%;
+    background-color: #47075a;
+    color: white;
+    padding: 13px;
+    width: 38%;
+    margin-left: 30%;
+  }
+
+  .fa {
+    padding: 2px;
+    font-size: 30px;
+    width: 22px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+    color: white;
+  }
+  
+
+.welcome2 button{
+    background:yellow;
+    color:black;
+    padding:10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+/*End of AboutUs page*/
+
+.c2 {
+    float: left;
+    width: 25%;
+    height: 750px;
+    margin-bottom: 50px;
+    background-color: rgb(243, 243, 243);
+    
+  }
+
+  
+.c2:hover {
+    background-color: #f5f10b;
+}
+
+.btn{
+    padding:10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: black; 
+    outline: none;
+    border: none;
+    background:white;
+}
+  
+.c2:hover .btn {
+    background-color: #47075a;
+    color:white;
+}
+
+/*End of project section*/
+
+
+hr{
+       align-content : center;
+       width : 70%;
+       margin-left : auto;
+       margin-right : auto;
+       margin-top:80px;
+}
+
+
+.c1 {
+    float: left;
+    width: 50%;
+    color: black;
+  }
+  iframe {
+    width: 100%;
+    height: 535px;
+  }
+  
+  
+  
+  .project {
+    margin: 30px;
+  }
+  
+  .project > p {
+    color: rgba(146, 146, 146, 0.74);
+  }
+  
+  .contact {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .button6 {
+    margin-left: 71%;
+  }
+/*.project{
+    width:100%;
+    background-color: black; 
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+}
+
+.project h1{
+    text-align: center;
+    font-size: 2.5em;
+    padding:30px;
+    margin-bottom:20px;
+    font-family: sans-serif;
+    color:white;
+}
+
+
+.m-images{
+    background: #D3D3D3;
+    width:100%;
+    height:100%;
+    display:flex;
+    margin:20px 0px;
+    
+}
+*/
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+#contact h3{
+    font-size:40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top:40px;
+    margin-bottom: 40px;
+    
+}
+form{ 
+    position: relative;
+    font-family: sans-serif;
+}
+
+input[type="text"],
+textarea {
+  width: 80%;
+  padding: 10px 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-bottom: 16px;
+  
+  border-radius:8px;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  border-radius:8px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.2em;
+    text-align: center;
+  }
+
+  footer div{
+   
+        width: 260px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 10px 20px;
+        text-align: center;
+      
+  }
+
+.ft1{
+    margin-left: 50px;
+}
+  
+.ft3{
+    margin-right: 50px;
+}
