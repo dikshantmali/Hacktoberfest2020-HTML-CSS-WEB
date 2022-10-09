@@ -1,0 +1,18 @@
+@media screen and (max-width: 800px) {
+  .main {
+    transform: scale(0.8);
+  }
+  .leftPortion {
+    display: flex;
+    flex-direction: column;
+  }
+  .players {
+    margin-top: -80px;
+  }
+  .heading {
+    font-size: 54px;
+  }
+  .frame {
+    margin-top: -70px;
+  }
+}

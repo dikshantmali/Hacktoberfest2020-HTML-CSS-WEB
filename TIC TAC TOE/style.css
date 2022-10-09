@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Acme", sans-serif;
+  background-color: #13151e;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+header {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 64px;
+}
+
+.reset {
+  font-size: 28px;
+  padding: 20px 30px 20px 30px;
+  background-color: #032344;
+  text-decoration: none;
+  color: white;
+  width: 100px;
+  border-radius: 10px;
+  padding-left: 48px;
+}
+
+.players {
+  display: flex;
+  flex-direction: column;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 32px;
+  gap: 30px;
+}
+
+.leftPortion {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.box2 {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  left: 52vw;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  gap: 70px;
+}
+
+#cellcontainer {
+  box-shadow: 5px 10px 20px #000000;
+  width: 360px;
+  height: 360px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background-color: #032344;
+  margin: auto;
+  color: white;
+  border-radius: 20px;
+}
+
+.cell {
+  cursor: pointer;
+  padding: 35px;
+  font-size: 38px;
+}
+.p-1,
+.p-2 {
+  font-family: "Acme", sans-serif;
+}
+#cell0,
+#cell1,
+#cell2,
+#cell3,
+#cell4,
+#cell5 {
+  border-bottom: 1px solid white;
+}
+#cell0,
+#cell1,
+#cell3,
+#cell4,
+#cell6,
+#cell7 {
+  border-right: 1px solid white;
+}
+#myaudio {
+  display: none;
+}

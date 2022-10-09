@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tic Tac Toe</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Chakra+Petch:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header class="heading">
+      <p>TIC&nbsp; TAC &nbsp;TOE</p>
+    </header>
+
+    <section class="main">
+      <div class="leftPortion">
+        <div class="players">
+          <p class="player1">
+            <span class="p-1">Player 1</span> 🔥v/s&nbsp;
+            <span class="p-2">Player 2</span> 🔥
+          </p>
+          <p class="player1">First Player &nbsp;: &nbsp; X</p>
+          <p class="player1">Secand Player&nbsp; :&nbsp; O</p>
+          <p class="win">Winner is : <span class="winner"></span></p>
+          <a href="#" class="reset">Again</a>
+        </div>
+        <div class="frame">
+          <div id="cellcontainer">
+            <div cellIndex="0" class="cell" id="cell0"></div>
+            <div cellIndex="1" class="cell" id="cell1"></div>
+            <div cellIndex="2" class="cell" id="cell2"></div>
+            <div cellIndex="3" class="cell" id="cell3"></div>
+            <div cellIndex="4" class="cell" id="cell4"></div>
+            <div cellIndex="5" class="cell" id="cell5"></div>
+            <div cellIndex="6" class="cell" id="cell6"></div>
+            <div cellIndex="7" class="cell" id="cell7"></div>
+            <div cellIndex="8" class="cell" id="cell8"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <audio id="myaudio" controls autoplay>
+      <source src="audios/start.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="script2.js" async defer></script>
+  </body>
+</html>
