@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Animation</title>
+</head>
+
+<body>
+  <div style="width:100%; height:100vh;"></div>
+    <div class="cursor" id="Cursor"></div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        cursor:grab;
+    }
+
+    .cursor {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        position: absolute;
+        transition: 0.05s all ease;
+        background-color: darkslateblue;
+    }
+</style>
+<script>
+  var cursor = document.getElementById("Cursor");
+
+document.onmousemove = function(e){
+    cursor.style.left = (e.pageX-23)+"px";
+    cursor.style.top = (e.pageY-23)+"px";
+    cursor.style.background = "darkslateblue";
+    cursor.style.display = "block";
+}
+document.onclick = function(e){
+    cursor.style.background = "white";
+}
+</script>
+
+</html>
