@@ -1,0 +1,153 @@
+#title{
+    background-color: #ff4c68;
+    color: white;
+    padding-top: 20px;
+}
+body{
+    font-family: "Montserrat";
+}
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+.title-img{
+    /* padding-top: 100px; */
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+h1{
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.navbar{
+    padding: 0 0 4.5rem;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+.nav-link{
+    font-size: 1.2rem ;
+    /* font-family: "Montserrat-light"; */
+}
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+/* features section */
+#features{
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 2.5%;
+}
+
+h3{
+    font-weight: bold;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+.icon{
+    color:#ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: #ff4c68;
+}
+
+/* testimonial section */
+
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+}
+
+.press-logo{
+    margin:20px 20px 50px;
+    width: 15%;
+}
+
+/* Pricing section */
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+ .pricing-column{
+    padding: 3% 2%;
+ }
+
+ #pricing h2{
+    color: black;
+ }
+
+/* footer section */
+
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding:7% 15%;
+}
+.cta-heading{    
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #fff;
+}
+#footer{
+    background-color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+}
+.footer-logo{
+    margin: 20px 10px;
+}
+#footer p{
+    size:5px
+}
+ @media (max-width:1000px) {
+    #title{
+        text-align: center;
+    }
+    .title-img{
+        position: static;
+        transform: rotate(0);
+    }
+ }
+
+ 
