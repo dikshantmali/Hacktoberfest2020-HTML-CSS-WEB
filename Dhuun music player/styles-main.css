@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.heading
+{
+    position: fixed;
+    width: 100%;
+}
+
+nav
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+.logo
+{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.fa-headphones
+{
+    color: rgb(255, 238, 0);
+    font-size: 42px;
+}
+
+#head
+{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.search
+{
+    margin-left: 60px;
+    width: 20vw;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 238, 0);
+    background-color: transparent;
+    color: white;
+    font-size:15px;
+    outline: none;
+    padding: 0 20px;
+    background: url('search\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: 94%;
+    background-size: 18px 18px;
+}
+
+nav ul 
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 30px;
+}
+
+nav ul li
+{
+    list-style: none;
+    margin-left: 30px;
+    position: relative;
+}
+
+.btn
+{
+    width: 6vw;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 238, 0);
+    background-color: transparent;
+    color: white;
+    font-size:15px;
+    outline: none;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    scale: 1.08;
+    border: 2px solid rgb(255, 238, 0);
+    background-color: rgb(255, 238, 0);
+    color: black;
+}
+
+.userinfo
+{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px; 
+    cursor: pointer;
+}
+
+.userinfolist 
+{
+    display: none;
+    z-index: 100;
+}
+
+nav ul li:hover .userinfolist 
+{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+
+nav ul li:hover .userinfolist ul
+{
+    display: block;
+    margin: 10px;
+}
+
+nav ul li:hover .userinfolist ul li
+{
+    width: 89px;
+    padding: 10px;
+}
+
+.bottom
+{
+    width: 100%;
+    height: 12vh;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    position: fixed
+}
+
+#fas 
+{
+    padding-left: 26px;
+    font-size: 25px;
+    font-weight:lighter;
+    color: rgb(255, 238, 0);
+    cursor: pointer;
+}
+
+.bottom-container
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 52vw;
+    margin: auto;
+    transform: translate(0, -62.5%);
+}
+
+.left-cover
+{
+    width: fit-content;
+    position: relative;
+    top: 50%;
+    transform: translate(10%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.left-cover img
+{
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.icons i
+{
+    padding: 0 8px;
+}
+
+.range
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.in
+{
+    width: 52vw;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.songitemMaintop
+{
+    background: linear-gradient(180deg, rgb(212, 198, 5),rgb(129, 121, 14), black);
+    padding: 50px;
+}
+
+.songitems
+{
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.songitemstop
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    margin:-30px auto 0;
+    margin-top: -30px;
+    width: fit-content;
+    
+}
+
+.songitemsContent
+{
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.songitemstop img
+{
+    height: 30vh;
+    width: 15vw;
+}
+
+#head1
+{
+    transform: translate(0, -30%);
+}
+
+#p3
+{
+    transform: translate(0, -40%);
+    font-size: 40px;
+    color: white;
+}
+
+#p2
+{
+    color: rgb(135, 140, 5);
+    font-size: 20px;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+table
+{
+    color: white;
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 85px;
+}
+
+table th
+{
+    text-align: left;
+    padding: 20px 14px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    background-color: rgba(64, 63, 63, 0.5); 
+    color: grey;  
+    position: relative;
+}
+
+.songName
+{
+    padding-right: 250px;
+}
+
+.album
+{
+    padding-right: 400px;
+}
+
+.date
+{
+    padding-right: 100px;
+}
+
+.time
+{
+    padding-right: 10px;
+}
+
+table tr td
+{
+    padding: 10px 10px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.row-hover:hover
+{
+    scale: 1.01;
+    background-color: rgba(67, 65, 65, 0.5);
+    transition: background-color scale 0.3s;
+}
+
+.songName:hover
+{
+    scale: 1.01;
+    text-decoration: underline;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.title
+{
+    display: flex;
+    align-items: center;
+}
+
+#images
+{
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
