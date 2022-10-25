@@ -1,0 +1,163 @@
+body{
+    background-color: rgb(25, 25, 25);
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes slide-left {
+    0%{
+        margin-top: 0;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 10%;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    height: 25%;
+    width: 25%;
+    filter: drop-shadow(1px 1px 2px #7e7e7e);
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 40%;
+}
+a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    height: 20px;
+    transition: color 0.3s;
+}
+a:hover{
+    color: gold;
+    border-bottom: 1px solid rgb(209, 207, 207);
+}
+#search{
+    border: 0;
+    border-radius: 10px;
+    width: 4.5rem;
+    height: 1.4rem;
+}
+
+#mainframe{
+    display: flex;
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.piz{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    background: -webkit-linear-gradient(#ffdd00, #fbb034);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4.5rem;
+    margin-top: 10%;
+    animation: slide-left 0.8s ease-in-out;
+}
+.pizza{
+    transform: scale(1.1);
+    animation: fade-in 3s ease-in;
+    animation: repeat 10s infinite;
+}
+@keyframes repeat {
+    0%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(1.05) rotate(1deg);
+    }
+    60%{
+        transform: rotate(-1deg);
+    }
+    100%{
+        transform: scale(1) rotate(0deg);
+
+    }
+}
+.tag1{
+    height: 7rem;
+    width: 5rem;
+    transform: translate(21rem,9.5rem);
+    z-index: 1;
+}
+.tag2{
+    height: 7rem;
+    width: 5rem;
+    transform: translate(47.5rem,9.5rem);
+    z-index: 1;
+}
+.tag3{
+    height: 7rem;
+    width: 5rem;
+    transform: translate(75rem,9.5rem);
+    z-index: 1;
+}
+#top_offers{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+
+}
+
+.offer{
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 25px;
+    height: 30rem;
+    width: 25rem;
+    z-index: -1;
+    background-color: #2f2f2f;
+}
+.pizza_img{
+    width: 25rem;
+}
+.name_piz{
+    transform: translateX(5px) translateY(-10px);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+.des{
+    margin-left: 10px;
+    margin-top:-2rem;
+    color: rgb(212, 211, 211);
+}
+.order-btn{
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: red;
+    border-radius: 5px;
+    height: 2rem;
+    width: 7rem;
+    color: white;
+}
+
+.creator{
+    font-size: small;
+    color: rgb(196, 196, 196);
+}
